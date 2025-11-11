@@ -1,11 +1,5 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI;
-
-if (!MONGODB_URI) {
-  throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
-}
-
 /**
  * Global is used here to maintain a cached connection across hot reloads
  * in development. This prevents connections growing exponentially
@@ -18,6 +12,12 @@ if (!cachedMongoose.mongoose) {
 }
 
 async function connectDB() {
+  const MONGODB_URI = process.env.MONGODB_URI;
+
+  if (!MONGODB_URI) {
+    throw new Error('Please define the MONGODB_URI environment variable inside .env.local');
+  }
+
   if (cachedMongoose.mongoose.conn) {
     return cachedMongoose.mongoose.conn;
   }
@@ -27,8 +27,7 @@ async function connectDB() {
       bufferCommands: false,
     };
 
-    // MONGODB_URI is guaranteed to be defined here due to the check above
-    cachedMongoose.mongoose.promise = mongoose.connect(MONGODB_URI!, opts).then((mongoose) => {
+    cachedMongoose.mongoose.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
       return mongoose;
     });
   }
