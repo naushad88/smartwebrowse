@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Cookie Policy | Smartwebrowse India Private Limited',
@@ -11,34 +12,46 @@ export const metadata: Metadata = {
 
 export default function CookiePolicy() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 text-primary-900 py-16 pt-24">
-        <div className="container-custom text-center">
-          <div className="inline-flex items-center px-6 py-3 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6 border border-primary-200">
-            <i className="fas fa-cookie-bite mr-2"></i>
-            Cookie Management
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight text-primary-900">
-            Cookie Policy
-          </h1>
-          <p className="text-xl md:text-2xl text-primary-700 max-w-3xl mx-auto leading-relaxed">
-            Learn how we use cookies and similar technologies to enhance your browsing experience 
-            and provide personalized services on our website.
-          </p>
-          <div className="mt-8 inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium border border-purple-200">
-            <i className="fas fa-shield-alt mr-2"></i>
-            Privacy Compliant
+      <section className="relative py-20 md:py-24 pt-28 overflow-hidden">
+        {/* Background Patterns */}
+        <div className="absolute inset-0 neural-pattern opacity-20"></div>
+        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
+        
+        {/* Animated Gradient Orbs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+
+        <div className="container-custom relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block mb-4">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
+                Cookie Management
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
+              Cookie Policy
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Learn how we use cookies and similar technologies to enhance your browsing experience 
+              and provide personalized AI services on our website.
+            </p>
+            <div className="mt-8 inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium border border-purple-200">
+              <i className="fas fa-shield-alt mr-2"></i>
+              Privacy Compliant
+            </div>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
-        <div className="container-custom">
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 neural-pattern opacity-10"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto">
             {/* Last Updated Info */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
+            <div className="card-ai p-8 mb-8">
               <div className="text-center">
                 <p className="text-lg text-gray-600 mb-2">
                   <strong>Last updated:</strong> January 2025
@@ -50,15 +63,15 @@ export default function CookiePolicy() {
             </div>
 
             {/* What Are Cookies */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">What Are Cookies?</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">What Are Cookies?</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Cookies are small text files that are placed on your device when you visit our website. 
-                They help us provide you with a better experience and understand how you use our site.
+                They help us provide you with a better experience and understand how you use our AI services.
               </p>
-              <div className="bg-primary-50 p-6 rounded-xl border border-primary-200">
-                <h3 className="text-xl font-semibold text-primary-900 mb-4">Cookie Benefits:</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-primary-800">
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Cookie Benefits:</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-800">
                   <div className="flex items-center">
                     <i className="fas fa-user-shield mr-2"></i>
                     <span>Enhanced Security</span>
@@ -76,8 +89,8 @@ export default function CookiePolicy() {
             </div>
 
             {/* How We Use Cookies */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">How We Use Cookies</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">How We Use Cookies</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 We use cookies for the following purposes to improve your experience:
               </p>
@@ -107,19 +120,19 @@ export default function CookiePolicy() {
             </div>
 
             {/* Types of Cookies */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Types of Cookies We Use</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Types of Cookies We Use</h2>
               
               <div className="space-y-6">
-                <div className="bg-blue-50 p-6 rounded-xl border border-blue-200">
+                <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
                   <div className="flex items-center mb-3">
-                    <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mr-3">
                       <i className="fas fa-shield-alt text-white"></i>
                     </div>
-                    <h3 className="text-xl font-semibold text-blue-900">1. Essential Cookies</h3>
+                    <h3 className="text-xl font-semibold text-gray-900">1. Essential Cookies</h3>
                   </div>
-                  <p className="text-blue-800 mb-3">These cookies are necessary for the website to function properly.</p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-blue-700 text-sm">
+                  <p className="text-gray-800 mb-3">These cookies are necessary for the website to function properly.</p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-gray-700 text-sm">
                     <div className="flex items-center">
                       <i className="fas fa-circle text-xs mr-2"></i>
                       <span>Session management</span>
@@ -135,15 +148,15 @@ export default function CookiePolicy() {
                   </div>
                 </div>
 
-                <div className="bg-green-50 p-6 rounded-xl border border-green-200">
+                <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200">
                   <div className="flex items-center mb-3">
-                    <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-emerald-600 rounded-full flex items-center justify-center mr-3">
                       <i className="fas fa-chart-line text-white"></i>
                     </div>
-                    <h3 className="text-xl font-semibold text-green-900">2. Analytics Cookies</h3>
+                    <h3 className="text-xl font-semibold text-gray-900">2. Analytics Cookies</h3>
                   </div>
-                  <p className="text-green-800 mb-3">Help us understand how visitors interact with our website.</p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-green-700 text-sm">
+                  <p className="text-gray-800 mb-3">Help us understand how visitors interact with our website.</p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-gray-700 text-sm">
                     <div className="flex items-center">
                       <i className="fas fa-circle text-xs mr-2"></i>
                       <span>Google Analytics</span>
@@ -159,15 +172,15 @@ export default function CookiePolicy() {
                   </div>
                 </div>
 
-                <div className="bg-purple-50 p-6 rounded-xl border border-purple-200">
+                <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-xl border border-purple-200">
                   <div className="flex items-center mb-3">
-                    <div className="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center mr-3">
+                    <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full flex items-center justify-center mr-3">
                       <i className="fas fa-bullhorn text-white"></i>
                     </div>
-                    <h3 className="text-xl font-semibold text-purple-900">3. Marketing Cookies</h3>
+                    <h3 className="text-xl font-semibold text-gray-900">3. Marketing Cookies</h3>
                   </div>
-                  <p className="text-purple-800 mb-3">Used to deliver relevant advertisements and track campaign performance.</p>
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-purple-700 text-sm">
+                  <p className="text-gray-800 mb-3">Used to deliver relevant advertisements and track campaign performance.</p>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3 text-gray-700 text-sm">
                     <div className="flex items-center">
                       <i className="fas fa-circle text-xs mr-2"></i>
                       <span>Google Ads</span>
@@ -185,71 +198,40 @@ export default function CookiePolicy() {
               </div>
             </div>
 
-            {/* Third-Party Cookies */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Third-Party Cookies</h2>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Some cookies are placed by third-party services that appear on our pages:
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-3">
-                  <div className="flex items-center">
-                    <i className="fas fa-chart-bar text-primary-600 mr-3"></i>
-                    <span className="text-gray-700">Google Analytics for website analytics</span>
-                  </div>
-                  <div className="flex items-center">
-                    <i className="fas fa-ad text-primary-600 mr-3"></i>
-                    <span className="text-gray-700">Google Ads for advertising</span>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center">
-                    <i className="fas fa-share-alt text-primary-600 mr-3"></i>
-                    <span className="text-gray-700">Social media platforms for sharing and engagement</span>
-                  </div>
-                  <div className="flex items-center">
-                    <i className="fas fa-credit-card text-primary-600 mr-3"></i>
-                    <span className="text-gray-700">Payment processors for secure transactions</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Managing Cookie Preferences */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Managing Your Cookie Preferences</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Managing Your Cookie Preferences</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 You can control and manage cookies in several ways:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-6 bg-primary-50 rounded-xl border border-primary-200">
-                  <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i className="fas fa-browser text-white text-lg"></i>
                   </div>
-                  <h3 className="font-semibold text-primary-900 mb-2">Browser Settings</h3>
-                  <p className="text-primary-700 text-sm">Most browsers allow you to refuse cookies or delete them</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Browser Settings</h3>
+                  <p className="text-gray-700 text-sm">Most browsers allow you to refuse cookies or delete them</p>
                 </div>
 
-                <div className="text-center p-6 bg-accent-50 rounded-xl border border-accent-200">
-                  <div className="w-12 h-12 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200">
+                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i className="fas fa-toggle-on text-white text-lg"></i>
                   </div>
-                  <h3 className="font-semibold text-accent-900 mb-2">Cookie Consent</h3>
-                  <p className="text-accent-700 text-sm">Use our cookie consent banner to manage preferences</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Cookie Consent</h3>
+                  <p className="text-gray-700 text-sm">Use our cookie consent banner to manage preferences</p>
                 </div>
 
-                <div className="text-center p-6 bg-green-50 rounded-xl border border-green-200">
-                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-200">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i className="fas fa-external-link-alt text-white text-lg"></i>
                   </div>
-                  <h3 className="font-semibold text-green-900 mb-2">Third-Party Opt-outs</h3>
-                  <p className="text-green-700 text-sm">Visit third-party websites to opt out of their cookies</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Third-Party Opt-outs</h3>
+                  <p className="text-gray-700 text-sm">Visit third-party websites to opt out of their cookies</p>
                 </div>
               </div>
               
-              <div className="mt-6 bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+              <div className="mt-6 bg-gradient-to-br from-yellow-50 to-amber-50 p-4 rounded-lg border border-yellow-200">
                 <p className="text-yellow-800 text-sm">
                   <i className="fas fa-exclamation-triangle mr-2"></i>
                   <strong>Note:</strong> Disabling certain cookies may affect the functionality of our website.
@@ -257,62 +239,28 @@ export default function CookiePolicy() {
               </div>
             </div>
 
-            {/* Cookie Duration */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Cookie Duration</h2>
-              <p className="text-gray-700 mb-6 leading-relaxed">
-                Cookies on our website have different lifespans:
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-6 bg-blue-50 rounded-xl border border-blue-200">
-                  <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i className="fas fa-clock text-white text-xl"></i>
-                  </div>
-                  <h3 className="font-semibold text-blue-900 mb-2">Session Cookies</h3>
-                  <p className="text-blue-700 text-sm">Deleted when you close your browser</p>
-                </div>
-
-                <div className="text-center p-6 bg-green-50 rounded-xl border border-green-200">
-                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i className="fas fa-calendar text-white text-xl"></i>
-                  </div>
-                  <h3 className="font-semibold text-green-900 mb-2">Persistent Cookies</h3>
-                  <p className="text-green-700 text-sm">Remain on your device for a set period</p>
-                </div>
-
-                <div className="text-center p-6 bg-purple-50 rounded-xl border border-purple-200">
-                  <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i className="fas fa-external-link-alt text-white text-xl"></i>
-                  </div>
-                  <h3 className="font-semibold text-purple-900 mb-2">Third-Party Cookies</h3>
-                  <p className="text-purple-700 text-sm">Subject to third-party privacy policies</p>
-                </div>
-              </div>
-            </div>
-
             {/* Contact Information */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Contact Us</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Contact Us</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 If you have any questions about our use of cookies, please contact us:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-primary-50 rounded-xl border border-primary-200">
-                  <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i className="fas fa-envelope text-white text-lg"></i>
                   </div>
-                  <h3 className="font-semibold text-primary-900 mb-2">Cookie Inquiries</h3>
-                  <p className="text-primary-700 text-sm">privacy@smartwebrowse.com</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Cookie Inquiries</h3>
+                  <p className="text-gray-700 text-sm">privacy@smartwebrowse.com</p>
                 </div>
 
-                <div className="text-center p-6 bg-accent-50 rounded-xl border border-accent-200">
-                  <div className="w-12 h-12 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200">
+                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i className="fas fa-building text-white text-lg"></i>
                   </div>
-                  <h3 className="font-semibold text-accent-900 mb-2">Company Address</h3>
-                  <p className="text-accent-700 text-sm">F-195, Second Floor, Industrial Area Phase 8-B, Sector 74, Mohali, India 160055</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Company Address</h3>
+                  <p className="text-gray-700 text-sm">F-195, Second Floor, Industrial Area Phase 8-B, Sector 74, Mohali, India 160055</p>
                 </div>
               </div>
             </div>
@@ -330,7 +278,3 @@ export default function CookiePolicy() {
     </div>
   );
 }
-
-
-
-

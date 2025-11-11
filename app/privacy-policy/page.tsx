@@ -1,5 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Smartwebrowse India Private Limited',
@@ -11,34 +12,46 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 text-primary-900 py-16 pt-24">
-        <div className="container-custom text-center">
-          <div className="inline-flex items-center px-6 py-3 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6 border border-primary-200">
-            <i className="fas fa-shield-alt mr-2"></i>
-            Data Protection
-          </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight tracking-tight text-primary-900">
-            Privacy Policy
-          </h1>
-          <p className="text-xl md:text-2xl text-primary-700 max-w-3xl mx-auto leading-relaxed">
-            Smartwebrowse India Private Limited is committed to protecting your privacy in accordance with Indian data protection laws. 
-            This policy explains how we collect, use, and safeguard your personal information.
-          </p>
-          <div className="mt-8 inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium border border-green-200">
-            <i className="fas fa-check-circle mr-2"></i>
-            Indian Data Protection Compliant
+      <section className="relative py-20 md:py-24 pt-28 overflow-hidden">
+        {/* Background Patterns */}
+        <div className="absolute inset-0 neural-pattern opacity-20"></div>
+        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
+        
+        {/* Animated Gradient Orbs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+
+        <div className="container-custom relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block mb-4">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
+                Data Protection
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
+              Privacy Policy
+            </h1>
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+              Smartwebrowse India Private Limited is committed to protecting your privacy in accordance with Indian data protection laws. 
+              This policy explains how we collect, use, and safeguard your personal information.
+            </p>
+            <div className="mt-8 inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium border border-green-200">
+              <i className="fas fa-check-circle mr-2"></i>
+              Indian Data Protection Compliant
+            </div>
           </div>
         </div>
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
-        <div className="container-custom">
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 neural-pattern opacity-10"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto">
             {/* Last Updated Info */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
+            <div className="card-ai p-8 mb-8">
               <div className="text-center">
                 <p className="text-lg text-gray-600 mb-2">
                   <strong>Last updated:</strong> January 2025
@@ -50,17 +63,17 @@ export default function PrivacyPolicy() {
             </div>
 
             {/* Your Privacy Rights */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Your Privacy Rights</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Your Privacy Rights</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 As an Indian company, Smartwebrowse India Private Limited respects your fundamental right to privacy under Indian law. 
-                We only collect data necessary to provide our IT services, and we give you full control over your personal information.
+                We only collect data necessary to provide our AI services, and we give you full control over your personal information.
               </p>
               
-              <div className="bg-primary-50 p-6 rounded-xl border border-primary-200">
-                <h3 className="text-xl font-semibold text-primary-900 mb-4">Data Controller:</h3>
-                <div className="space-y-2 text-primary-800">
-                  <p><strong>Smartwebrowse India Private Limited Private Limited</strong></p>
+              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Data Controller:</h3>
+                <div className="space-y-2 text-gray-700">
+                  <p><strong>Smartwebrowse India Private Limited</strong></p>
                   <p>F-195, Second Floor, Industrial Area Phase 8-B, Sector 74, Mohali, India 160055</p>
                   <p><strong>Registration:</strong> Indian company (CIN: U72200PB2013PTC037123)</p>
                   <p><strong>Email:</strong> privacy@smartwebrowse.com</p>
@@ -69,14 +82,14 @@ export default function PrivacyPolicy() {
             </div>
 
             {/* Personal Data We Collect */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Personal Data We Collect</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Personal Data We Collect</h2>
               
               <div className="space-y-6">
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Personal Information</h3>
                   <p className="text-gray-600 mb-3">
-                    Information you provide directly when creating an account or making purchases.
+                    Information you provide directly when creating an account or making inquiries about our AI services.
                   </p>
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-gray-800 mb-2">Examples:</h4>
@@ -85,7 +98,7 @@ export default function PrivacyPolicy() {
                       <li>Email address</li>
                       <li>Phone number (optional)</li>
                       <li>Company name and address</li>
-                      <li>Project requirements</li>
+                      <li>AI project requirements</li>
                     </ul>
                   </div>
                   <div className="mt-3 text-sm text-gray-600">
@@ -95,35 +108,15 @@ export default function PrivacyPolicy() {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Payment Information</h3>
-                  <p className="text-gray-600 mb-3">
-                    Financial data processed securely through our payment providers.
-                  </p>
-                  <div className="bg-gray-50 p-4 rounded-lg">
-                    <h4 className="font-semibold text-gray-800 mb-2">Examples:</h4>
-                    <ul className="list-disc pl-6 text-gray-700 space-y-1">
-                      <li>Credit/debit card details</li>
-                      <li>Payment history</li>
-                      <li>Transaction records</li>
-                      <li>GST information</li>
-                    </ul>
-                  </div>
-                  <div className="mt-3 text-sm text-gray-600">
-                    <strong>Lawful Basis:</strong> Contract performance & legal obligation<br/>
-                    <strong>Retention:</strong> 7 years (Indian tax law)
-                  </div>
-                </div>
-
-                <div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Usage & Analytics</h3>
                   <p className="text-gray-600 mb-3">
-                    Data collected to improve our services and understand user behavior.
+                    Data collected to improve our AI services and understand user behavior.
                   </p>
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <h4 className="font-semibold text-gray-800 mb-2">Examples:</h4>
                     <ul className="list-disc pl-6 text-gray-700 space-y-1">
                       <li>Website interactions</li>
-                      <li>Service preferences</li>
+                      <li>AI service preferences</li>
                       <li>Download history</li>
                       <li>Performance metrics</li>
                     </ul>
@@ -137,12 +130,12 @@ export default function PrivacyPolicy() {
             </div>
 
             {/* Your Data Protection Rights */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Your Data Protection Rights</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Your Data Protection Rights</h2>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h3 className="text-xl font-semibold text-primary-900 mb-4">Under Indian IT Act 2000 & Rules</h3>
+                  <h3 className="text-xl font-semibold text-blue-900 mb-4">Under Indian IT Act 2000 & Rules</h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start">
                       <i className="fas fa-check text-green-500 mr-3 mt-1"></i>
@@ -164,7 +157,7 @@ export default function PrivacyPolicy() {
                 </div>
 
                 <div>
-                  <h3 className="text-xl font-semibold text-primary-900 mb-4">Additional Rights</h3>
+                  <h3 className="text-xl font-semibold text-blue-900 mb-4">Additional Rights</h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start">
                       <i className="fas fa-check text-green-500 mr-3 mt-1"></i>
@@ -188,36 +181,36 @@ export default function PrivacyPolicy() {
             </div>
 
             {/* Questions About Your Privacy */}
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Questions About Your Privacy?</h2>
+            <div className="card-ai p-8 mb-8">
+              <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Questions About Your Privacy?</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 We're committed to transparency about how we handle your personal data. If you have any questions 
                 or want to exercise your rights, please don't hesitate to contact us.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="text-center p-6 bg-primary-50 rounded-xl border border-primary-200">
-                  <div className="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-200">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i className="fas fa-envelope text-white text-lg"></i>
                   </div>
-                  <h3 className="font-semibold text-primary-900 mb-2">Privacy Inquiries</h3>
-                  <p className="text-primary-700 text-sm">privacy@smartwebrowse.com</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Privacy Inquiries</h3>
+                  <p className="text-gray-700 text-sm">privacy@smartwebrowse.com</p>
                 </div>
 
-                <div className="text-center p-6 bg-accent-50 rounded-xl border border-accent-200">
-                  <div className="w-12 h-12 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200">
+                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i className="fas fa-building text-white text-lg"></i>
                   </div>
-                  <h3 className="font-semibold text-accent-900 mb-2">Data Protection Authority</h3>
-                  <p className="text-accent-700 text-sm">meity.gov.in</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Data Protection Authority</h3>
+                  <p className="text-gray-700 text-sm">meity.gov.in</p>
                 </div>
 
-                <div className="text-center p-6 bg-green-50 rounded-xl border border-green-200">
-                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="text-center p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl border border-green-200">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <i className="fas fa-clock text-white text-lg"></i>
                   </div>
-                  <h3 className="font-semibold text-green-900 mb-2">Response Time</h3>
-                  <p className="text-green-700 text-sm">Within 30 days (as required by law)</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Response Time</h3>
+                  <p className="text-gray-700 text-sm">Within 30 days (as required by law)</p>
                 </div>
               </div>
             </div>
@@ -235,7 +228,3 @@ export default function PrivacyPolicy() {
     </div>
   );
 }
-
-
-
-

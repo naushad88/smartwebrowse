@@ -3,7 +3,7 @@ import HeroFullPage from '@/components/HeroFullPage';
 import ServicesOverview from '@/components/ServicesOverview';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import FocusIndustries from '@/components/FocusIndustries';
-import BlogSection from '@/components/BlogSection';
+// import BlogSection from '@/components/BlogSection';
 import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/CTASection';
 import Stats from '@/components/Stats';
@@ -43,7 +43,7 @@ export default async function HomePage() {
       <ServicesOverview />
       <WhyChooseUs />
       <FocusIndustries />
-      <BlogSection />
+      {/* <BlogSection /> */}
       {/* <Testimonials /> */}
       <CTASection />
     </>
