@@ -27,43 +27,58 @@ export default function AIIntegrationPage() {
     {
       title: 'Automation',
       description: 'Streamline processes and reduce manual work',
-      icon: 'fa-solid fa-robot'
+      icon: 'fa-robot'
     },
     {
       title: 'Better Insights',
       description: 'Data-driven decision making and analytics',
-      icon: 'fa-solid fa-chart-line'
+      icon: 'fa-chart-line'
     },
     {
       title: 'User Experience',
       description: 'Personalized and intelligent interactions',
-      icon: 'fa-solid fa-user-check'
+      icon: 'fa-user-check'
     },
     {
       title: 'Competitive Edge',
       description: 'Stay ahead with cutting-edge AI technology',
-      icon: 'fa-solid fa-trophy'
+      icon: 'fa-trophy'
     }
   ];
 
   return (
-    <div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 text-primary-900">
-        <div className="container-custom">
+      <section className="relative py-20 md:py-24 pt-28 overflow-hidden">
+        {/* Background Patterns */}
+        <div className="absolute inset-0 neural-pattern opacity-20"></div>
+        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
+        
+        {/* Animated Gradient Orbs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="heading-1 mb-6 text-primary-900">
-              AI Integration Services
+            <div className="inline-block mb-4">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
+                AI Integration Services
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
+              Seamless AI Integration Solutions
             </h1>
-            <p className="text-xl md:text-2xl text-primary-700 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
               Integrate artificial intelligence into your applications to automate processes, 
               improve user experience, and gain competitive advantages.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/consultation" className="btn-primary text-lg px-8 py-4">
+              <Link href="/consultation" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                <i className="fas fa-calendar-alt"></i>
                 Get Free Consultation
               </Link>
-              <Link href="/services/all-development-services" className="btn-outline text-lg px-8 py-4 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white">
+              <Link href="/services/all-development-services" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-8 py-4 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
+                <i className="fas fa-list"></i>
                 View All Development Services
               </Link>
             </div>
@@ -72,54 +87,55 @@ export default function AIIntegrationPage() {
       </section>
 
       {/* Main Content */}
-      <section className="py-16 bg-white">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 neural-pattern opacity-10"></div>
+        <div className="container-custom relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="heading-2 mb-6 text-gray-900">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
                 Transform Your Business with AI
               </h2>
-              <p className="text-body text-gray-600 mb-6">
-                Our AI integration services help organizations leverage artificial intelligence 
-                to automate processes, gain insights, and create intelligent applications.
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Our AI integration services help you seamlessly incorporate artificial intelligence 
+                into your existing applications and workflows, enabling intelligent automation and 
+                data-driven decision making.
               </p>
-              <p className="text-body text-gray-600 mb-6">
-                We develop and integrate AI solutions that are tailored to your business needs, 
-                ensuring seamless integration and measurable results.
+              <p className="text-base text-gray-600 mb-6 leading-relaxed">
+                From AI-powered chatbots to machine learning models and predictive analytics, 
+                we deliver comprehensive AI integration solutions that drive business value 
+                and competitive advantage.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/consultation" className="btn-primary">
-                  Schedule Free AI Assessment
+                <Link href="/consultation" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <i className="fas fa-check-circle"></i>
+                  Schedule Free Assessment
                 </Link>
-                <Link href="/services/all-development-services" className="btn-outline">
-                  Learn About Custom Development
+                <Link href="/services/ai-services-provider" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-3 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
+                  Learn About AI Services
                 </Link>
               </div>
             </div>
-            <div className="bg-white rounded-xl shadow-sm border border-neutral-100 p-8">
-              <h3 className="heading-3 mb-6 text-neutral-800">What We Deliver</h3>
-              <ul className="space-y-4">
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check-circle text-accent-500 mt-1 mr-3 text-xl"></i>
-                  <div>
-                    <h4 className="font-semibold text-neutral-800">AI Strategy</h4>
-                    <p className="text-neutral-600">Comprehensive AI roadmap and implementation plan</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check-circle text-accent-500 mt-1 mr-3 text-xl"></i>
-                  <div>
-                    <h4 className="font-semibold text-neutral-800">AI Development</h4>
-                    <p className="text-neutral-600">Custom AI models and intelligent applications</p>
-                  </div>
-                </li>
-                <li className="flex items-start">
-                  <i className="fa-solid fa-check-circle text-accent-500 mt-1 mr-3 text-xl"></i>
-                  <div>
-                    <h4 className="font-semibold text-neutral-800">Integration Support</h4>
-                    <p className="text-neutral-600">Seamless AI integration with existing systems</p>
-                  </div>
-                </li>
+            <div className="card-ai p-8">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
+                Integration Solutions Portfolio
+              </h3>
+              <ul className="space-y-5">
+                {[
+                  { icon: 'fa-comments', title: 'AI Chatbots', desc: 'Intelligent virtual assistants and chatbots' },
+                  { icon: 'fa-brain', title: 'Machine Learning', desc: 'ML model development and deployment' },
+                  { icon: 'fa-language', title: 'NLP Integration', desc: 'Natural language processing solutions' },
+                  { icon: 'fa-eye', title: 'Computer Vision', desc: 'Image recognition and visual AI' }
+                ].map((item, idx) => (
+                  <li key={idx} className="flex items-start group">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white text-lg mr-4 group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
+                      <i className={`fas ${item.icon}`}></i>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 mb-1 group-hover:text-blue-700 transition-colors">{item.title}</h4>
+                      <p className="text-gray-600 text-sm">{item.desc}</p>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -127,23 +143,31 @@ export default function AIIntegrationPage() {
       </section>
 
       {/* Features */}
-      <section className="py-16 bg-gray-50">
-        <div className="container-custom">
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 circuit-pattern opacity-10"></div>
+        <div className="container-custom relative z-10">
           <div className="text-center mb-12">
-            <h2 className="heading-2 mb-6 text-gray-900">
+            <div className="inline-block mb-4">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
+                Our Services
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
               Comprehensive AI Integration Features
             </h2>
-            <p className="text-body text-gray-600 max-w-3xl mx-auto">
-              Our AI integration solutions cover all aspects of artificial intelligence, 
-              ensuring comprehensive functionality and intelligent automation.
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Our AI integration services cover all aspects of artificial intelligence implementation, 
+              ensuring seamless integration and optimal performance.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {features.map((feature, index) => (
-              <div key={index} className="flex items-start">
-                <i className="fa-solid fa-check text-accent-500 mt-1 mr-3 text-lg"></i>
-                <span className="text-neutral-700">{feature}</span>
+              <div key={index} className="card-ai p-6 flex items-start group hover:-translate-y-1 transition-all duration-300">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white mr-4 flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                  <i className="fas fa-check text-sm"></i>
+                </div>
+                <span className="text-gray-700 font-medium">{feature}</span>
               </div>
             ))}
           </div>
@@ -151,26 +175,32 @@ export default function AIIntegrationPage() {
       </section>
 
       {/* Benefits */}
-      <section className="py-16 bg-white">
-        <div className="container-custom">
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 neural-pattern opacity-10"></div>
+        <div className="container-custom relative z-10">
           <div className="text-center mb-12">
-            <h2 className="heading-2 mb-6 text-gray-900">
+            <div className="inline-block mb-4">
+              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
+                Why Choose Us
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
               Why Choose Our AI Integration Services?
             </h2>
-            <p className="text-body text-gray-600 max-w-3xl mx-auto">
-              We deliver measurable results that enhance your business intelligence and 
-              support your growth objectives.
+            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              We deliver AI integration solutions that transform your business operations and 
+              drive measurable results.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((benefit, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary-400 to-primary-500 flex items-center justify-center text-white text-2xl mx-auto mb-4 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                  <i className={benefit.icon}></i>
+              <div key={index} className="card-ai p-6 text-center group hover:-translate-y-2 transition-all duration-300">
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white text-2xl mx-auto mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
+                  <i className={`fas ${benefit.icon}`}></i>
                 </div>
-                <h3 className="text-lg font-bold text-neutral-800 mb-3 group-hover:text-primary-700 transition-colors duration-300">{benefit.title}</h3>
-                <p className="text-neutral-600 text-sm">{benefit.description}</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">{benefit.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -178,42 +208,39 @@ export default function AIIntegrationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16">
-        <div className="container-custom text-center">
-          <div className="relative overflow-hidden bg-gradient-to-r from-primary-500 to-primary-600 rounded-3xl p-12 shadow-2xl">
-            {/* Background pattern with dots */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0 rounded-3xl" style={{
-                backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px)',
-                backgroundSize: '20px 20px'
-              }}></div>
-            </div>
-            
-            <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Ready to Integrate AI?</h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                Let's discuss how our AI integration services can help you transform 
-                your business with intelligent automation and insights.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/consultation" className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                  Get Free Consultation
-                </Link>
-                <Link href="/services/ai-web-development" className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300">
-                  View All Development Services
-                </Link>
-              </div>
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900"></div>
+        <div className="absolute inset-0 neural-pattern opacity-20"></div>
+        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
+        
+        {/* Animated Gradient Orbs */}
+        <div className="absolute top-10 left-10 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-blob"></div>
+        <div className="absolute bottom-10 right-10 w-72 h-72 bg-indigo-500/20 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+        
+        <div className="container-custom relative z-10 text-center">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-indigo-200 bg-clip-text text-transparent">
+              Ready to Integrate AI into Your Business?
+            </h2>
+            <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
+              Let's discuss how our AI integration services can help you automate processes, 
+              improve user experience, and gain competitive advantages.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/consultation" className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                <i className="fas fa-calendar-alt"></i>
+                Get Free Consultation
+              </Link>
+              <Link href="/services" className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+                <i className="fas fa-list"></i>
+                View All Services
+              </Link>
             </div>
           </div>
         </div>
       </section>
       
-      {/* Mobile CTA Button */}
-      <MobileCTA href="/get-a-quote" bgColor="bg-[#0ea5e9]" hoverColor="hover:bg-[#0284c7]" ringColor="focus:ring-[#0ea5e9]" />    </div>
+      <MobileCTA href="/get-a-quote" bgColor="bg-[#0ea5e9]" hoverColor="hover:bg-[#0284c7]" ringColor="focus:ring-[#0ea5e9]" />
+    </div>
   );
 }
-
-
-
-
-

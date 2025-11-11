@@ -3,46 +3,46 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Infrastructure Services | Scalable AI Infrastructure Setup | Smartwebrowse',
-  description: 'Scalable AI infrastructure setup, cloud AI platforms, and AI-ready infrastructure to support your AI initiatives and ensure optimal performance.',
-  keywords: 'AI Infrastructure, AI Infrastructure Setup, Cloud AI Platforms, AI-Ready Infrastructure, AI Infrastructure Services',
+  title: 'Workflow Automation Services | Smartwebrowse India Private Limited',
+  description: 'Streamline workflows and improve efficiency with intelligent workflow automation solutions.',
+  keywords: 'Workflow Automation, Business Workflow, Process Workflow, Intelligent Workflow',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-infrastructure',
+    canonical: 'https://www.smartwebrowse.com/services/automation-services/workflow-automation',
   },
 };
 
-export default function AIInfrastructurePage() {
+export default function WorkflowAutomationPage() {
   const features = [
-    'Scalable AI infrastructure design and setup',
-    'Cloud AI platform deployment and configuration',
-    'AI infrastructure optimization and tuning',
-    'AI infrastructure monitoring and management',
-    'AI infrastructure security and compliance',
-    'AI infrastructure scaling and capacity planning',
-    'AI infrastructure backup and disaster recovery',
-    'AI infrastructure support and maintenance'
+    'Approval workflow automation and routing',
+    'Task assignment and tracking automation',
+    'Notification and alert automation',
+    'Data routing and synchronization',
+    'Multi-step process automation',
+    'Conditional workflow logic',
+    'Integration with existing systems',
+    'Workflow analytics and reporting'
   ];
 
   const benefits = [
     {
-      title: 'Scalable Architecture',
-      description: 'Build scalable AI infrastructure that grows with your needs',
-      icon: 'fa-server'
+      title: 'Streamlined Processes',
+      description: 'Eliminate bottlenecks and streamline business workflows',
+      icon: 'fa-project-diagram'
     },
     {
-      title: 'Cloud Integration',
-      description: 'Leverage cloud AI platforms for flexibility and cost efficiency',
-      icon: 'fa-cloud'
-    },
-    {
-      title: 'Optimal Performance',
-      description: 'Optimized infrastructure for maximum AI performance',
+      title: 'Faster Processing',
+      description: 'Reduce processing times with automated workflows',
       icon: 'fa-tachometer-alt'
     },
     {
-      title: 'Reliable Support',
-      description: 'Comprehensive infrastructure support and maintenance',
-      icon: 'fa-headset'
+      title: 'Better Visibility',
+      description: 'Track workflow progress and identify improvement opportunities',
+      icon: 'fa-eye'
+    },
+    {
+      title: 'Consistency',
+      description: 'Ensure consistent execution of business processes',
+      icon: 'fa-check-double'
     }
   ];
 
@@ -62,24 +62,24 @@ export default function AIInfrastructurePage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-4">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
-                AI Infrastructure Services
+                Workflow Automation
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Scalable AI Infrastructure Solutions
+              Intelligent Workflow Automation
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Scalable AI infrastructure setup, cloud AI platforms, and AI-ready infrastructure 
-              to support your AI initiatives and ensure optimal performance.
+              Streamline workflows and improve efficiency with intelligent workflow automation solutions 
+              that optimize business processes and reduce bottlenecks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/consultation" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <i className="fas fa-calendar-alt"></i>
-                Get Free Infrastructure Consultation
+                Get Free Consultation
               </Link>
-              <Link href="/services" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-8 py-4 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
+              <Link href="/services/automation-services" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-8 py-4 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
                 <i className="fas fa-list"></i>
-                View All Services
+                View All Automation Services
               </Link>
             </div>
           </div>
@@ -93,36 +93,36 @@ export default function AIInfrastructurePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-                Build Scalable AI Infrastructure
+                Optimize Business Workflows
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our AI infrastructure services help organizations build and maintain scalable, 
-                high-performance infrastructure to support their AI initiatives.
+                Workflow automation involves automating the sequence of tasks and processes that make up a business workflow. 
+                This includes approval processes, task assignments, notifications, and data routing between systems and people.
               </p>
               <p className="text-base text-gray-600 mb-6 leading-relaxed">
-                From infrastructure design and setup to cloud AI platform deployment and ongoing 
-                support, we deliver AI-ready infrastructure that ensures optimal performance and scalability.
+                Our workflow automation solutions help organizations eliminate manual handoffs, reduce processing times, 
+                and ensure consistent execution of business processes, resulting in improved efficiency and customer satisfaction.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/consultation" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <i className="fas fa-check-circle"></i>
-                  Schedule Infrastructure Assessment
+                  Schedule Free Assessment
                 </Link>
-                <Link href="/services/ai-support" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-3 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
-                  Learn About AI Support
+                <Link href="/services/automation-services" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-3 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
+                  Learn About Automation Services
                 </Link>
               </div>
             </div>
             <div className="card-ai p-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-                Infrastructure Services Portfolio
+                Workflow Automation Solutions
               </h3>
               <ul className="space-y-5">
                 {[
-                  { icon: 'fa-server', title: 'Infrastructure Setup', desc: 'Design and deploy AI infrastructure' },
-                  { icon: 'fa-cloud', title: 'Cloud AI Platforms', desc: 'Deploy and configure cloud AI platforms' },
-                  { icon: 'fa-cogs', title: 'Infrastructure Optimization', desc: 'Optimize infrastructure for performance' },
-                  { icon: 'fa-headset', title: 'Infrastructure Support', desc: 'Ongoing infrastructure support and maintenance' }
+                  { icon: 'fa-project-diagram', title: 'Approval Workflows', desc: 'Automate approval processes and routing' },
+                  { icon: 'fa-tasks', title: 'Task Management', desc: 'Automated task assignment and tracking' },
+                  { icon: 'fa-bell', title: 'Notifications', desc: 'Automated alerts and notifications' },
+                  { icon: 'fa-route', title: 'Data Routing', desc: 'Intelligent data flow between systems' }
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start group">
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white text-lg mr-4 group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
@@ -151,11 +151,11 @@ export default function AIInfrastructurePage() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Comprehensive AI Infrastructure Features
+              Comprehensive Workflow Automation Features
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Our AI infrastructure services cover all aspects of infrastructure design, deployment, 
-              and management, ensuring reliable and scalable AI infrastructure.
+              Our workflow automation services cover all aspects of business workflow automation, 
+              ensuring comprehensive functionality and operational efficiency.
             </p>
           </div>
           
@@ -183,11 +183,11 @@ export default function AIInfrastructurePage() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Why Choose Our AI Infrastructure Services?
+              Why Choose Our Workflow Automation Services?
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We deliver scalable infrastructure that ensures optimal performance and 
-              supports your AI initiatives.
+              We deliver measurable results that improve operational efficiency and 
+              support your business growth objectives.
             </p>
           </div>
           
@@ -218,20 +218,19 @@ export default function AIInfrastructurePage() {
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-indigo-200 bg-clip-text text-transparent">
-              Ready to Build AI Infrastructure?
+              Ready to Automate Your Workflows?
             </h2>
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
-              Let's discuss how our AI infrastructure services can help you build scalable, 
-              high-performance infrastructure for your AI initiatives.
+              Let's discuss how workflow automation can streamline your business processes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/consultation" className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                 <i className="fas fa-calendar-alt"></i>
                 Get Free Consultation
               </Link>
-              <Link href="/services" className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+              <Link href="/services/automation-services" className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
                 <i className="fas fa-list"></i>
-                View All Services
+                View All Automation Services
               </Link>
             </div>
           </div>

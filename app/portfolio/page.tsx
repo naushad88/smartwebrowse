@@ -3,12 +3,12 @@ import { Metadata } from 'next';
 import PortfolioContent from '@/components/PortfolioContent';
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Cloud, Cybersecurity & Web Projects',
-  description: 'Explore our successful IT projects: healthcare systems, e-commerce platforms, financial security & IoT solutions. See real results from our work.',
-  keywords: 'IT portfolio, cloud projects, cybersecurity solutions, web development projects, digital transformation',
+  title: 'Portfolio | AI Solutions & Automation Projects - Smartwebrowse India Private Limited',
+  description: 'Explore our successful AI projects: AI-powered platforms, automation solutions, AI learning systems & mobile apps. See real results from our AI work.',
+  keywords: 'AI portfolio, AI projects, automation solutions, AI development projects, AI transformation',
   openGraph: {
-    title: 'Portfolio | Cloud, Cybersecurity & Web Projects',
-    description: 'Explore our successful IT projects: healthcare systems, e-commerce platforms, financial security & IoT solutions. See real results from our work.',
+    title: 'Portfolio | AI Solutions & Automation Projects',
+    description: 'Explore our successful AI projects: AI-powered platforms, automation solutions, AI learning systems & mobile apps. See real results from our AI work.',
     url: 'https://www.smartwebrowse.com/portfolio',
     siteName: 'Smartwebrowse India Private Limited',
     type: 'website',
@@ -101,7 +101,7 @@ const portfolioData = {
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50 pt-20">
       <PortfolioContent data={portfolioData} />
     </div>
   );

@@ -46,7 +46,7 @@ export default function Sidebar({ user }: SidebarProps) {
           {!isCollapsed && (
             <div className="flex items-center justify-center w-full">
               <Image
-                src="/images/Logo.png"
+                src="/images/Smartwebrowse-Logo.png"
                 alt="Smartwebrowse India Private Limited"
                 width={120}
                 height={45}

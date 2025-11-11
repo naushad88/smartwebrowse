@@ -27,7 +27,8 @@ async function connectDB() {
       bufferCommands: false,
     };
 
-    cachedMongoose.mongoose.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
+    // MONGODB_URI is guaranteed to be defined here due to the check above
+    cachedMongoose.mongoose.promise = mongoose.connect(MONGODB_URI!, opts).then((mongoose) => {
       return mongoose;
     });
   }

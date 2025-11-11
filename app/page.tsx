@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: 'Smartwebrowse India Private Limited',
     images: [
       {
-        url: '/images/Logo.png',
+        url: '/images/Smartwebrowse-Logo.png',
         width: 210,
         height: 61,
         alt: 'Smartwebrowse India Private Limited - AI Services',

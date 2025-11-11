@@ -22,7 +22,7 @@ export default function AdsLandingThankYouPage() {
         <div className="container-custom py-4">
           <Link href="/" className="flex items-center space-x-2">
             <Image 
-              src="/images/Logo.png" 
+              src="/images/Smartwebrowse-Logo.png" 
               alt="Smartwebrowse India Private Limited" 
               width={180} 
               height={52}

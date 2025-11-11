@@ -1,0 +1,12 @@
+# Robust Softech Email Configuration
+# Copy this content to .env.local and update with your actual credentials
+
+# Email Server Configuration
+EMAIL_USER="noreply@robustsoftech.com"
+EMAIL_PASS="your-actual-email-password"
+
+# MongoDB Configuration (if needed)
+MONGODB_URI="your-mongodb-connection-string-here"
+
+# Base URL for API calls
+NEXT_PUBLIC_BASE_URL="https://www.robustsoftech.com"

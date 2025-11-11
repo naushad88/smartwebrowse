@@ -79,7 +79,7 @@ const Footer = () => {
             >
               <Link href="/" className="inline-block mb-6 group">
                 <Image
-                  src="/images/Logo.png"
+                  src="/images/Smartwebrowse-Logo.png"
                   alt="Smartwebrowse India Private Limited"
                   width={180}
                   height={52}

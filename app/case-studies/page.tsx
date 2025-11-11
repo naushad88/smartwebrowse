@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Smartwebrowse India Private Limited',
-  description: 'Explore real-world case studies showcasing our successful implementations in education technology, e-commerce, professional services, healthcare, and mobile app development.',
+  title: 'Case Studies | AI Solutions & Automation Projects - Smartwebrowse India Private Limited',
+  description: 'Explore real-world case studies showcasing our successful AI implementations in education technology, e-commerce, professional services, healthcare, and mobile app development.',
   alternates: {
     canonical: 'https://www.smartwebrowse.com/case-studies',
   },
@@ -100,57 +102,61 @@ export default function CaseStudies() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 pt-20">
-      <div className="container-custom py-16">
-        {/* Hero Section with Gradient */}
-        <div className="text-center mb-16">
-          <div className="inline-block mb-6">
-            <span className="text-sm font-semibold text-primary-600 bg-primary-100 px-4 py-2 rounded-full">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50 pt-20">
+      <div className="container-custom py-16 md:py-20 relative overflow-hidden">
+        {/* Background Patterns */}
+        <div className="absolute inset-0 neural-pattern opacity-15"></div>
+        <div className="absolute inset-0 circuit-pattern opacity-10"></div>
+
+        {/* Hero Section */}
+        <div
+          className="text-center mb-16 relative z-10"
+        >
+          <div className="inline-block mb-4">
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
               Success Stories
             </span>
           </div>
-          <h1 className="text-5xl font-bold bg-gradient-to-r from-gray-900 via-primary-600 to-accent-600 bg-clip-text text-transparent mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
             Case Studies
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Discover how we've helped organizations across education, retail, professional services, healthcare, and mobile app development 
-            achieve their digital transformation goals and overcome complex technical challenges.
+            achieve their AI transformation goals and overcome complex technical challenges.
           </p>
         </div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 relative z-10">
           {caseStudies.map((study, index) => {
-            // Different gradient colors for each case study - using blue color scheme only
             const gradientColors = [
-              'from-blue-500 to-indigo-600',
-              'from-blue-600 to-blue-700', 
-              'from-indigo-500 to-blue-600',
-              'from-blue-400 to-blue-600',
-              'from-indigo-600 to-blue-700',
-              'from-blue-500 to-blue-700'
+              'from-blue-600 via-indigo-600 to-purple-600',
+              'from-cyan-600 via-blue-600 to-indigo-600', 
+              'from-indigo-600 via-purple-600 to-pink-600',
+              'from-blue-500 via-cyan-500 to-blue-600',
+              'from-indigo-600 via-blue-600 to-cyan-600',
+              'from-purple-600 via-indigo-600 to-blue-600'
             ];
             
             const cardGradient = gradientColors[index % gradientColors.length];
             
             return (
-              <div key={index} className="group relative">
-                {/* Background gradient card with pattern */}
-                <div className={`absolute inset-0 bg-gradient-to-r ${cardGradient} rounded-2xl opacity-5 group-hover:opacity-10 transition-opacity duration-300`}></div>
-                <div className="absolute inset-0 rounded-2xl opacity-5 group-hover:opacity-10 transition-opacity duration-300" style={{
-                  backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.2) 1px, transparent 1px)',
-                  backgroundSize: '15px 15px'
-                }}></div>
-                
-                <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-all duration-300">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div
+                key={index}
+                className="group relative"
+              >
+                <div className="card-ai p-8 hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                  {/* Animated background gradient on hover */}
+                  <div className={`absolute inset-0 bg-gradient-to-r ${cardGradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-2xl`}></div>
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10">
                     <div>
                       <div className="flex items-center gap-3 mb-4">
-                        <span className={`text-sm font-medium text-white px-4 py-2 rounded-full bg-gradient-to-r ${cardGradient} shadow-lg`}>
+                        <span className={`text-xs font-bold text-white px-4 py-2 rounded-full bg-gradient-to-r ${cardGradient} shadow-lg`}>
                           {study.industry}
                         </span>
                       </div>
                       
-                      <h2 className="text-3xl font-bold text-gray-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
+                      <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-blue-700 transition-colors duration-300">
                         {study.title}
                       </h2>
                       
@@ -159,7 +165,7 @@ export default function CaseStudies() {
                           <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${cardGradient}`}></div>
                           The Challenge
                         </h3>
-                        <p className="text-gray-600 leading-relaxed">{study.challenge}</p>
+                        <p className="text-gray-600 leading-relaxed text-sm">{study.challenge}</p>
                       </div>
                       
                       <div className="mb-6">
@@ -167,7 +173,7 @@ export default function CaseStudies() {
                           <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${cardGradient}`}></div>
                           Our Solution
                         </h3>
-                        <p className="text-gray-600 leading-relaxed">{study.solution}</p>
+                        <p className="text-gray-600 leading-relaxed text-sm">{study.solution}</p>
                       </div>
                       
                       <div className="mb-6">
@@ -179,7 +185,7 @@ export default function CaseStudies() {
                           {study.technologies.map((tech, techIndex) => (
                             <span
                               key={techIndex}
-                              className="text-sm bg-gradient-to-r from-gray-100 to-gray-200 text-gray-700 px-3 py-2 rounded-full border border-gray-200 hover:shadow-md transition-all duration-200"
+                              className="text-xs bg-gradient-to-br from-blue-50 to-indigo-50 text-gray-700 px-3 py-1.5 rounded-full border border-blue-100 hover:shadow-md transition-all duration-200 font-medium"
                             >
                               {tech}
                             </span>
@@ -195,11 +201,11 @@ export default function CaseStudies() {
                           <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${cardGradient}`}></div>
                           Project Overview
                         </h3>
-                        <div className="relative overflow-hidden rounded-xl shadow-lg">
+                        <div className="relative overflow-hidden rounded-xl shadow-lg group/image">
                           <img
                             src={study.featuredImage}
                             alt={study.title}
-                            className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                            className="w-full h-48 object-cover group-hover/image:scale-105 transition-transform duration-300"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
@@ -209,13 +215,13 @@ export default function CaseStudies() {
                         <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${cardGradient}`}></div>
                         Results & Impact
                       </h3>
-                      <div className="space-y-4">
+                      <div className="space-y-3">
                         {study.results.map((result, resultIndex) => (
-                          <div key={resultIndex} className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100">
-                            <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 bg-gradient-to-r ${cardGradient}`}>
+                          <div key={resultIndex} className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-br from-green-50 to-emerald-50 border border-green-100 group/result hover:shadow-md transition-all duration-300">
+                            <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 bg-gradient-to-r ${cardGradient} group-hover/result:scale-110 transition-transform duration-300`}>
                               <i className="fas fa-check text-white text-xs"></i>
                             </div>
-                            <p className="text-gray-700 font-medium">{result}</p>
+                            <p className="text-gray-700 font-medium text-sm">{result}</p>
                           </div>
                         ))}
                       </div>
@@ -228,25 +234,35 @@ export default function CaseStudies() {
         </div>
 
         {/* Enhanced CTA Section */}
-        <div className="text-center mt-20">
-          <div className="relative overflow-hidden bg-gradient-to-r from-primary-500 to-primary-600 rounded-3xl p-12 shadow-2xl">
-            {/* Background pattern with dots */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0 rounded-3xl bg-white/20 bg-[radial-gradient(circle,rgba(255,255,255,0.3)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
-            </div>
+        <div
+          className="text-center mt-20 relative z-10"
+        >
+          <div className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 rounded-3xl p-12 shadow-2xl border border-white/20">
+            <div className="absolute inset-0 neural-pattern opacity-20"></div>
+            <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
             
             <div className="relative z-10">
-              <h3 className="text-3xl font-bold text-white mb-4">Ready to Start Your Success Story?</h3>
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Let's discuss how we can help transform your business with our proven solutions and expertise.
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Start Your Success Story?
+              </h3>
+              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Let's discuss how we can help transform your business with our proven AI solutions and expertise.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="/consultation" className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                <Link 
+                  href="/consultation" 
+                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                >
                   Schedule Free Consultation
-                </a>
-                <a href="/get-a-quote" className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300">
+                  <i className="fas fa-arrow-right ml-2"></i>
+                </Link>
+                <Link 
+                  href="/get-a-quote" 
+                  className="inline-flex items-center justify-center px-8 py-4 glass-effect border-2 border-white/40 text-white rounded-xl font-bold hover:bg-white/10 hover:border-white/60 transition-all duration-300"
+                >
                   Request Quote
-                </a>
+                  <i className="fas fa-chevron-right ml-2"></i>
+                </Link>
               </div>
             </div>
           </div>
@@ -255,7 +271,3 @@ export default function CaseStudies() {
     </div>
   );
 }
-
-
-
-

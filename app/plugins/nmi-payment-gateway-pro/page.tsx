@@ -124,7 +124,7 @@ export default function NMIPluginPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <Image
-                src="/images/Logo.png"
+                src="/images/Smartwebrowse-Logo.png"
                 alt="Smartwebrowse India Private Limited Logo"
                 width={200}
                 height={60}

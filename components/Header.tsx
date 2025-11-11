@@ -52,10 +52,10 @@ const Header = () => {
           name: 'Automation Services', 
           href: '/services/automation-services',
           children: [
-            { name: 'Process Automation', href: '/services/automation-services' },
-            { name: 'Workflow Automation', href: '/services/automation-services' },
-            { name: 'AI-Powered Automation', href: '/services/automation-services' },
-            { name: 'Business Process Automation', href: '/services/automation-services' },
+            { name: 'Process Automation', href: '/services/automation-services/process-automation' },
+            { name: 'Workflow Automation', href: '/services/automation-services/workflow-automation' },
+            { name: 'AI-Powered Automation', href: '/services/automation-services/ai-powered-automation' },
+            { name: 'Business Process Automation', href: '/services/automation-services/business-process-automation' },
           ]
         },
         { 
@@ -63,9 +63,9 @@ const Header = () => {
           href: '/services/ai-support',
           children: [
             { name: '24/7 AI Support', href: '/services/ai-support' },
-            { name: 'AI System Maintenance', href: '/services/ai-support' },
+            { name: 'AI System Maintenance', href: '/services/ai-support/ai-system-maintenance' },
             { name: 'AI Infrastructure Support', href: '/services/ai-infrastructure' },
-            { name: 'AI Monitoring', href: '/services/ai-support' },
+            { name: 'AI Monitoring', href: '/services/ai-support/ai-monitoring' },
           ]
         },
         { 
@@ -131,7 +131,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="/images/Logo.png"
+                  src="/images/Smartwebrowse-Logo.png"
               alt="Smartwebrowse India Private Limited"
               width={210}
               height={61}
@@ -150,25 +150,25 @@ const Header = () => {
                     onMouseEnter={handleDropdownMouseEnter}
                     onMouseLeave={handleDropdownMouseLeave}
                   >
-                    <button className="flex items-center space-x-1 text-neutral-800 hover:text-primary-600 transition-colors duration-200 font-semibold">
+                    <button className="flex items-center space-x-1 text-gray-800 hover:text-blue-600 transition-colors duration-200 font-semibold">
                       <span>{item.name}</span>
                       <i className="fa-solid fa-chevron-down text-xs"></i>
                     </button>
                     
                     {/* Mega Menu */}
-                    <div className={`absolute top-full left-0 w-[1000px] bg-white shadow-lg rounded-xl transition-all duration-300 border border-neutral-100 z-50 ${
+                    <div className={`absolute top-full left-0 w-[1000px] bg-white shadow-2xl rounded-2xl transition-all duration-300 border border-blue-100 z-50 backdrop-blur-sm ${
                       isServicesDropdownOpen 
                         ? 'opacity-100 visible translate-y-0' 
                         : 'opacity-0 invisible translate-y-4'
                     }`} style={{ left: 'max(0px, calc(50% - 400px))' }}>
-                      <div className="p-6">
+                      <div className="p-6 bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/30 rounded-2xl">
                         <div className="grid grid-cols-4 gap-6">
                           {item.children.slice(0, 4).map((child) => (
                             <div key={child.name} className="space-y-3">
                               <Link
                                 href={child.href}
                                 onClick={handleLinkClick}
-                                className="block font-semibold text-lg text-primary-600 hover:text-primary-700 transition-colors duration-200 mb-3 pb-2 border-b border-neutral-200"
+                                className="block font-bold text-lg bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 mb-3 pb-2 border-b border-blue-200"
                               >
                                 {child.name}
                               </Link>
@@ -179,9 +179,9 @@ const Header = () => {
                                       key={subChild.name}
                                       href={subChild.href}
                                       onClick={handleLinkClick}
-                                      className="block p-2 rounded-lg hover:bg-neutral-50 transition-colors duration-200 group/sub"
+                                      className="block p-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 transition-all duration-200 group/sub border border-transparent hover:border-blue-200"
                                     >
-                                      <div className="font-medium text-neutral-700 group-hover/sub:text-primary-600 transition-colors duration-200 text-sm">
+                                      <div className="font-medium text-gray-700 group-hover/sub:text-blue-600 transition-colors duration-200 text-sm">
                                         {subChild.name}
                                       </div>
                                     </Link>
@@ -192,14 +192,14 @@ const Header = () => {
                           ))}
                         </div>
                         {item.children.length > 4 && (
-                          <div className="mt-6 pt-4 border-t border-neutral-200">
+                          <div className="mt-6 pt-4 border-t border-blue-200">
                             <div className="grid grid-cols-4 gap-6">
                               {item.children.slice(4).map((child) => (
                                 <div key={child.name} className="space-y-3">
                                   <Link
                                     href={child.href}
                                     onClick={handleLinkClick}
-                                    className="block font-semibold text-lg text-primary-600 hover:text-primary-700 transition-colors duration-200 mb-3 pb-2 border-b border-neutral-200"
+                                    className="block font-bold text-lg bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 mb-3 pb-2 border-b border-blue-200"
                                   >
                                     {child.name}
                                   </Link>
@@ -210,9 +210,9 @@ const Header = () => {
                                           key={subChild.name}
                                           href={subChild.href}
                                           onClick={handleLinkClick}
-                                          className="block p-2 rounded-lg hover:bg-neutral-50 transition-colors duration-200 group/sub"
+                                          className="block p-2 rounded-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-indigo-50 transition-all duration-200 group/sub border border-transparent hover:border-blue-200"
                                         >
-                                          <div className="font-medium text-neutral-700 group-hover/sub:text-primary-600 transition-colors duration-200 text-sm">
+                                          <div className="font-medium text-gray-700 group-hover/sub:text-blue-600 transition-colors duration-200 text-sm">
                                             {subChild.name}
                                           </div>
                                         </Link>
@@ -230,7 +230,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className="text-gray-800 hover:text-primary-600 transition-colors duration-200 font-semibold"
+                    className="text-gray-800 hover:text-blue-600 transition-colors duration-200 font-semibold"
                   >
                     {item.name}
                   </Link>
@@ -241,10 +241,10 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link href="/consultation" className="btn-secondary">
+            <Link href="/consultation" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-2.5 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
               Schedule Consultation
             </Link>
-            <Link href="/get-a-quote" className="btn-primary">
+            <Link href="/get-a-quote" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
               Request a Quote
             </Link>
           </div>
@@ -252,7 +252,7 @@ const Header = () => {
           {/* Mobile Menu Button - Only visible on mobile */}
           <button
             onClick={toggleMenu}
-            className="lg:hidden p-3 rounded-lg text-white hover:text-white hover:bg-primary-700 transition-all duration-200 bg-primary-600 shadow-md border border-primary-700"
+            className="lg:hidden p-3 rounded-lg text-white hover:text-white hover:bg-blue-700 transition-all duration-200 bg-gradient-to-r from-blue-600 to-indigo-600 shadow-md border border-blue-700"
             aria-label="Toggle menu"
             style={{ zIndex: 9999 }}
           >

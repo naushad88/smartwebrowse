@@ -1,23 +1,9 @@
-import type { Metadata } from 'next';
+'use client';
+
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
-export const metadata: Metadata = {
-  title: 'About Smartwebrowse India Private Limited | Leading AI Startup',
-  description: 'Discover Smartwebrowse India Private Limited\'s journey as a leading AI startup. Expert AI services, automation, and AI support trusted by businesses worldwide.',
-  keywords: 'about Smartwebrowse, AI startup company, AI services provider, automation services, AI consulting',
-  alternates: {
-    canonical: 'https://www.smartwebrowse.com/about',
-  },
-  openGraph: {
-    title: 'About Smartwebrowse India Private Limited | Leading AI Startup',
-    description: 'Discover Smartwebrowse India Private Limited\'s journey as a leading AI startup. Expert AI services, automation, and AI support trusted by businesses worldwide.',
-    url: 'https://www.smartwebrowse.com/about',
-    siteName: 'Smartwebrowse India Private Limited',
-    type: 'website',
-  },
-};
-
-export default function AboutPage() {
+export default function AboutPageClient() {
   const values = [
     {
       title: 'AI Innovation',
@@ -46,32 +32,32 @@ export default function AboutPage() {
   ];
 
   const timeline = [
-    { year: '2013', title: 'Company Founded', description: 'Smartwebrowse India Private Limited was founded in June 2013, establishing a strong foundation in technology services', icon: 'fa-building', color: 'from-blue-500 to-blue-600' },
-    { year: '2021', title: 'Technology Expansion', description: 'Expanded technology services and built expertise across multiple domains', icon: 'fa-cogs', color: 'from-green-500 to-green-600' },
-    { year: '2022', title: 'Infrastructure Growth', description: 'Established scalable infrastructure and expanded service capabilities', icon: 'fa-server', color: 'from-purple-500 to-purple-600' },
-    { year: '2023', title: 'Innovation Focus', description: 'Introduced innovative solutions and advanced technology services', icon: 'fa-lightbulb', color: 'from-orange-500 to-orange-600' },
-    { year: '2024', title: 'AI Transformation', description: 'Acquired by Ishpreet Kaur & Sheeba Parveen. Strategic pivot towards AI technology, focusing on AI automation, AI development, and comprehensive AI solutions. Beginning of our journey to stay one step ahead in the AI world.', icon: 'fa-brain', color: 'from-pink-500 to-rose-600' },
-    { year: '2025', title: 'AI Leadership', description: 'Recognized as a leading AI company with exceptional expertise in AI automation, AI development, and AI services. Delivering cutting-edge solutions that transform businesses.', icon: 'fa-rocket', color: 'from-indigo-500 to-indigo-600' }
+    { year: '2020', title: 'Company Founded', description: 'Started as an AI startup focused on intelligent automation and AI services', icon: 'fa-brain', color: 'from-blue-500 to-blue-600' },
+    { year: '2021', title: 'AI Services Launch', description: 'Launched comprehensive AI services and automation solutions', icon: 'fa-robot', color: 'from-green-500 to-green-600' },
+    { year: '2022', title: 'AI Infrastructure', description: 'Established scalable AI infrastructure and AI support services', icon: 'fa-server', color: 'from-purple-500 to-purple-600' },
+    { year: '2023', title: 'AI Innovation', description: 'Introduced cutting-edge AI solutions and advanced automation services', icon: 'fa-lightbulb', color: 'from-orange-500 to-orange-600' },
+    { year: '2024', title: 'AI Leadership', description: 'Recognized as a leading AI startup with expertise in AI services and automation', icon: 'fa-trophy', color: 'from-yellow-500 to-yellow-600' },
+    { year: '2025', title: 'AI Transformation', description: 'Leading businesses through AI transformation with intelligent solutions', icon: 'fa-rocket', color: 'from-indigo-500 to-indigo-600' }
   ];
 
   const team = [
     {
-      name: 'Ishpreet Kaur',
-      role: 'Co-Acquirer & Leader',
-      description: 'Visionary leader who acquired Smartwebrowse in 2024 and spearheaded the AI transformation. Expert in AI automation, AI development, and strategic AI implementation. Driving women empowerment in technology while staying ahead in the AI world.',
+      name: 'AI Leadership Team',
+      role: 'CEO & Founder',
+      description: 'Expert in AI services, machine learning, and intelligent automation with deep AI expertise.',
       icon: 'fa-user-tie'
     },
     {
-      name: 'Sheeba Parveen',
-      role: 'Co-Acquirer & Leader',
-      description: 'Innovative leader who co-acquired the company in 2024 and transformed it into an AI powerhouse. Expert in AI development, AI infrastructure, and cutting-edge AI technologies. Championing women in tech and leading AI innovation.',
+      name: 'AI Technology Team',
+      role: 'CTO & AI Lead',
+      description: 'Expert in AI development, AI infrastructure, and cutting-edge AI technologies.',
       icon: 'fa-code'
     },
     {
-      name: 'Women Empowerment Team',
-      role: 'AI Leadership',
-      description: 'A dedicated team of women professionals leading AI automation, AI development, AI consulting, and comprehensive AI integration services. Delivering exceptional results in the AI space.',
-      icon: 'fa-users'
+      name: 'AI Solutions Team',
+      role: 'Head of AI Services',
+      description: 'AI consulting and automation professional with expertise in AI integration and AI analytics.',
+      icon: 'fa-cogs'
     }
   ];
 
@@ -84,23 +70,62 @@ export default function AboutPage() {
         <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
         
         {/* Animated Gradient Orbs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+        <motion.div
+          animate={{ 
+            x: [0, 100, 0],
+            y: [0, 80, 0],
+            scale: [1, 1.2, 1]
+          }}
+          transition={{ 
+            duration: 20, 
+            repeat: Infinity, 
+            ease: "easeInOut" 
+          }}
+          className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"
+        ></motion.div>
+        <motion.div
+          animate={{ 
+            x: [0, -80, 0],
+            y: [0, -60, 0],
+            scale: [1, 1.3, 1]
+          }}
+          transition={{ 
+            duration: 25, 
+            repeat: Infinity, 
+            ease: "easeInOut",
+            delay: 0.5
+          }}
+          className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"
+        ></motion.div>
 
         <div className="container-custom relative z-10 text-center">
-          <div className="inline-block mb-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="inline-block mb-4"
+          >
             <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
               About Us
             </span>
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-            About Smartwebrowse
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A pure women empowerment company acquired by visionary leaders Ishpreet Kaur & Sheeba Parveen in 2024. 
-            We're a leading AI technology company dedicated to transforming businesses through 
-            intelligent AI services, automation solutions, and exceptional AI support, staying one step ahead in the AI world.
-          </p>
+          </motion.div>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent"
+          >
+            About Smartwebrowse India Private Limited
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+          >
+            We're a leading AI startup company dedicated to transforming businesses through 
+            intelligent AI services, automation solutions, and exceptional AI support.
+          </motion.p>
         </div>
       </section>
 
@@ -109,32 +134,20 @@ export default function AboutPage() {
         <div className="absolute inset-0 neural-pattern opacity-10"></div>
         <div className="container-custom relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
             >
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
                 Our Story
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Smartwebrowse India Private Limited was founded in June 2013, establishing itself as a technology 
-                company with a strong foundation. In 2024, the company was acquired by visionary leaders 
-                <strong className="text-gray-900"> Ishpreet Kaur & Sheeba Parveen</strong>, marking a transformative moment in our journey.
+                Founded as an AI startup, Smartwebrowse India Private Limited has grown to become a
+                leading AI services provider, delivering intelligent automation and AI solutions to 
+                businesses across multiple industries.
               </p>
-              <div className="mb-8 p-6 rounded-2xl bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 border-2 border-pink-200">
-                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-                  <i className="fas fa-handshake text-pink-600"></i>
-                  The 2024 Transformation
-                </h3>
-                <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  After acquiring Smartwebrowse in 2024, <strong className="text-gray-900">Ishpreet Kaur & Sheeba Parveen</strong> 
-                  immediately recognized the potential to transform the company into an AI powerhouse. They strategically 
-                  pivoted the entire organization towards AI technology, making it our core focus and competitive advantage.
-                </p>
-                <p className="text-base text-gray-700 leading-relaxed">
-                  Under their visionary leadership, we've excelled in <strong className="text-gray-900">AI automation, AI development, 
-                  and comprehensive AI services</strong>. This transformation has positioned us as a leader in the AI space, 
-                  delivering exceptional results and staying <strong className="text-gray-900">one step ahead in the AI world</strong>.
-                </p>
-              </div>
               <p className="text-base text-gray-600 mb-6 leading-relaxed">
                 Today, we're proud to serve clients globally, helping them navigate the complexities of 
                 AI transformation with confidence and expertise. Our AI services, automation solutions, 
@@ -150,8 +163,12 @@ export default function AboutPage() {
                   <div className="text-gray-600 font-medium">Automation Solutions</div>
                 </div>
               </div>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
               className="card-ai p-8"
             >
               <h3 className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
@@ -175,7 +192,7 @@ export default function AboutPage() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -184,7 +201,11 @@ export default function AboutPage() {
       <section className="py-16 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 circuit-pattern opacity-10"></div>
         <div className="container-custom relative z-10">
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
             <div className="inline-block mb-4">
@@ -199,12 +220,16 @@ export default function AboutPage() {
               These fundamental principles guide everything we do and shape the way we 
               serve our clients and work with our team.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="card-ai p-6 text-center group hover:-translate-y-2 transition-all duration-300"
               >
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${value.color} flex items-center justify-center text-white text-2xl mx-auto mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg`}>
@@ -212,7 +237,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">{value.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -222,7 +247,11 @@ export default function AboutPage() {
       <section className="py-20 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 neural-pattern opacity-15"></div>
         <div className="container-custom relative z-10">
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
             <div className="inline-block mb-4">
@@ -234,23 +263,26 @@ export default function AboutPage() {
               Our AI Journey
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From a technology company founded in 2013 to a leading AI powerhouse after acquisition in 2024, 
-              discover the milestones that shaped our transformation and success in AI automation, AI development, and AI innovation.
+              From an AI startup to a leading AI services provider, discover the milestones that shaped our success in AI and automation.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {timeline.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="group relative"
               >
-                <div className="card-ai p-6 text-center hover:shadow-2xl transition-all duration-500 relative overflow-hidden h-full">
+                <div className="card-ai p-6 text-center hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden h-full">
                   {/* Animated background gradient on hover */}
                   <div className={`absolute inset-0 bg-gradient-to-br ${item.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-2xl`}></div>
                   
                   {/* Year Badge */}
-                  <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl text-white text-xl font-bold mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300 relative z-10`}>
+                  <div className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${item.color} rounded-2xl text-white text-xl font-bold mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg relative z-10`}>
                     {item.year}
                   </div>
                   
@@ -263,7 +295,7 @@ export default function AboutPage() {
                     <i className={`fas ${item.icon} text-blue-600 text-xl`}></i>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -273,7 +305,11 @@ export default function AboutPage() {
       <section className="py-16 md:py-20 relative overflow-hidden">
         <div className="absolute inset-0 circuit-pattern opacity-10"></div>
         <div className="container-custom relative z-10">
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
             <div className="inline-block mb-4">
@@ -285,17 +321,19 @@ export default function AboutPage() {
               Meet Our Leadership Team
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              A pure women empowerment company led by visionary leaders Ishpreet Kaur & Sheeba Parveen, 
-              who acquired the company in 2024 and transformed it into an AI-focused powerhouse. 
               Our experienced leadership team brings together decades of expertise in 
-              AI technology, business, and innovation, championing women in tech and staying one step ahead in the AI world.
+              AI technology, business, and innovation.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {team.map((member, index) => (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
                 className="card-ai p-8 text-center group hover:-translate-y-2 transition-all duration-300"
               >
                 <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white text-3xl mx-auto mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
@@ -304,7 +342,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">{member.name}</h3>
                 <div className="text-blue-600 font-semibold mb-3">{member.role}</div>
                 <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -317,7 +355,11 @@ export default function AboutPage() {
         <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
         
         <div className="container-custom relative z-10 text-center">
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
             className="relative overflow-hidden bg-gradient-to-r from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-xl rounded-3xl p-12 shadow-2xl border border-white/20"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -342,9 +384,10 @@ export default function AboutPage() {
                 <i className="fas fa-chevron-right ml-2"></i>
               </Link>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
     </div>
   );
 }
+

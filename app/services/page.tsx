@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
@@ -35,7 +36,7 @@ export default async function ServicesPage() {
       title: 'AI Services',
       description: 'Comprehensive AI solutions and AI consulting services',
       icon: 'fas fa-brain',
-      color: 'from-blue-500 to-blue-600',
+      color: 'from-blue-600 via-indigo-600 to-purple-600',
       services: [
         { name: 'AI Services Provider', link: '/services/ai-services-provider' },
         { name: 'AI Consulting', link: '/services/ai-consulting' },
@@ -47,31 +48,31 @@ export default async function ServicesPage() {
       title: 'Automation Services',
       description: 'Intelligent process and workflow automation solutions',
       icon: 'fas fa-robot',
-      color: 'from-green-500 to-green-600',
+      color: 'from-cyan-600 via-blue-600 to-indigo-600',
       services: [
-        { name: 'Process Automation', link: '/services/automation-services' },
-        { name: 'Workflow Automation', link: '/services/automation-services' },
-        { name: 'AI-Powered Automation', link: '/services/automation-services' },
-        { name: 'Business Process Automation', link: '/services/automation-services' },
+        { name: 'Process Automation', link: '/services/automation-services/process-automation' },
+        { name: 'Workflow Automation', link: '/services/automation-services/workflow-automation' },
+        { name: 'AI-Powered Automation', link: '/services/automation-services/ai-powered-automation' },
+        { name: 'Business Process Automation', link: '/services/automation-services/business-process-automation' },
       ]
     },
     {
       title: 'AI Support & Maintenance',
       description: '24/7 AI system support and continuous monitoring',
       icon: 'fas fa-headset',
-      color: 'from-purple-500 to-purple-600',
+      color: 'from-purple-600 via-pink-600 to-rose-600',
       services: [
         { name: '24/7 AI Support', link: '/services/ai-support' },
-        { name: 'AI System Maintenance', link: '/services/ai-support' },
+        { name: 'AI System Maintenance', link: '/services/ai-support/ai-system-maintenance' },
         { name: 'AI Infrastructure Support', link: '/services/ai-infrastructure' },
-        { name: 'AI Monitoring', link: '/services/ai-support' },
+        { name: 'AI Monitoring', link: '/services/ai-support/ai-monitoring' },
       ]
     },
     {
       title: 'AI Solutions',
       description: 'Advanced AI analytics and intelligent infrastructure',
       icon: 'fas fa-chart-line',
-      color: 'from-orange-500 to-orange-600',
+      color: 'from-orange-600 via-red-600 to-pink-600',
       services: [
         { name: 'AI Analytics', link: '/services/ai-analytics' },
         { name: 'AI Infrastructure', link: '/services/ai-infrastructure' },
@@ -82,53 +83,84 @@ export default async function ServicesPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 text-primary-900 py-16 pt-24">
-        <div className="container-custom text-center">
-          <h1 className="heading-1 mb-6 text-primary-900">Our AI Services</h1>
-          <p className="text-lg md:text-xl text-primary-700 max-w-3xl mx-auto">
-            Comprehensive AI solutions that drive intelligent automation and business transformation.
-            From AI services to automation and support, we deliver cutting-edge AI technology that exceeds expectations.
+      <section className="relative py-20 md:py-24 pt-28 overflow-hidden">
+        {/* Background Patterns */}
+        <div className="absolute inset-0 neural-pattern opacity-20"></div>
+        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
+        
+        {/* Animated Gradient Orbs */}
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+
+        <div className="container-custom relative z-10 text-center">
+          <div className="inline-block mb-4">
+            <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
+              Our Services
+            </span>
+          </div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
+            Our AI Services
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Comprehensive AI solutions that drive digital transformation and business growth.
+            From AI services to automation and AI support, we deliver results that exceed expectations.
           </p>
         </div>
       </section>
 
       {/* Service Categories */}
-      <section className="py-16">
-        <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 circuit-pattern opacity-10"></div>
+        <div className="container-custom relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {serviceCategories.map((category, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className={`p-6 rounded-t-xl bg-gradient-to-r ${category.color} text-white`}>
-                  <div className="flex items-center mb-4">
-                    <i className={`${category.icon} text-3xl mr-3`}></i>
-                    <h3 className="text-xl font-bold">{category.title}</h3>
+              <div
+                key={index}
+                className="group"
+              >
+                <div className="card-ai h-full hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 relative overflow-hidden">
+                  {/* Gradient Header */}
+                  <div className={`p-6 bg-gradient-to-r ${category.color} text-white relative overflow-hidden`}>
+                    <div className="absolute inset-0 neural-pattern opacity-20"></div>
+                    <div className="relative z-10">
+                      <div className="flex items-center mb-4">
+                        <div className="w-14 h-14 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center mr-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300">
+                          <i className={`${category.icon} text-2xl text-white`}></i>
+                        </div>
+                        <h3 className="text-2xl font-bold">{category.title}</h3>
+                      </div>
+                      <p className="text-blue-100 text-sm leading-relaxed">{category.description}</p>
+                    </div>
                   </div>
-                  <p className="text-gray-100">{category.description}</p>
-                </div>
-                <div className="p-6">
-                  <ul className="space-y-3">
-                    {category.services.map((service, serviceIndex) => (
-                      <li key={serviceIndex}>
-                        <Link 
-                          href={service.link}
-                          className="flex items-center text-gray-700 hover:text-primary-600 transition-colors duration-200"
-                        >
-                          <i className="fas fa-arrow-right text-sm mr-2 text-primary-500"></i>
-                          {service.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-6 pt-4 border-t border-gray-200">
-                    <Link 
-                      href={getCategoryLink(category.title)}
-                      className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors duration-200"
-                    >
-                      View All {category.title}
-                      <i className="fas fa-arrow-right ml-2"></i>
-                    </Link>
+                  
+                  {/* Services List */}
+                  <div className="p-6">
+                    <ul className="space-y-3 mb-6">
+                      {category.services.map((service, serviceIndex) => (
+                        <li key={serviceIndex}>
+                          <Link 
+                            href={service.link}
+                            className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200 group/item"
+                          >
+                            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-50 to-indigo-50 flex items-center justify-center mr-3 group-hover/item:from-blue-100 group-hover/item:to-indigo-100 transition-all duration-300">
+                              <i className="fas fa-arrow-right text-xs text-blue-600"></i>
+                            </div>
+                            <span className="font-medium">{service.name}</span>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="pt-4 border-t border-gray-200">
+                      <Link 
+                        href={getCategoryLink(category.title)}
+                        className="inline-flex items-center text-blue-600 font-bold hover:text-indigo-700 transition-colors duration-200 group/link"
+                      >
+                        View All {category.title}
+                        <i className="fas fa-arrow-right ml-2 group-hover/link:translate-x-2 transition-transform duration-300"></i>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -138,27 +170,36 @@ export default async function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16">
-        <div className="container-custom text-center">
-          <div className="relative overflow-hidden bg-gradient-to-r from-primary-500 to-primary-600 rounded-3xl p-12 shadow-2xl">
-            {/* Background pattern with dots */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0 rounded-3xl bg-white/20 bg-[radial-gradient(circle,rgba(255,255,255,0.3)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
-            </div>
-            
-            <div className="relative z-10">
-              <h2 className="text-3xl font-bold text-white mb-4">Ready to Transform with AI?</h2>
-              <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-                Let's discuss how our AI services and automation solutions can help transform your business and drive growth.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/consultation" className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                  Get Free Consultation
-                </Link>
-                <Link href="/about" className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300">
-                  Learn More About Us
-                </Link>
-              </div>
+      <section className="py-16 md:py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900"></div>
+        <div className="absolute inset-0 neural-pattern opacity-20"></div>
+        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
+        
+        <div className="container-custom relative z-10 text-center">
+          <div
+            className="relative overflow-hidden bg-gradient-to-r from-blue-600/90 via-indigo-600/90 to-purple-600/90 backdrop-blur-xl rounded-3xl p-12 shadow-2xl border border-white/20"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+              Ready to Transform with AI?
+            </h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed">
+              Let's discuss how our AI services and automation solutions can help transform your business and drive growth.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link 
+                href="/consultation" 
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                Get Free Consultation
+                <i className="fas fa-arrow-right ml-2"></i>
+              </Link>
+              <Link 
+                href="/about" 
+                className="inline-flex items-center justify-center px-8 py-4 glass-effect border-2 border-white/40 text-white rounded-xl font-bold hover:bg-white/10 hover:border-white/60 transition-all duration-300"
+              >
+                Learn More About Us
+                <i className="fas fa-chevron-right ml-2"></i>
+              </Link>
             </div>
           </div>
         </div>

@@ -3,46 +3,46 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Infrastructure Services | Scalable AI Infrastructure Setup | Smartwebrowse',
-  description: 'Scalable AI infrastructure setup, cloud AI platforms, and AI-ready infrastructure to support your AI initiatives and ensure optimal performance.',
-  keywords: 'AI Infrastructure, AI Infrastructure Setup, Cloud AI Platforms, AI-Ready Infrastructure, AI Infrastructure Services',
+  title: 'AI System Maintenance Services | Smartwebrowse India Private Limited',
+  description: 'Comprehensive AI system maintenance services to ensure optimal performance, reliability, and continuous operation of your AI systems.',
+  keywords: 'AI System Maintenance, AI Maintenance, AI System Support, AI Infrastructure Maintenance',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-infrastructure',
+    canonical: 'https://www.smartwebrowse.com/services/ai-support/ai-system-maintenance',
   },
 };
 
-export default function AIInfrastructurePage() {
+export default function AISystemMaintenancePage() {
   const features = [
-    'Scalable AI infrastructure design and setup',
-    'Cloud AI platform deployment and configuration',
-    'AI infrastructure optimization and tuning',
-    'AI infrastructure monitoring and management',
-    'AI infrastructure security and compliance',
-    'AI infrastructure scaling and capacity planning',
-    'AI infrastructure backup and disaster recovery',
-    'AI infrastructure support and maintenance'
+    'Regular AI system updates and patches',
+    'AI model performance optimization',
+    'System health monitoring and diagnostics',
+    'Security updates and vulnerability patches',
+    'Database optimization and cleanup',
+    'Configuration tuning and adjustments',
+    'Backup and disaster recovery management',
+    'Performance benchmarking and reporting'
   ];
 
   const benefits = [
     {
-      title: 'Scalable Architecture',
-      description: 'Build scalable AI infrastructure that grows with your needs',
-      icon: 'fa-server'
-    },
-    {
-      title: 'Cloud Integration',
-      description: 'Leverage cloud AI platforms for flexibility and cost efficiency',
-      icon: 'fa-cloud'
-    },
-    {
       title: 'Optimal Performance',
-      description: 'Optimized infrastructure for maximum AI performance',
+      description: 'Keep your AI systems running at peak performance with regular maintenance',
       icon: 'fa-tachometer-alt'
     },
     {
-      title: 'Reliable Support',
-      description: 'Comprehensive infrastructure support and maintenance',
-      icon: 'fa-headset'
+      title: 'System Reliability',
+      description: 'Ensure continuous operation and minimize downtime with proactive maintenance',
+      icon: 'fa-shield-alt'
+    },
+    {
+      title: 'Security Updates',
+      description: 'Stay protected with regular security patches and updates',
+      icon: 'fa-lock'
+    },
+    {
+      title: 'Cost Efficiency',
+      description: 'Prevent costly issues with proactive maintenance and optimization',
+      icon: 'fa-dollar-sign'
     }
   ];
 
@@ -62,24 +62,24 @@ export default function AIInfrastructurePage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-4">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
-                AI Infrastructure Services
+                AI System Maintenance
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Scalable AI Infrastructure Solutions
+              AI System Maintenance Services
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Scalable AI infrastructure setup, cloud AI platforms, and AI-ready infrastructure 
-              to support your AI initiatives and ensure optimal performance.
+              Comprehensive AI system maintenance services to ensure optimal performance, reliability, 
+              and continuous operation of your AI systems.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/consultation" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <i className="fas fa-calendar-alt"></i>
-                Get Free Infrastructure Consultation
+                Get Free Consultation
               </Link>
-              <Link href="/services" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-8 py-4 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
+              <Link href="/services/ai-support" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-8 py-4 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
                 <i className="fas fa-list"></i>
-                View All Services
+                View All AI Support Services
               </Link>
             </div>
           </div>
@@ -93,20 +93,22 @@ export default function AIInfrastructurePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-                Build Scalable AI Infrastructure
+                Keep Your AI Systems Running Smoothly
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our AI infrastructure services help organizations build and maintain scalable, 
-                high-performance infrastructure to support their AI initiatives.
+                AI system maintenance involves regular updates, performance optimization, security patches, 
+                and proactive monitoring to ensure your AI systems operate at peak efficiency. Our maintenance 
+                services help prevent downtime, maintain accuracy, and extend the lifespan of your AI infrastructure.
               </p>
               <p className="text-base text-gray-600 mb-6 leading-relaxed">
-                From infrastructure design and setup to cloud AI platform deployment and ongoing 
-                support, we deliver AI-ready infrastructure that ensures optimal performance and scalability.
+                We provide scheduled maintenance, emergency support, and continuous optimization to keep your 
+                AI systems running smoothly and delivering optimal results, ensuring your business operations 
+                remain uninterrupted.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/consultation" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <i className="fas fa-check-circle"></i>
-                  Schedule Infrastructure Assessment
+                  Schedule Free Assessment
                 </Link>
                 <Link href="/services/ai-support" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-3 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
                   Learn About AI Support
@@ -115,14 +117,14 @@ export default function AIInfrastructurePage() {
             </div>
             <div className="card-ai p-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-                Infrastructure Services Portfolio
+                Maintenance Services Portfolio
               </h3>
               <ul className="space-y-5">
                 {[
-                  { icon: 'fa-server', title: 'Infrastructure Setup', desc: 'Design and deploy AI infrastructure' },
-                  { icon: 'fa-cloud', title: 'Cloud AI Platforms', desc: 'Deploy and configure cloud AI platforms' },
-                  { icon: 'fa-cogs', title: 'Infrastructure Optimization', desc: 'Optimize infrastructure for performance' },
-                  { icon: 'fa-headset', title: 'Infrastructure Support', desc: 'Ongoing infrastructure support and maintenance' }
+                  { icon: 'fa-sync-alt', title: 'Regular Updates', desc: 'Keep AI systems updated with latest versions' },
+                  { icon: 'fa-tachometer-alt', title: 'Performance Optimization', desc: 'Optimize AI system performance' },
+                  { icon: 'fa-shield-alt', title: 'Security Patches', desc: 'Apply security updates and patches' },
+                  { icon: 'fa-tools', title: 'System Tuning', desc: 'Fine-tune AI models and configurations' }
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start group">
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white text-lg mr-4 group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
@@ -151,11 +153,11 @@ export default function AIInfrastructurePage() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Comprehensive AI Infrastructure Features
+              Comprehensive AI System Maintenance Features
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Our AI infrastructure services cover all aspects of infrastructure design, deployment, 
-              and management, ensuring reliable and scalable AI infrastructure.
+              Our AI system maintenance services cover all aspects of system maintenance and optimization, 
+              ensuring reliable and optimal performance.
             </p>
           </div>
           
@@ -183,11 +185,11 @@ export default function AIInfrastructurePage() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Why Choose Our AI Infrastructure Services?
+              Why Choose Our AI System Maintenance Services?
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We deliver scalable infrastructure that ensures optimal performance and 
-              supports your AI initiatives.
+              We deliver reliable maintenance that ensures your AI systems perform optimally 
+              and support your business objectives.
             </p>
           </div>
           
@@ -218,20 +220,19 @@ export default function AIInfrastructurePage() {
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-indigo-200 bg-clip-text text-transparent">
-              Ready to Build AI Infrastructure?
+              Need AI System Maintenance?
             </h2>
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
-              Let's discuss how our AI infrastructure services can help you build scalable, 
-              high-performance infrastructure for your AI initiatives.
+              Let's discuss how our AI system maintenance services can keep your AI systems running optimally.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/consultation" className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                 <i className="fas fa-calendar-alt"></i>
                 Get Free Consultation
               </Link>
-              <Link href="/services" className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+              <Link href="/services/ai-support" className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
                 <i className="fas fa-list"></i>
-                View All Services
+                View All AI Support Services
               </Link>
             </div>
           </div>

@@ -3,46 +3,46 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Infrastructure Services | Scalable AI Infrastructure Setup | Smartwebrowse',
-  description: 'Scalable AI infrastructure setup, cloud AI platforms, and AI-ready infrastructure to support your AI initiatives and ensure optimal performance.',
-  keywords: 'AI Infrastructure, AI Infrastructure Setup, Cloud AI Platforms, AI-Ready Infrastructure, AI Infrastructure Services',
+  title: 'AI-Powered Automation Services | Smartwebrowse India Private Limited',
+  description: 'Intelligent automation solutions powered by artificial intelligence to automate complex business processes and workflows.',
+  keywords: 'AI-Powered Automation, Intelligent Automation, AI Automation, Machine Learning Automation',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-infrastructure',
+    canonical: 'https://www.smartwebrowse.com/services/automation-services/ai-powered-automation',
   },
 };
 
-export default function AIInfrastructurePage() {
+export default function AIPoweredAutomationPage() {
   const features = [
-    'Scalable AI infrastructure design and setup',
-    'Cloud AI platform deployment and configuration',
-    'AI infrastructure optimization and tuning',
-    'AI infrastructure monitoring and management',
-    'AI infrastructure security and compliance',
-    'AI infrastructure scaling and capacity planning',
-    'AI infrastructure backup and disaster recovery',
-    'AI infrastructure support and maintenance'
+    'Machine learning-powered process automation',
+    'Natural language processing for document automation',
+    'Computer vision for image and document recognition',
+    'Intelligent decision-making automation',
+    'Predictive analytics-driven automation',
+    'AI chatbot and virtual assistant automation',
+    'Sentiment analysis and content automation',
+    'Adaptive automation that learns and improves'
   ];
 
   const benefits = [
     {
-      title: 'Scalable Architecture',
-      description: 'Build scalable AI infrastructure that grows with your needs',
-      icon: 'fa-server'
+      title: 'Intelligent Decisions',
+      description: 'AI-powered automation that makes intelligent decisions and adapts to changes',
+      icon: 'fa-brain'
     },
     {
-      title: 'Cloud Integration',
-      description: 'Leverage cloud AI platforms for flexibility and cost efficiency',
-      icon: 'fa-cloud'
+      title: 'Complex Automation',
+      description: 'Automate complex processes that require intelligence and decision-making',
+      icon: 'fa-robot'
     },
     {
-      title: 'Optimal Performance',
-      description: 'Optimized infrastructure for maximum AI performance',
-      icon: 'fa-tachometer-alt'
+      title: 'Continuous Learning',
+      description: 'AI systems that learn and improve over time',
+      icon: 'fa-graduation-cap'
     },
     {
-      title: 'Reliable Support',
-      description: 'Comprehensive infrastructure support and maintenance',
-      icon: 'fa-headset'
+      title: 'Advanced Capabilities',
+      description: 'Leverage cutting-edge AI technologies for superior automation',
+      icon: 'fa-rocket'
     }
   ];
 
@@ -62,24 +62,24 @@ export default function AIInfrastructurePage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block mb-4">
               <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
-                AI Infrastructure Services
+                AI-Powered Automation
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Scalable AI Infrastructure Solutions
+              Intelligent AI-Powered Automation
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Scalable AI infrastructure setup, cloud AI platforms, and AI-ready infrastructure 
-              to support your AI initiatives and ensure optimal performance.
+              Intelligent automation solutions powered by artificial intelligence to automate complex 
+              business processes and workflows with machine learning and AI capabilities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/consultation" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105">
                 <i className="fas fa-calendar-alt"></i>
-                Get Free Infrastructure Consultation
+                Get Free Consultation
               </Link>
-              <Link href="/services" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-8 py-4 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
+              <Link href="/services/automation-services" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-8 py-4 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
                 <i className="fas fa-list"></i>
-                View All Services
+                View All Automation Services
               </Link>
             </div>
           </div>
@@ -93,36 +93,39 @@ export default function AIInfrastructurePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-                Build Scalable AI Infrastructure
+                Next-Generation AI Automation
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Our AI infrastructure services help organizations build and maintain scalable, 
-                high-performance infrastructure to support their AI initiatives.
+                AI-powered automation combines artificial intelligence and machine learning with automation 
+                technologies to create intelligent systems that can learn, adapt, and make decisions. Unlike 
+                traditional automation that follows fixed rules, AI-powered automation can handle complex, 
+                variable scenarios and improve over time.
               </p>
               <p className="text-base text-gray-600 mb-6 leading-relaxed">
-                From infrastructure design and setup to cloud AI platform deployment and ongoing 
-                support, we deliver AI-ready infrastructure that ensures optimal performance and scalability.
+                Our AI-powered automation solutions leverage machine learning models, natural language processing, 
+                and computer vision to automate complex business processes that require intelligence and decision-making, 
+                delivering superior results and continuous improvement.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/consultation" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <i className="fas fa-check-circle"></i>
-                  Schedule Infrastructure Assessment
+                  Schedule Free Assessment
                 </Link>
-                <Link href="/services/ai-support" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-3 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
-                  Learn About AI Support
+                <Link href="/services/automation-services" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-3 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
+                  Learn About Automation Services
                 </Link>
               </div>
             </div>
             <div className="card-ai p-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-                Infrastructure Services Portfolio
+                AI-Powered Automation Solutions
               </h3>
               <ul className="space-y-5">
                 {[
-                  { icon: 'fa-server', title: 'Infrastructure Setup', desc: 'Design and deploy AI infrastructure' },
-                  { icon: 'fa-cloud', title: 'Cloud AI Platforms', desc: 'Deploy and configure cloud AI platforms' },
-                  { icon: 'fa-cogs', title: 'Infrastructure Optimization', desc: 'Optimize infrastructure for performance' },
-                  { icon: 'fa-headset', title: 'Infrastructure Support', desc: 'Ongoing infrastructure support and maintenance' }
+                  { icon: 'fa-brain', title: 'Machine Learning', desc: 'ML-powered intelligent automation' },
+                  { icon: 'fa-language', title: 'NLP Automation', desc: 'Natural language processing automation' },
+                  { icon: 'fa-eye', title: 'Computer Vision', desc: 'Visual recognition and automation' },
+                  { icon: 'fa-robot', title: 'Intelligent Bots', desc: 'AI-powered chatbots and assistants' }
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start group">
                     <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white text-lg mr-4 group-hover:scale-110 transition-transform duration-300 flex-shrink-0">
@@ -151,11 +154,11 @@ export default function AIInfrastructurePage() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Comprehensive AI Infrastructure Features
+              Comprehensive AI-Powered Automation Features
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Our AI infrastructure services cover all aspects of infrastructure design, deployment, 
-              and management, ensuring reliable and scalable AI infrastructure.
+              Our AI-powered automation services cover all aspects of intelligent automation, 
+              ensuring comprehensive functionality and superior results.
             </p>
           </div>
           
@@ -183,11 +186,11 @@ export default function AIInfrastructurePage() {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Why Choose Our AI Infrastructure Services?
+              Why Choose Our AI-Powered Automation Services?
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We deliver scalable infrastructure that ensures optimal performance and 
-              supports your AI initiatives.
+              We deliver intelligent automation solutions that transform your business and 
+              drive measurable results.
             </p>
           </div>
           
@@ -218,20 +221,19 @@ export default function AIInfrastructurePage() {
         <div className="container-custom relative z-10 text-center">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-blue-200 to-indigo-200 bg-clip-text text-transparent">
-              Ready to Build AI Infrastructure?
+              Ready for AI-Powered Automation?
             </h2>
             <p className="text-lg md:text-xl text-blue-100 mb-8 leading-relaxed">
-              Let's discuss how our AI infrastructure services can help you build scalable, 
-              high-performance infrastructure for your AI initiatives.
+              Let's discuss how AI-powered automation can transform your business processes.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/consultation" className="inline-flex items-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                 <i className="fas fa-calendar-alt"></i>
                 Get Free Consultation
               </Link>
-              <Link href="/services" className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+              <Link href="/services/automation-services" className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
                 <i className="fas fa-list"></i>
-                View All Services
+                View All Automation Services
               </Link>
             </div>
           </div>

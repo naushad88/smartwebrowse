@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     description: 'Smartwebrowse India Private Limited (SWB) is a leading AI startup providing intelligent automation, AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI consulting to transform businesses with intelligent technology.',
     images: [
       {
-        url: '/images/Logo.png',
+        url: '/images/Smartwebrowse-Logo.png',
         width: 210,
         height: 61,
         alt: 'Smartwebrowse India Private Limited Logo',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     creator: '@smartwebrowse',
     title: 'SWB | Smartwebrowse India Private Limited - AI Services, Automation & Support',
     description: 'Smartwebrowse India Private Limited (SWB) is a leading AI startup providing intelligent automation, AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI consulting to transform businesses with intelligent technology.',
-    images: ['/images/Logo.png'],
+    images: ['/images/Smartwebrowse-Logo.png'],
   },
   robots: {
     index: true,

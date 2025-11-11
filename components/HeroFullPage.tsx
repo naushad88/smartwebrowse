@@ -106,8 +106,8 @@ const HeroFullPage = ({ data }: HeroProps) => {
       <HeaderTransparent isScrolled={isScrolled} />
 
       {/* Main Content */}
-      <div className="relative z-20 flex-1 flex items-center justify-center pt-20">
-        <div className="container-custom text-center text-white w-full">
+      <div className="relative z-20 flex-1 flex items-center justify-center pt-24 pb-20">
+        <div className="container-custom text-center text-white w-full px-4">
             {/* Animated Badge - Smaller */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -126,7 +126,7 @@ const HeroFullPage = ({ data }: HeroProps) => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 text-white drop-shadow-2xl leading-tight"
+              className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-10 md:mb-12 text-white drop-shadow-2xl leading-tight px-4"
             >
               {heroData.title}
             </motion.h1>

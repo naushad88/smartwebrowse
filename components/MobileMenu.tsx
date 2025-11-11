@@ -103,7 +103,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
         >
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <Image
-              src="/images/Logo.png"
+              src="/images/Smartwebrowse-Logo.png"
               alt="Smartwebrowse India Private Limited"
               width={120}
               height={35}
