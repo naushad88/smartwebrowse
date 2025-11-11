@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation & Setup Guide for NMI Payment Gateway Plugin</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+        }
+        .cover-page {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin: -20px -20px 40px -20px;
+            border-radius: 0 0 20px 20px;
+        }
+        .cover-page h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .cover-page h2 {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            opacity: 1;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .version-info {
+            background: rgba(255,255,255,0.25);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 30px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        h1 {
+            color: #2563eb;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h2 {
+            color: #1e40af;
+            margin-top: 30px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #1f2937;
+            margin-top: 25px;
+        }
+        .toc {
+            background: #f8fafc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .toc li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .toc li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #3b82f6;
+        }
+        .step {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .success {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .code {
+            background: #1f2937;
+            color: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .contact-info {
+            background: #f0f9ff;
+            border: 1px solid #0ea5e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            color: #6b7280;
+        }
+        @media print {
+            body { margin: 0; padding: 15px; }
+            .cover-page { margin: 0; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cover Page -->
+    <div class="cover-page">
+        <h1>Network Merchants Inc Gateway</h1>
+        <h2>for WooCommerce</h2>
+        <div class="version-info">
+            <strong>Installation & Setup Guide</strong><br>
+            Version 1.0.1<br>
+            Compatible with WooCommerce 5.0+
+        </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <h1>Table of Contents</h1>
+    <div class="toc">
+        <ul>
+            <li><a href="#overview">Plugin Overview</a></li>
+            <li><a href="#prerequisites">Prerequisites</a></li>
+            <li><a href="#installation">Installation Steps</a></li>
+            <li><a href="#configuration">Configuration Guide</a></li>
+            <li><a href="#testing">Testing Instructions</a></li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+            <li><a href="#support">Support & Resources</a></li>
+        </ul>
+    </div>
+
+    <!-- Plugin Overview -->
+    <h1 id="overview">Plugin Overview</h1>
+    <p>The <strong>Network Merchants Inc Gateway (NMI) for WooCommerce</strong> is a comprehensive payment processing solution that enables your WooCommerce store to accept credit card payments securely through Network Merchants Inc. (NMI).</p>
+    
+    <h2>Key Features</h2>
+    <ul>
+        <li><span class="highlight">PCI DSS Compliant</span> - Secure tokenization without storing sensitive card data</li>
+        <li><span class="highlight">WooCommerce Blocks Support</span> - Modern checkout experience with React-based payment forms</li>
+        <li><span class="highlight">HPOS Compatible</span> - Works with WooCommerce High-Performance Order Storage</li>
+        <li><span class="highlight">Refund Support</span> - Process full or partial refunds directly from WooCommerce</li>
+        <li><span class="highlight">Debug Logging</span> - Comprehensive transaction logs for debugging and monitoring</li>
+        <li><span class="highlight">Collect.js Tokenization</span> - PCI DSS compliant payment processing</li>
+    </ul>
+
+    <!-- Prerequisites -->
+    <h1 id="prerequisites">Prerequisites</h1>
+    <div class="warning">
+        <strong>⚠️ Important:</strong> Ensure your WordPress site meets these requirements before installation.
+    </div>
+    
+    <h2>System Requirements</h2>
+    <ul>
+        <li><strong>WordPress:</strong> Version 5.8 or higher</li>
+        <li><strong>WooCommerce:</strong> Version 5.0 or higher</li>
+        <li><strong>PHP:</strong> Version 7.4 or higher (PHP 8.0+ recommended)</li>
+        <li><strong>MySQL:</strong> Version 5.6 or higher</li>
+        <li><strong>SSL Certificate:</strong> Required for secure payment processing</li>
+    </ul>
+
+    <h2>Required Accounts</h2>
+    <ul>
+        <li><strong>NMI Merchant Account:</strong> Active Network Merchants Inc merchant account</li>
+        <li><strong>API Credentials:</strong> Username, Password, and Security Key from NMI</li>
+        <li><strong>Collect.js Account:</strong> For PCI DSS compliant tokenization</li>
+    </ul>
+
+    <!-- Installation Steps -->
+    <h1 id="installation">Installation Steps</h1>
+    
+    <h2>Step 1: Download the Plugin</h2>
+    <div class="step">
+        <p>After purchasing the plugin, you'll receive a ZIP file named:</p>
+        <div class="code">network-merchants-inc-gateway-for-woocommerce.zip</div>
+    </div>
+
+    <h2>Step 2: Upload to WordPress</h2>
+    <div class="step">
+        <p><strong>Method A: WordPress Admin Dashboard</strong></p>
+        <ol>
+            <li>Log in to your WordPress admin dashboard</li>
+            <li>Navigate to <strong>Plugins → Add New</strong></li>
+            <li>Click <strong>"Upload Plugin"</strong></li>
+            <li>Choose the ZIP file and click <strong>"Install Now"</strong></li>
+            <li>Click <strong>"Activate Plugin"</strong> after installation</li>
+        </ol>
+    </div>
+
+    <div class="step">
+        <p><strong>Method B: FTP Upload</strong></p>
+        <ol>
+            <li>Extract the ZIP file on your computer</li>
+            <li>Upload the extracted folder to <span class="highlight">/wp-content/plugins/</span></li>
+            <li>Activate the plugin from WordPress admin dashboard</li>
+        </ol>
+    </div>
+
+    <h2>Step 3: Verify Installation</h2>
+    <div class="success">
+        <p>✅ <strong>Success!</strong> The plugin should now appear in:</p>
+        <div class="code">WooCommerce → Settings → Payments → Network Merchants Inc Gateway</div>
+    </div>
+
+    <!-- Configuration Guide -->
+    <h1 id="configuration">Configuration Guide</h1>
+    
+    <h2>Step 1: Access Payment Settings</h2>
+    <div class="step">
+        <ol>
+            <li>Go to <strong>WooCommerce → Settings → Payments</strong></li>
+            <li>Find <strong>"Network Merchants Inc Gateway"</strong></li>
+            <li>Click <strong>"Manage"</strong> or <strong>"Configure"</strong></li>
+        </ol>
+    </div>
+
+    <h2>Step 2: Configure Basic Settings</h2>
+    <div class="step">
+        <p><strong>Enable/Disable:</strong></p>
+        <ul>
+            <li>✅ Check <strong>"Enable Network Merchants Inc Gateway"</strong></li>
+            <li>✅ Check <strong>"Enable for virtual products"</strong> (if applicable)</li>
+        </ul>
+    </div>
+
+    <h2>Step 3: API Configuration</h2>
+    <div class="warning">
+        <strong>🔒 Security Note:</strong> Keep your API credentials secure and never share them publicly.
+    </div>
+    
+    <div class="step">
+        <p><strong>Required API Settings:</strong></p>
+        <ul>
+            <li><strong>Security Key:</strong> Your NMI security key</li>
+            <li><strong>Collect.js Public Key:</strong> Your Collect.js public key</li>
+        </ul>
+    </div>
+
+    <h2>Step 4: Test Mode Configuration</h2>
+    <div class="step">
+        <p><strong>For Testing:</strong></p>
+        <ul>
+            <li>✅ Enable <strong>"Test Mode"</strong> during initial setup</li>
+            <li>Use test card numbers: <span class="highlight">4242 4242 4242 4242</span></li>
+            <li>Use any future expiration date and any 3-digit CVC</li>
+        </ul>
+    </div>
+
+    <h2>Step 5: Advanced Settings</h2>
+    <div class="step">
+        <p><strong>Optional Configurations:</strong></p>
+        <ul>
+            <li><strong>Debug Logging:</strong> Enable for troubleshooting</li>
+            <li><strong>Order Status:</strong> Set completion status (default: Processing)</li>
+            <li><strong>Payment Method Title:</strong> Customize checkout display name</li>
+            <li><strong>Payment Method Description:</strong> Add helpful text for customers</li>
+        </ul>
+    </div>
+
+    <!-- Testing Instructions -->
+    <h1 id="testing">Testing Instructions</h1>
+    
+    <h2>Step 1: Enable Test Mode</h2>
+    <div class="step">
+        <p>Before going live, always test the payment gateway:</p>
+        <ol>
+            <li>Ensure <strong>"Test Mode"</strong> is enabled in plugin settings</li>
+            <li>Save the configuration</li>
+        </ol>
+    </div>
+
+    <h2>Step 2: Test Payment Processing</h2>
+    <div class="step">
+        <p><strong>Test Card Numbers:</strong></p>
+        <ul>
+            <li><strong>Visa:</strong> 4242 4242 4242 4242</li>
+            <li><strong>Mastercard:</strong> 5555 5555 5555 4444</li>
+            <li><strong>American Express:</strong> 3782 822463 10005</li>
+            <li><strong>Declined Card:</strong> 4000 0000 0000 0002</li>
+        </ul>
+        <p><strong>Use any future expiration date and any 3-digit CVC</strong></p>
+    </div>
+
+    <h2>Step 3: Verify Transaction Logs</h2>
+    <div class="step">
+        <p>After test transactions, check:</p>
+        <ol>
+            <li>Go to <strong>WooCommerce → Orders</strong></li>
+            <li>Verify test orders are created</li>
+            <li>Check order status and payment details</li>
+            <li>Review debug logs if enabled</li>
+        </ol>
+    </div>
+
+    <h2>Step 4: Disable Test Mode</h2>
+    <div class="success">
+        <p>✅ <strong>Ready for Production!</strong></p>
+        <p>Once testing is complete:</p>
+        <ol>
+            <li>Disable <strong>"Test Mode"</strong></li>
+            <li>Save configuration</li>
+            <li>Your store is ready to accept real payments</li>
+        </ol>
+    </div>
+
+    <!-- Troubleshooting -->
+    <h1 id="troubleshooting">Troubleshooting</h1>
+    
+    <h2>Common Issues & Solutions</h2>
+    
+    <h3>Payment Declined</h3>
+    <div class="warning">
+        <p><strong>Possible Causes:</strong></p>
+        <ul>
+            <li>Incorrect API credentials</li>
+            <li>Test mode enabled with live credentials</li>
+            <li>Invalid card information</li>
+            <li>Insufficient funds</li>
+        </ul>
+        <p><strong>Solution:</strong> Verify API settings and test with different card numbers</p>
+    </div>
+
+    <h3>Plugin Not Appearing</h3>
+    <div class="warning">
+        <p><strong>Possible Causes:</strong></p>
+        <ul>
+            <li>Plugin not activated</li>
+            <li>WooCommerce not installed/activated</li>
+            <li>PHP version incompatibility</li>
+        </ul>
+        <p><strong>Solution:</strong> Check plugin activation and system requirements</p>
+    </div>
+
+    <h3>SSL Certificate Issues</h3>
+    <div class="warning">
+        <p><strong>Issue:</strong> Payment forms not loading or SSL errors</p>
+        <p><strong>Solution:</strong> Ensure your site has a valid SSL certificate</p>
+    </div>
+
+    <h2>Debug Logging</h2>
+    <div class="step">
+        <p>Enable debug logging for detailed error information:</p>
+        <ol>
+            <li>Go to plugin settings</li>
+            <li>Enable <strong>"Debug Logging"</strong></li>
+            <li>Check logs at: <span class="highlight">wp-content/uploads/wc-logs/</span></li>
+        </ol>
+    </div>
+
+    <!-- Support & Resources -->
+    <h1 id="support">Support & Resources</h1>
+    
+    <div class="contact-info">
+        <h2>📞 Support Information</h2>
+        <p><strong>Email Support:</strong> nmi-support@robustsoftech.com</p>
+        <p><strong>Response Time:</strong> Within 12 hours</p>
+        <p><strong>Business Hours:</strong> Monday - Friday, 9 AM - 6 PM EST</p>
+        <p><strong>Emergency Support:</strong> Available for critical issues</p>
+    </div>
+
+    <h2>Additional Resources</h2>
+    <ul>
+        <li><strong>Documentation:</strong> Complete API documentation available</li>
+        <li><strong>Video Tutorials:</strong> Step-by-step setup videos</li>
+        <li><strong>FAQ Section:</strong> Common questions and answers</li>
+        <li><strong>Community Forum:</strong> Connect with other users</li>
+    </ul>
+
+    <h2>What's Included</h2>
+    <div class="success">
+        <ul>
+            <li>✅ <strong>6 Months Free Support</strong> - Expert assistance with setup and configuration</li>
+            <li>✅ <strong>Lifetime Free Updates</strong> - Regular updates and security patches</li>
+            <li>✅ <strong>Money Back Guarantee</strong> - 30-day satisfaction guarantee</li>
+            <li>✅ <strong>Instant Download</strong> - Immediate access after purchase</li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p><strong>Network Merchants Inc Gateway for WooCommerce</strong></p>
+        <p>Installation & Setup Guide v1.0.1</p>
+        <p>© 2025 Robust Softech Private Limited. All rights reserved.</p>
+        <p>For technical support: nmi-support@robustsoftech.com</p>
+    </div>
+</body>
+</html>

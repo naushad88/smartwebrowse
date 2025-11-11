@@ -1,0 +1,874 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, sans-serif;
+    --font-poppins: 'Poppins', system-ui, sans-serif;
+  }
+
+  /* Apply default border color to elements that need borders */
+  * {
+    @apply border-gray-200;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 text-neutral-900;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-neutral-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-300 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-neutral-400;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 shadow-sm;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-neutral-50 text-primary-600 font-medium py-3 px-6 rounded-lg border border-primary-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 shadow-sm;
+  }
+
+  .btn-outline {
+    @apply bg-transparent hover:bg-primary-500 text-primary-600 hover:text-white font-medium py-3 px-6 rounded-lg border border-primary-600 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 shadow-sm;
+  }
+
+  .btn-outline-white {
+    @apply bg-transparent hover:bg-white text-white hover:text-primary-600 font-medium py-3 px-6 rounded-lg border border-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2;
+  }
+
+  .section-padding {
+    @apply py-16 lg:py-24;
+  }
+
+  .page-top-margin {
+    @apply pt-20 lg:pt-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .heading-1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight mt-8;
+  }
+
+  .heading-2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold font-heading leading-tight mt-6;
+  }
+
+  .heading-3 {
+    @apply text-2xl md:text-3xl font-bold font-heading leading-tight mt-4;
+  }
+
+  .heading-4 {
+    @apply text-xl md:text-2xl font-bold font-heading leading-tight mt-3;
+  }
+
+  /* Blob Animation */
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+
+  /* Grid Pattern Background */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Blog Content Styling */
+  .blog-content h1,
+  .blog-content h2,
+  .blog-content h3,
+  .blog-content h4,
+  .blog-content h5,
+  .blog-content h6 {
+    @apply font-bold text-gray-900 mb-4 mt-6;
+    line-height: 1.3;
+  }
+
+  .blog-content h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+    @apply mb-6 mt-10;
+  }
+
+  .blog-content h2 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+    @apply mb-5 mt-8;
+  }
+
+  .blog-content h3 {
+    @apply text-lg md:text-xl lg:text-2xl;
+    @apply mb-4 mt-6;
+  }
+
+  .blog-content h4 {
+    @apply text-base md:text-lg lg:text-xl;
+    @apply mb-3 mt-5;
+  }
+
+  .blog-content h5 {
+    @apply text-sm md:text-base lg:text-lg;
+    @apply mb-2 mt-4;
+  }
+
+  .blog-content h6 {
+    @apply text-sm md:text-base;
+    @apply mb-2 mt-4;
+  }
+
+  .blog-content p {
+    @apply text-gray-700 leading-relaxed mb-6 text-base md:text-lg;
+  }
+
+  .blog-content ul,
+  .blog-content ol {
+    @apply mb-8 ml-8;
+  }
+
+  .blog-content li {
+    @apply mb-3 text-gray-700 leading-relaxed;
+  }
+
+  .blog-content blockquote {
+    @apply border-l-4 border-primary-500 pl-8 py-6 my-8 bg-gray-50 italic text-gray-700 text-lg;
+  }
+
+  .blog-content img {
+    @apply rounded-xl shadow-lg my-8 w-full;
+  }
+
+  .blog-content a {
+    @apply text-primary-600 hover:text-primary-700 underline decoration-2 underline-offset-2;
+  }
+
+  .blog-content strong {
+    @apply font-bold text-gray-900;
+  }
+
+  .blog-content em {
+    @apply italic text-gray-700;
+  }
+
+  .blog-content code {
+    @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono;
+  }
+
+  .blog-content pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-6;
+  }
+
+  .blog-content pre code {
+    @apply bg-transparent text-inherit p-0;
+  }
+
+  .blog-content table {
+    @apply w-full border-collapse border border-gray-300 my-6;
+  }
+
+  .blog-content th,
+  .blog-content td {
+    @apply border border-gray-300 px-4 py-2 text-left;
+  }
+
+  .blog-content th {
+    @apply bg-gray-50 font-semibold text-gray-900;
+  }
+
+  .blog-content hr {
+    @apply border-gray-300 my-8;
+  }
+
+  /* Enhanced Blog Content Styling */
+  .blog-content {
+    @apply text-gray-800 leading-relaxed;
+  }
+
+  .blog-content > *:first-child {
+    @apply mt-0;
+  }
+
+  .blog-content > *:last-child {
+    @apply mb-0;
+  }
+
+  .blog-content h1:first-child,
+  .blog-content h2:first-child,
+  .blog-content h3:first-child,
+  .blog-content h4:first-child,
+  .blog-content h5:first-child,
+  .blog-content h6:first-child {
+    @apply mt-0;
+  }
+
+  /* Better spacing for lists */
+  .blog-content ul ul,
+  .blog-content ol ol {
+    @apply mt-4 mb-4;
+  }
+
+  /* Enhanced blockquote styling */
+  .blog-content blockquote p {
+    @apply mb-0;
+  }
+
+  /* Better image handling */
+  .blog-content img {
+    @apply mx-auto;
+  }
+
+  /* Enhanced content structure and layout */
+  .blog-content {
+    @apply space-y-6;
+  }
+
+  .blog-content p {
+    @apply text-base md:text-lg leading-7 text-gray-700 mb-6;
+  }
+
+  .blog-content ul,
+  .blog-content ol {
+    @apply mb-6 ml-6 space-y-2;
+  }
+
+  .blog-content li {
+    @apply text-base md:text-lg leading-7 text-gray-700;
+  }
+
+  .blog-content blockquote {
+    @apply border-l-4 border-primary-500 pl-6 py-4 my-8 bg-gray-50 rounded-r-lg;
+  }
+
+  .blog-content blockquote p {
+    @apply text-lg text-gray-700 italic mb-0;
+  }
+
+  /* Better content formatting */
+  .blog-content {
+    @apply text-gray-800 leading-relaxed;
+  }
+
+  .blog-content > *:first-child {
+    @apply mt-0;
+  }
+
+  .blog-content > *:last-child {
+    @apply mb-0;
+  }
+
+  /* Enhanced paragraph spacing */
+  .blog-content p {
+    @apply mb-6 text-base md:text-lg leading-7 text-gray-700;
+  }
+
+  .blog-content p:last-child {
+    @apply mb-0;
+  }
+
+  /* Better list formatting */
+  .blog-content ul,
+  .blog-content ol {
+    @apply mb-6 ml-6 space-y-3;
+  }
+
+  .blog-content li {
+    @apply text-base md:text-lg leading-7 text-gray-700 mb-2;
+  }
+
+  .blog-content li:last-child {
+    @apply mb-0;
+  }
+
+  /* Enhanced heading spacing */
+  .blog-content h1,
+  .blog-content h2,
+  .blog-content h3,
+  .blog-content h4,
+  .blog-content h5,
+  .blog-content h6 {
+    @apply font-bold text-gray-900 leading-tight mt-8 mb-4;
+  }
+
+  .blog-content h1:first-child,
+  .blog-content h2:first-child,
+  .blog-content h3:first-child,
+  .blog-content h4:first-child,
+  .blog-content h5:first-child,
+  .blog-content h6:first-child {
+    @apply mt-0;
+  }
+
+  /* Better code formatting */
+  .blog-content code {
+    @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono border border-gray-200;
+  }
+
+  .blog-content pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-6 text-sm;
+  }
+
+  .blog-content pre code {
+    @apply bg-transparent text-inherit p-0 border-0;
+  }
+
+  /* Enhanced link styling */
+  .blog-content a {
+    @apply text-primary-600 hover:text-primary-700 underline decoration-2 underline-offset-2 transition-colors duration-200;
+  }
+
+  /* Better strong and emphasis */
+  .blog-content strong {
+    @apply font-bold text-gray-900;
+  }
+
+  .blog-content em {
+    @apply italic text-gray-700;
+  }
+
+  /* Content sections and spacing */
+  .blog-content > * + * {
+    @apply mt-6;
+  }
+
+  .blog-content > h1 + *,
+  .blog-content > h2 + *,
+  .blog-content > h3 + *,
+  .blog-content > h4 + *,
+  .blog-content > h5 + *,
+  .blog-content > h6 + * {
+    @apply mt-4;
+  }
+
+  /* Remove any WordPress-specific styling */
+  .blog-content [class*="wp-"] {
+    @apply !important;
+  }
+
+  /* Prose enhancements for blog content */
+  .blog-content.prose {
+    @apply max-w-none;
+  }
+
+  .blog-content.prose h1,
+  .blog-content.prose h2,
+  .blog-content.prose h3,
+  .blog-content.prose h4,
+  .blog-content.prose h5,
+  .blog-content.prose h6 {
+    @apply text-gray-900 font-bold leading-tight;
+  }
+
+  .blog-content.prose h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl mb-6 mt-10;
+  }
+
+  .blog-content.prose h2 {
+    @apply text-xl md:text-2xl lg:text-3xl mb-5 mt-8;
+  }
+
+  .blog-content.prose h3 {
+    @apply text-lg md:text-xl lg:text-2xl mb-4 mt-6;
+  }
+
+  .blog-content.prose h4 {
+    @apply text-base md:text-lg lg:text-xl mb-3 mt-5;
+  }
+
+  .blog-content.prose p {
+    @apply text-base md:text-lg leading-7 text-gray-700 mb-6;
+  }
+
+  .blog-content.prose ul,
+  .blog-content.prose ol {
+    @apply mb-6 ml-6 space-y-3;
+  }
+
+  .blog-content.prose li {
+    @apply text-base md:text-lg leading-7 text-gray-700 mb-2;
+  }
+
+  .blog-content.prose blockquote {
+    @apply border-l-4 border-primary-500 pl-6 py-4 my-8 bg-gray-50 rounded-r-lg italic;
+  }
+
+  .blog-content.prose blockquote p {
+    @apply text-lg text-gray-700 mb-0;
+  }
+
+  .blog-content.prose code {
+    @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono border border-gray-200;
+  }
+
+  .blog-content.prose pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-6 text-sm;
+  }
+
+  .blog-content.prose a {
+    @apply text-primary-600 hover:text-primary-700 underline decoration-2 underline-offset-2 transition-colors duration-200;
+  }
+
+  .blog-content.prose strong {
+    @apply font-bold text-gray-900;
+  }
+
+  .blog-content.prose em {
+    @apply italic text-gray-700;
+  }
+
+  /* Better table layout and responsiveness */
+  .blog-content table {
+    @apply w-full border-collapse shadow-lg bg-white rounded-lg overflow-hidden my-8;
+    min-width: 100%;
+    table-layout: auto;
+  }
+
+  .blog-content table th,
+  .blog-content table td {
+    @apply border border-gray-200 px-4 py-3 text-left align-top;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 0;
+  }
+
+  .blog-content table th {
+    @apply bg-primary-50 text-primary-900 font-semibold text-sm;
+  }
+
+  .blog-content table td {
+    @apply bg-white text-gray-800 text-sm;
+  }
+
+  /* Responsive table wrapper */
+  .blog-content .table-wrapper {
+    @apply w-full overflow-x-auto border border-gray-200 rounded-lg shadow-md my-8;
+    max-width: 100%;
+  }
+
+  /* Table responsive behavior */
+  .blog-content table {
+    @apply min-w-full;
+  }
+
+  /* Ensure table doesn't break layout */
+  .blog-content .table-container {
+    @apply w-full overflow-hidden my-8;
+    max-width: 100%;
+  }
+
+  /* Force table to respect container width */
+  .blog-content table {
+    @apply max-w-full;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Handle very wide content in table cells */
+  .blog-content table td,
+  .blog-content table th {
+    @apply max-w-xs;
+    max-width: 20rem;
+    word-break: break-word;
+  }
+
+  /* Responsive table for mobile */
+  @media (max-width: 768px) {
+    .blog-content table {
+      @apply text-sm;
+    }
+    
+    .blog-content table th,
+    .blog-content table td {
+      @apply px-2 py-2;
+      max-width: 12rem;
+    }
+  }
+
+  /* Better code styling */
+  .blog-content code:not(pre code) {
+    @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono border border-gray-200;
+  }
+
+  .blog-content pre {
+    @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-6 text-sm;
+  }
+
+  .blog-content pre code {
+    @apply bg-transparent text-inherit p-0;
+  }
+
+  /* Enhanced link styling */
+  .blog-content a {
+    @apply text-primary-600 hover:text-primary-700 underline decoration-2 underline-offset-2 transition-colors duration-200;
+  }
+
+  /* Better strong and emphasis */
+  .blog-content strong {
+    @apply font-bold text-gray-900;
+  }
+
+  .blog-content em {
+    @apply italic text-gray-700;
+  }
+
+  /* Improved spacing and typography */
+  .blog-content h1,
+  .blog-content h2,
+  .blog-content h3,
+  .blog-content h4,
+  .blog-content h5,
+  .blog-content h6 {
+    @apply font-bold text-gray-900 leading-tight;
+  }
+
+  .blog-content h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl mb-6 mt-10;
+  }
+
+  .blog-content h2 {
+    @apply text-xl md:text-2xl lg:text-3xl mb-5 mt-8;
+  }
+
+  .blog-content h3 {
+    @apply text-lg md:text-xl lg:text-2xl mb-4 mt-6;
+  }
+
+  .blog-content h4 {
+    @apply text-base md:text-lg lg:text-xl mb-3 mt-5;
+  }
+
+  .blog-content h5 {
+    @apply text-sm md:text-base lg:text-lg mb-2 mt-4;
+  }
+
+  .blog-content h6 {
+    @apply text-sm md:text-base mb-2 mt-4;
+  }
+
+  /* Content sections and columns */
+  .blog-content .content-section {
+    @apply mb-8;
+  }
+
+  .blog-content .content-columns {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8;
+  }
+
+  .blog-content .content-column {
+    @apply bg-gray-50 p-4 rounded-lg border border-gray-200;
+  }
+
+  /* Better list styling */
+  .blog-content ul {
+    @apply list-disc;
+  }
+
+  .blog-content ol {
+    @apply list-decimal;
+  }
+
+  .blog-content li {
+    @apply mb-2;
+  }
+
+  /* Enhanced spacing between sections */
+  .blog-content > * + * {
+    @apply mt-6;
+  }
+
+  .blog-content > h1 + *,
+  .blog-content > h2 + *,
+  .blog-content > h3 + *,
+  .blog-content > h4 + *,
+  .blog-content > h5 + *,
+  .blog-content > h6 + * {
+    @apply mt-4;
+  }
+
+  /* Enhanced table styling */
+  .blog-content table {
+    @apply w-full border-collapse shadow-md bg-white rounded-lg overflow-hidden;
+    min-width: 100%;
+    table-layout: auto;
+  }
+
+  .blog-content table th,
+  .blog-content table td {
+    @apply border border-gray-200 px-4 py-3 text-left align-top;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 0;
+  }
+
+  .blog-content table th {
+    @apply bg-primary-50 text-primary-900 font-semibold;
+  }
+
+  .blog-content table td {
+    @apply bg-white text-gray-800;
+  }
+
+  /* Responsive table wrapper */
+  .blog-content .table-wrapper {
+    @apply w-full overflow-x-auto border border-gray-200 rounded-lg shadow-md;
+    max-width: 100%;
+  }
+
+  /* Table responsive behavior */
+  .blog-content table {
+    @apply min-w-full;
+  }
+
+  /* Ensure table doesn't break layout */
+  .blog-content .table-container {
+    @apply w-full overflow-hidden;
+    max-width: 100%;
+  }
+
+  /* Force table to respect container width */
+  .blog-content table {
+    @apply max-w-full;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Handle very wide content in table cells */
+  .blog-content table td,
+  .blog-content table th {
+    @apply max-w-xs;
+    max-width: 20rem;
+    word-break: break-word;
+  }
+
+  /* Responsive table for mobile */
+  @media (max-width: 768px) {
+    .blog-content table {
+      @apply text-sm;
+    }
+    
+    .blog-content table th,
+    .blog-content table td {
+      @apply px-2 py-2;
+      max-width: 12rem;
+    }
+  }
+
+  /* Better code styling */
+  .blog-content code:not(pre code) {
+    @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono border border-gray-200;
+  }
+
+  .text-body {
+    @apply text-lg text-gray-600 leading-relaxed;
+  }
+
+  .card {
+    @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-white/20;
+  }
+  
+  .card-ai {
+    @apply bg-gradient-to-br from-white/90 to-blue-50/50 backdrop-blur-md rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-100/50 hover:border-blue-300/50;
+  }
+  
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+  
+  .ai-gradient {
+    @apply bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600;
+  }
+  
+  .ai-gradient-light {
+    @apply bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50;
+  }
+  
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  @keyframes gradient-x {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 3s ease infinite;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-br from-primary-50 via-white to-accent-50;
+  }
+
+  .hero-gradient {
+    @apply bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
+
+/* Font Awesome icon styles */
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  @apply inline-block;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* AI-themed animations */
+@keyframes neural-pulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes circuit-flow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.6);
+  }
+}
+
+.animate-neural-pulse {
+  animation: neural-pulse 3s ease-in-out infinite;
+}
+
+.animate-circuit-flow {
+  animation: circuit-flow 20s linear infinite;
+  background-size: 200% 200%;
+}
+
+.animate-glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+/* Neural network pattern background */
+.neural-pattern {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+  background-size: 100% 100%;
+}
+
+/* Circuit pattern */
+.circuit-pattern {
+  background-image: 
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Focus styles for accessibility */
+.focus-visible:focus {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2;
+}
+
+/* Loading states */
+.loading {
+  @apply opacity-50 pointer-events-none;
+}
+
+/* Smooth transitions */
+.transition-smooth {
+  @apply transition-all duration-300 ease-in-out;
+}

@@ -1,0 +1,219 @@
+import { Metadata } from 'next';
+import MobileCTA from '@/components/MobileCTA';
+import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Security Testing | Smartwebrowse India Private Limited',
+  description: 'Comprehensive security testing services to identify vulnerabilities and ensure your applications are secure from cyber threats.',
+  keywords: 'Security Testing, Penetration Testing, VAPT, Application Security, Cybersecurity Testing, Vulnerability Assessment',
+  alternates: {
+    canonical: 'https://www.smartwebrowse.com/services/security-testing',
+  },
+};
+
+export default function SecurityTestingPage() {
+  const features = [
+    'Web application security testing',
+    'API security testing and validation',
+    'Mobile app security assessment',
+    'Network security testing',
+    'Social engineering testing',
+    'Security code review and analysis',
+    'Compliance-focused security testing',
+    'Security testing automation and CI/CD integration'
+  ];
+
+  const benefits = [
+    {
+      title: 'Identify Vulnerabilities',
+      description: 'Find security weaknesses before attackers do',
+      icon: 'fa-solid fa-search'
+    },
+    {
+      title: 'Compliance Ready',
+      description: 'Meet industry security standards and requirements',
+      icon: 'fa-solid fa-certificate'
+    },
+    {
+      title: 'Risk Mitigation',
+      description: 'Reduce security risks and potential breaches',
+      icon: 'fa-solid fa-shield-alt'
+    },
+    {
+      title: 'Customer Trust',
+      description: 'Build confidence in your application security',
+      icon: 'fa-solid fa-handshake'
+    }
+  ];
+
+  return (
+    <div>
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-br from-primary-50 via-primary-100 to-primary-200 text-primary-900">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="heading-1 mb-6 text-primary-900">
+              Security Testing
+            </h1>
+            <p className="text-lg md:text-xl text-primary-700 mb-8 leading-relaxed">
+              Comprehensive security testing services to identify vulnerabilities and 
+              ensure your applications are secure from cyber threats.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/consultation" className="btn-primary text-lg px-8 py-4">
+                Get Free Consultation
+              </Link>
+              <Link href="/services/application-testing" className="btn-outline text-lg px-8 py-4 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white">
+                View All Testing Services
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Main Content */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="heading-2 mb-6 text-gray-900">
+                Secure Your Applications
+              </h2>
+              <p className="text-body text-gray-600 mb-6">
+                Our security testing services help organizations identify and fix 
+                security vulnerabilities before they can be exploited by attackers.
+              </p>
+              <p className="text-body text-gray-600 mb-6">
+                We use industry-standard methodologies and tools to provide comprehensive 
+                security testing that meets compliance requirements and industry best practices.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/consultation" className="btn-primary">
+                  Get Free Security Assessment
+                </Link>
+                <Link href="/services/automated-testing" className="btn-outline">
+                  Learn About Automated Testing
+                </Link>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl shadow-lg p-8">
+              <h3 className="heading-3 mb-6 text-gray-900">What We Deliver</h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <i className="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Security Assessment</h4>
+                    <p className="text-gray-600">Comprehensive security evaluation and reporting</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <i className="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Vulnerability Testing</h4>
+                    <p className="text-gray-600">Identify and document security weaknesses</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <i className="fa-solid fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Remediation Guidance</h4>
+                    <p className="text-gray-600">Detailed recommendations for fixing security issues</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section className="py-16 bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="heading-2 mb-6 text-gray-900">
+              Comprehensive Security Testing Features
+            </h2>
+            <p className="text-body text-gray-600 max-w-3xl mx-auto">
+              Our security testing solutions cover all aspects of application security, 
+              ensuring comprehensive vulnerability identification and assessment.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-start">
+                <i className="fa-solid fa-check text-green-500 mt-1 mr-3 text-lg"></i>
+                <span className="text-gray-700">{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-16 bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="heading-2 mb-6 text-gray-900">
+              Why Choose Our Security Testing Services?
+            </h2>
+            <p className="text-body text-gray-600 max-w-3xl mx-auto">
+              We deliver measurable results that enhance your security posture and 
+              support your business objectives.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {benefits.map((benefit, index) => (
+              <div key={index} className="text-center">
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                  <i className={benefit.icon}></i>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{benefit.title}</h3>
+                <p className="text-gray-600 text-sm">{benefit.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16">
+        <div className="container-custom text-center">
+          <div className="relative overflow-hidden bg-gradient-to-r from-primary-500 to-primary-600 rounded-3xl p-12 shadow-2xl">
+            {/* Background pattern with dots */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute inset-0 rounded-3xl" style={{
+                backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.3) 1px, transparent 1px)',
+                backgroundSize: '20px 20px'
+              }}></div>
+            </div>
+            
+            <div className="relative z-10">
+              <h2 className="text-3xl font-bold text-white mb-4">Ready to Secure Your Applications?</h2>
+              <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Let's discuss how our security testing services can help you identify 
+                vulnerabilities and strengthen your security posture.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/consultation" className="bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                  Schedule Free Consultation
+                </Link>
+                <Link href="/services/application-testing" className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary-600 transition-all duration-300">
+                  View All Testing Services
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Mobile CTA Button */}
+      <MobileCTA href="/get-a-quote" bgColor="bg-[#0ea5e9]" hoverColor="hover:bg-[#0284c7]" ringColor="focus:ring-[#0ea5e9]" />    </div>
+  );
+}
+
+
+
+
+
