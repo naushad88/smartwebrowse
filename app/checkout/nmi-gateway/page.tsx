@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import StripeCheckout from '@/components/StripeCheckout';
 import { useRouter } from 'next/navigation';
 
 export default function NMICheckoutPage() {
@@ -86,47 +85,41 @@ export default function NMICheckoutPage() {
     return newErrors;
   };
 
-  const handlePaymentSubmit = async (paymentMethodId: string) => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+
     setLoading(true);
 
     try {
-      // Process payment with customer details
-      const response = await fetch('/api/process-payment', {
+      // Submit inquiry form
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          paymentMethodId,
-          customerName: formData.name,
-          customerEmail: formData.email,
-          customerWebsite: formData.website,
-          customerPhone: formData.phone,
-          amount: totalPrice,
-          product: 'Network Merchants Inc Gateway for WooCommerce',
-          licenseQuantity: licenseQuantity,
-          extendedSupport: extendedSupport,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: `Inquiry for ${pluginDetails.name}\n\nWebsite: ${formData.website}\nLicenses: ${licenseQuantity}\nExtended Support: ${extendedSupport ? 'Yes' : 'No'}\nTotal: $${totalPrice}`,
         }),
       });
 
       const data = await response.json();
 
       if (data.success) {
-        // Redirect to thank you page with all order details
-        const params = new URLSearchParams({
-          email: formData.email,
-          orderId: data.orderId,
-          licenseQuantity: licenseQuantity.toString(),
-          extendedSupport: extendedSupport.toString(),
-          totalPrice: totalPrice.toString(),
-        });
-        const redirectUrl = `/thank-you/nmi-purchase?${params.toString()}`;
-        console.log('Redirecting to:', redirectUrl);
-        router.push(redirectUrl);
+        // Redirect to thank you page
+        router.push('/thank-you');
       } else {
-        alert('Payment failed. Please try again.');
+        alert('Failed to submit. Please try again.');
         setLoading(false);
       }
     } catch (error) {
-      console.error('Payment error:', error);
+      console.error('Submission error:', error);
       alert('An error occurred. Please try again.');
       setLoading(false);
     }
@@ -215,7 +208,7 @@ export default function NMICheckoutPage() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-neutral-900 mb-1">Secure & Reliable</h4>
-                      <p className="text-sm text-neutral-600">Powered by Stripe. Your payment information is secure and encrypted.</p>
+                      <p className="text-sm text-neutral-600">Contact us for pricing and purchase information.</p>
                     </div>
                   </div>
                 </div>
@@ -377,14 +370,25 @@ export default function NMICheckoutPage() {
                   </div>
                 </div>
 
-                {/* Payment Card Details Section */}
-                <div className="mb-6">
-                  <h3 className="text-lg font-semibold text-neutral-900 mb-4 flex items-center gap-2">
-                    <i className="fas fa-credit-card text-primary-600"></i>
-                    Payment Card Details <span className="text-red-500">*</span>
-                  </h3>
-                  <StripeCheckout formData={formData} onSubmit={handlePaymentSubmit} loading={loading} totalPrice={totalPrice} />
-                </div>
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  onClick={handleSubmit}
+                  disabled={loading}
+                  className="w-full bg-gradient-to-r from-primary-600 to-primary-700 text-white font-bold py-4 px-6 rounded-lg hover:from-primary-700 hover:to-primary-800 transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                >
+                  {loading ? (
+                    <>
+                      <i className="fas fa-spinner fa-spin"></i>
+                      <span>Submitting...</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>Submit Inquiry</span>
+                      <i className="fas fa-arrow-right"></i>
+                    </>
+                  )}
+                </button>
               </div>
             </div>
           </div>
