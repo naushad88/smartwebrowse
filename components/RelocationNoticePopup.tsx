@@ -21,12 +21,12 @@ export default function RelocationNoticePopup() {
   }
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-gradient-to-br from-black/70 via-slate-900/65 to-purple-900/60 p-4 backdrop-blur-sm">
-      <div className="relative w-full max-w-2xl rounded-2xl border border-pink-200 bg-gradient-to-br from-white via-rose-50 to-purple-50 p-6 shadow-2xl md:p-8">
+    <div className="fixed inset-0 z-[100000] flex items-center justify-center bg-gradient-to-br from-black/70 via-slate-900/65 to-purple-900/60 p-3 backdrop-blur-sm sm:p-4">
+      <div className="relative w-full max-w-2xl max-h-[88vh] overflow-y-auto rounded-2xl border border-pink-200 bg-gradient-to-br from-white via-rose-50 to-purple-50 p-5 shadow-2xl md:p-8">
         <button
           type="button"
           onClick={() => setIsOpen(false)}
-          className="absolute right-4 top-4 rounded-md p-2 text-gray-500 transition hover:bg-gray-100 hover:text-gray-700"
+          className="sticky float-right top-3 z-10 rounded-md bg-white/90 p-2 text-gray-500 transition hover:bg-gray-100 hover:text-gray-700"
           aria-label="Close notice"
         >
           <i className="fas fa-times" aria-hidden="true"></i>
