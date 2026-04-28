@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import { useState } from 'react';
 import Head from 'next/head';
 
 // Declare Calendly types
@@ -15,8 +16,18 @@ declare global {
 
 export default function ConsultationPage() {
   const calendlyRef = useRef<HTMLDivElement>(null);
+  const calendlyUrl = 'https://calendly.com/contact-smartwebrowse/30min?back=1&month=2026-04';
+  const [showCalendlyWidget, setShowCalendlyWidget] = useState(false);
 
   useEffect(() => {
+    setShowCalendlyWidget(true);
+  }, []);
+
+  useEffect(() => {
+    if (!showCalendlyWidget) {
+      return;
+    }
+
     // Wait for Calendly to be available
     const initCalendly = () => {
       if (window.Calendly && calendlyRef.current) {
@@ -27,7 +38,7 @@ export default function ConsultationPage() {
           }
           
           window.Calendly.initInlineWidget({
-            url: 'https://calendly.com/robustsoftech/60min',
+            url: calendlyUrl,
             parentElement: calendlyRef.current,
             prefill: {},
             utm: {}
@@ -78,7 +89,7 @@ export default function ConsultationPage() {
     setTimeout(fixMobileCookieConsent, 500);
     setTimeout(fixMobileCookieConsent, 1500);
     setTimeout(fixMobileCookieConsent, 3000);
-  }, []);
+  }, [showCalendlyWidget, calendlyUrl]);
 
   return (
     <>
@@ -160,7 +171,7 @@ export default function ConsultationPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 sm:mb-12">
               <div className="flex items-center text-gray-700">
                 <i className="fas fa-clock text-blue-600 mr-2"></i>
-                <span>60-minute session</span>
+                <span>30-minute session</span>
               </div>
               <div className="flex items-center text-gray-700">
                 <i className="fas fa-video text-blue-600 mr-2"></i>
@@ -176,19 +187,26 @@ export default function ConsultationPage() {
          
         {/* Calendly Form - Full Width */}
         <div className="w-full px-4 my-0 relative">
-          <div 
-            ref={calendlyRef}
-            className="calendly-inline-widget" 
-            data-url="https://calendly.com/robustsoftech/60min"
-            style={{ 
-              minWidth: '100%', 
-              width: '100%', 
-              height: '700px',
-              position: 'relative',
-              zIndex: 1,
-              overflow: 'hidden'
-            }}
-          ></div>
+          {showCalendlyWidget ? (
+            <div 
+              ref={calendlyRef}
+              className="calendly-inline-widget" 
+              data-url={calendlyUrl}
+              style={{ 
+                minWidth: '100%', 
+                width: '100%', 
+                height: '700px',
+                position: 'relative',
+                zIndex: 1,
+                overflow: 'hidden'
+              }}
+            ></div>
+          ) : (
+            <div
+              className="w-full animate-pulse rounded-xl bg-blue-50"
+              style={{ height: '700px' }}
+            />
+          )}
         </div>
       </section>
     </>
