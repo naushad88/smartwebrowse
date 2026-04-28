@@ -50,7 +50,7 @@ export default function AboutPage() {
     { year: '2021', title: 'Technology Expansion', description: 'Expanded technology services and built expertise across multiple domains', icon: 'fa-cogs', color: 'from-green-500 to-green-600' },
     { year: '2022', title: 'Infrastructure Growth', description: 'Established scalable infrastructure and expanded service capabilities', icon: 'fa-server', color: 'from-purple-500 to-purple-600' },
     { year: '2023', title: 'Innovation Focus', description: 'Introduced innovative solutions and advanced technology services', icon: 'fa-lightbulb', color: 'from-orange-500 to-orange-600' },
-    { year: '2024', title: 'AI Transformation', description: 'Acquired by Ishpreet Kaur & Sheeba Parveen. Strategic pivot towards AI technology, focusing on AI automation, AI development, and comprehensive AI solutions. Beginning of our journey to stay one step ahead in the AI world.', icon: 'fa-brain', color: 'from-pink-500 to-rose-600' },
+    { year: '2026', title: 'AI Transformation', description: 'Acquired by Ishpreet Kaur & Sheeba Parveen on April 20, 2026. Strategic pivot towards AI technology, focusing on AI automation, AI development, and comprehensive AI solutions. Beginning of our journey to stay one step ahead in the AI world.', icon: 'fa-brain', color: 'from-pink-500 to-rose-600' },
     { year: '2025', title: 'AI Leadership', description: 'Recognized as a leading AI company with exceptional expertise in AI automation, AI development, and AI services. Delivering cutting-edge solutions that transform businesses.', icon: 'fa-rocket', color: 'from-indigo-500 to-indigo-600' }
   ];
 
@@ -58,13 +58,13 @@ export default function AboutPage() {
     {
       name: 'Ishpreet Kaur',
       role: 'Co-Acquirer & Leader',
-      description: 'Visionary leader who acquired Smartwebrowse in 2024 and spearheaded the AI transformation. Expert in AI automation, AI development, and strategic AI implementation. Driving women empowerment in technology while staying ahead in the AI world.',
+      description: 'Visionary leader who acquired Smartwebrowse on April 20, 2026 and spearheaded the AI transformation. Expert in AI automation, AI development, and strategic AI implementation. Driving women empowerment in technology while staying ahead in the AI world.',
       icon: 'fa-user-tie'
     },
     {
       name: 'Sheeba Parveen',
       role: 'Co-Acquirer & Leader',
-      description: 'Innovative leader who co-acquired the company in 2024 and transformed it into an AI powerhouse. Expert in AI development, AI infrastructure, and cutting-edge AI technologies. Championing women in tech and leading AI innovation.',
+      description: 'Innovative leader who co-acquired the company on April 20, 2026 and transformed it into an AI powerhouse. Expert in AI development, AI infrastructure, and cutting-edge AI technologies. Championing women in tech and leading AI innovation.',
       icon: 'fa-code'
     },
     {
@@ -97,9 +97,9 @@ export default function AboutPage() {
             About Smartwebrowse
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A pure women empowerment company acquired by visionary leaders Ishpreet Kaur & Sheeba Parveen in 2024. 
-            We're a leading AI technology company dedicated to transforming businesses through 
-            intelligent AI services, automation solutions, and exceptional AI support, staying one step ahead in the AI world.
+            A women-empowerment company acquired on April 20, 2026, now focused on leading AI transformation.
+            We are dedicated to delivering intelligent AI services, automation solutions, and exceptional AI support,
+            staying one step ahead in the AI world.
           </p>
         </div>
       </section>
@@ -116,8 +116,8 @@ export default function AboutPage() {
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Smartwebrowse India Private Limited was founded in June 2013, establishing itself as a technology 
-                company with a strong foundation. In April 2026, the company was acquired by visionary leaders 
-                <strong className="text-gray-900"> Ishpreet Kaur & Sheeba Parveen</strong>, marking a transformative moment in our journey.
+                company with a strong foundation. In April 2026, the company entered new ownership,
+                marking a transformative moment in our journey.
               </p>
               <div className="mb-8 p-6 rounded-2xl bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 border-2 border-pink-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
@@ -234,7 +234,7 @@ export default function AboutPage() {
               Our AI Journey
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From a technology company founded in 2013 to a leading AI powerhouse after acquisition in 2024, 
+              From a technology company founded in 2013 to a leading AI powerhouse after acquisition in April 2026, 
               discover the milestones that shaped our transformation and success in AI automation, AI development, and AI innovation.
             </p>
           </div>
@@ -286,7 +286,7 @@ export default function AboutPage() {
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
               A pure women empowerment company led by visionary leaders Ishpreet Kaur & Sheeba Parveen, 
-              who acquired the company in 2024 and transformed it into an AI-focused powerhouse. 
+              who acquired the company on April 20, 2026 and transformed it into an AI-focused powerhouse. 
               Our experienced leadership team brings together decades of expertise in 
               AI technology, business, and innovation, championing women in tech and staying one step ahead in the AI world.
             </p>
