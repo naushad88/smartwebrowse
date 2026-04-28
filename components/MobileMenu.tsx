@@ -230,229 +230,115 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
               </button>
             
               {isServicesOpen && (
-                <div style={{ 
-                  marginLeft: '20px', 
-                  marginTop: '8px',
-                  paddingLeft: '16px',
-                  borderLeft: '2px solid #e2e8f0',
-                  animation: 'slideDown 0.3s ease-out'
-                }}>
-                  <Link 
-                    href="/services/cybersecurity-services" 
+                <div
+                  style={{
+                    marginLeft: '20px',
+                    marginTop: '8px',
+                    paddingLeft: '16px',
+                    borderLeft: '2px solid #e2e8f0',
+                    animation: 'slideDown 0.3s ease-out'
+                  }}
+                >
+                  <Link
+                    href="/services"
                     style={{
                       display: 'block',
                       padding: '8px 16px',
-                      color: '#64748b',
+                      color: '#2563eb',
                       textDecoration: 'none',
                       fontSize: '14px',
-                      fontWeight: '400',
+                      fontWeight: '600',
                       borderRadius: '6px',
-                      marginBottom: '4px',
-                      transition: 'all 0.2s ease',
-                      backgroundColor: 'transparent'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f1f5f9';
-                      e.currentTarget.style.color = '#2563eb';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                      e.currentTarget.style.color = '#64748b';
+                      marginBottom: '10px',
+                      backgroundColor: '#eff6ff'
                     }}
                     onClick={onClose}
                   >
-                    <i className="fas fa-shield-alt mr-2" style={{ width: '16px', color: '#64748b' }}></i>
-                    Cybersecurity Services
+                    View All Services
                   </Link>
-                  <Link 
-                    href="/services/cloud-services" 
-                    style={{
-                      display: 'block',
-                      padding: '8px 16px',
-                      color: '#64748b',
-                      textDecoration: 'none',
-                      fontSize: '14px',
-                      fontWeight: '400',
-                      borderRadius: '6px',
-                      marginBottom: '4px',
-                      transition: 'all 0.2s ease',
-                      backgroundColor: 'transparent'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f1f5f9';
-                      e.currentTarget.style.color = '#2563eb';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                      e.currentTarget.style.color = '#64748b';
-                    }}
-                    onClick={onClose}
-                  >
-                    <i className="fas fa-cloud mr-2" style={{ width: '16px', color: '#64748b' }}></i>
-                    Cloud Services
-                  </Link>
-                  <Link 
-                    href="/services/devops-automation-services" 
-                    style={{
-                      display: 'block',
-                      padding: '8px 16px',
-                      color: '#64748b',
-                      textDecoration: 'none',
-                      fontSize: '14px',
-                      fontWeight: '400',
-                      borderRadius: '6px',
-                      marginBottom: '4px',
-                      transition: 'all 0.2s ease',
-                      backgroundColor: 'transparent'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f1f5f9';
-                      e.currentTarget.style.color = '#2563eb';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                      e.currentTarget.style.color = '#64748b';
-                    }}
-                    onClick={onClose}
-                  >
-                    <i className="fas fa-cogs mr-2" style={{ width: '16px', color: '#64748b' }}></i>
-                    DevOps & Automation
-                  </Link>
-                  <Link 
-                    href="/services/it-services-support" 
-                    style={{
-                      display: 'block',
-                      padding: '8px 16px',
-                      color: '#64748b',
-                      textDecoration: 'none',
-                      fontSize: '14px',
-                      fontWeight: '400',
-                      borderRadius: '6px',
-                      marginBottom: '4px',
-                      transition: 'all 0.2s ease',
-                      backgroundColor: 'transparent'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f1f5f9';
-                      e.currentTarget.style.color = '#2563eb';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                      e.currentTarget.style.color = '#64748b';
-                    }}
-                    onClick={onClose}
-                  >
-                    <i className="fas fa-headset mr-2" style={{ width: '16px', color: '#64748b' }}></i>
-                    IT Services & Support
-                  </Link>
-                  <Link 
-                    href="/services/application-testing" 
-                    style={{
-                      display: 'block',
-                      padding: '8px 16px',
-                      color: '#64748b',
-                      textDecoration: 'none',
-                      fontSize: '14px',
-                      fontWeight: '400',
-                      borderRadius: '6px',
-                      marginBottom: '4px',
-                      transition: 'all 0.2s ease',
-                      backgroundColor: 'transparent'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f1f5f9';
-                      e.currentTarget.style.color = '#2563eb';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                      e.currentTarget.style.color = '#64748b';
-                    }}
-                    onClick={onClose}
-                  >
-                    <i className="fas fa-bug mr-2" style={{ width: '16px', color: '#64748b' }}></i>
-                    Application Testing
-                  </Link>
-                  <Link 
-                    href="/services/ai-web-development" 
-                    style={{
-                      display: 'block',
-                      padding: '8px 16px',
-                      color: '#64748b',
-                      textDecoration: 'none',
-                      fontSize: '14px',
-                      fontWeight: '400',
-                      borderRadius: '6px',
-                      marginBottom: '4px',
-                      transition: 'all 0.2s ease',
-                      backgroundColor: 'transparent'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f1f5f9';
-                      e.currentTarget.style.color = '#2563eb';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                      e.currentTarget.style.color = '#64748b';
-                    }}
-                    onClick={onClose}
-                  >
-                    <i className="fas fa-code mr-2" style={{ width: '16px', color: '#64748b' }}></i>
-                    AI & Web Development
-                  </Link>
-                  <Link 
-                    href="/services/mobile-app-development" 
-                    style={{
-                      display: 'block',
-                      padding: '8px 16px',
-                      color: '#64748b',
-                      textDecoration: 'none',
-                      fontSize: '14px',
-                      fontWeight: '400',
-                      borderRadius: '6px',
-                      marginBottom: '4px',
-                      transition: 'all 0.2s ease',
-                      backgroundColor: 'transparent'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f1f5f9';
-                      e.currentTarget.style.color = '#2563eb';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                      e.currentTarget.style.color = '#64748b';
-                    }}
-                    onClick={onClose}
-                  >
-                    <i className="fas fa-mobile-alt mr-2" style={{ width: '16px', color: '#64748b' }}></i>
-                    Mobile App Development
-                  </Link>
-                  <Link 
-                    href="/services/digital-marketing" 
-                    style={{
-                      display: 'block',
-                      padding: '8px 16px',
-                      color: '#64748b',
-                      textDecoration: 'none',
-                      fontSize: '14px',
-                      fontWeight: '400',
-                      borderRadius: '6px',
-                      marginBottom: '4px',
-                      transition: 'all 0.2s ease',
-                      backgroundColor: 'transparent'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.backgroundColor = '#f1f5f9';
-                      e.currentTarget.style.color = '#2563eb';
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.backgroundColor = 'transparent';
-                      e.currentTarget.style.color = '#64748b';
-                    }}
-                    onClick={onClose}
-                  >
-                    <i className="fas fa-chart-line mr-2" style={{ width: '16px', color: '#64748b' }}></i>
-                    Digital Marketing
-                  </Link>
+
+                  {[
+                    {
+                      title: 'AI Services',
+                      links: [
+                        { name: 'AI Services Provider', href: '/services/ai-services-provider' },
+                        { name: 'AI Consulting', href: '/services/ai-consulting' },
+                        { name: 'AI Integration', href: '/services/ai-integration' },
+                        { name: 'AI Development', href: '/services/ai-development' }
+                      ]
+                    },
+                    {
+                      title: 'Automation Services',
+                      links: [
+                        { name: 'Process Automation', href: '/services/automation-services/process-automation' },
+                        { name: 'Workflow Automation', href: '/services/automation-services/workflow-automation' },
+                        { name: 'AI-Powered Automation', href: '/services/automation-services/ai-powered-automation' },
+                        { name: 'Business Process Automation', href: '/services/automation-services/business-process-automation' }
+                      ]
+                    },
+                    {
+                      title: 'AI Support',
+                      links: [
+                        { name: '24/7 AI Support', href: '/services/ai-support' },
+                        { name: 'AI System Maintenance', href: '/services/ai-support/ai-system-maintenance' },
+                        { name: 'AI Infrastructure Support', href: '/services/ai-infrastructure' },
+                        { name: 'AI Monitoring', href: '/services/ai-support/ai-monitoring' }
+                      ]
+                    },
+                    {
+                      title: 'AI Solutions',
+                      links: [
+                        { name: 'AI Analytics', href: '/services/ai-analytics' },
+                        { name: 'AI Infrastructure', href: '/services/ai-infrastructure' },
+                        { name: 'Custom AI Solutions', href: '/services/ai-development' },
+                        { name: 'AI Training & Implementation', href: '/services/ai-consulting' }
+                      ]
+                    }
+                  ].map((section) => (
+                    <div key={section.title} style={{ marginBottom: '12px' }}>
+                      <div
+                        style={{
+                          padding: '6px 16px',
+                          color: '#1d4ed8',
+                          fontSize: '13px',
+                          fontWeight: '700',
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.04em'
+                        }}
+                      >
+                        {section.title}
+                      </div>
+                      {section.links.map((service) => (
+                        <Link
+                          key={service.name}
+                          href={service.href}
+                          style={{
+                            display: 'block',
+                            padding: '8px 16px',
+                            color: '#64748b',
+                            textDecoration: 'none',
+                            fontSize: '14px',
+                            fontWeight: '400',
+                            borderRadius: '6px',
+                            marginBottom: '4px',
+                            transition: 'all 0.2s ease',
+                            backgroundColor: 'transparent'
+                          }}
+                          onMouseEnter={(e) => {
+                            e.currentTarget.style.backgroundColor = '#f1f5f9';
+                            e.currentTarget.style.color = '#2563eb';
+                          }}
+                          onMouseLeave={(e) => {
+                            e.currentTarget.style.backgroundColor = 'transparent';
+                            e.currentTarget.style.color = '#64748b';
+                          }}
+                          onClick={onClose}
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
                 </div>
               )}
             </div>
