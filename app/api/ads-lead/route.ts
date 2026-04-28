@@ -33,13 +33,13 @@ export async function POST(request: NextRequest) {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: process.env.EMAIL_USER || 'noreply@smartwebrowse.com',
+          user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
           pass: process.env.EMAIL_PASS || 'your-email-password',
         },
       });
 
       const mailOptions = {
-        from: process.env.EMAIL_USER,
+        from: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
         to: 'sales@smartwebrowse.com',
         subject: `New Lead from Ads Landing Page - ${name}`,
         html: `
@@ -69,13 +69,13 @@ export async function POST(request: NextRequest) {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: process.env.EMAIL_USER || 'noreply@smartwebrowse.com',
+          user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
           pass: process.env.EMAIL_PASS || 'your-email-password',
         },
       });
 
       const clientMailOptions = {
-        from: `"Smartwebrowse India Private Limited Team" <${process.env.EMAIL_USER}>`,
+        from: `"Smartwebrowse India Private Limited Team" <${process.env.EMAIL_USER || 'norply@smartwebrowse.com'}>`,
         to: email,
         subject: 'We\'ve received your enquiry — Smartwebrowse India Private Limited Team',
         html: `

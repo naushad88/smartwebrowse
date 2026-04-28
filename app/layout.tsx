@@ -5,6 +5,7 @@ import ConditionalHeader from '@/components/ConditionalHeader';
 import ConditionalFooter from '@/components/ConditionalFooter';
 import { Analytics } from '@/components/Analytics';
 import { LanguageProvider } from '@/contexts/LanguageContext';
+import RelocationNoticePopup from '@/components/RelocationNoticePopup';
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -102,6 +103,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased`}>
         <LanguageProvider>
+          <RelocationNoticePopup />
           <ConditionalHeader />
           <main id="main" className="min-h-screen">
             {children}

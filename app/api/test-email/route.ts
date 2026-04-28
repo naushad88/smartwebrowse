@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
       port: 465,
       secure: true,
       auth: {
-        user: process.env.EMAIL_USER || 'noreply@smartwebrowse.com',
+        user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
         pass: process.env.EMAIL_PASS || 'your-email-password',
       },
     });
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
 
     // Send test email to customer
     const customerMailOptions = {
-      from: `"Smartwebrowse India Private Limited" <${process.env.EMAIL_USER}>`,
+      from: `"Smartwebrowse India Private Limited" <${process.env.EMAIL_USER || 'norply@smartwebrowse.com'}>`,
       to: customerEmail,
       subject: `🎉 TEST: Your NMI Plugin Order Confirmation #${orderId}`,
       html: `

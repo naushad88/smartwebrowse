@@ -7,7 +7,7 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true, // true for 465, false for other ports
   auth: {
-    user: process.env.EMAIL_USER || 'noreply@smartwebrowse.com',
+    user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
     pass: process.env.EMAIL_PASS || 'your-email-password',
   },
 });
@@ -78,7 +78,7 @@ export async function POST(request: NextRequest) {
     `;
 
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'noreply@smartwebrowse.com',
+      from: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
       to: 'sales@smartwebrowse.com',
       subject: `New Quote Request from ${name} - ${mainService}`,
       html: emailHtml,

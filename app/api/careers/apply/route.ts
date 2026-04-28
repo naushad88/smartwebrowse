@@ -7,7 +7,7 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true, // true for 465, false for other ports
   auth: {
-    user: process.env.EMAIL_USER || 'noreply@smartwebrowse.com',
+    user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
     pass: process.env.EMAIL_PASS || 'your-email-password',
   },
 });
@@ -151,7 +151,7 @@ Submitted: ${new Date().toLocaleString()}
 
     // Send email to HR
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'your-email@gmail.com',
+      from: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
       to: 'hr@smartwebrowse.com',
       subject: emailSubject,
       text: emailText,
@@ -213,7 +213,7 @@ Submitted: ${new Date().toLocaleString()}
     `;
 
     const candidateMailOptions = {
-      from: process.env.EMAIL_USER || 'your-email@gmail.com',
+      from: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
       to: email,
       subject: `Application Received - ${jobTitle} Position`,
       html: candidateEmailHtml,

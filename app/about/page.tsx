@@ -116,16 +116,16 @@ export default function AboutPage() {
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Smartwebrowse India Private Limited was founded in June 2013, establishing itself as a technology 
-                company with a strong foundation. In 2024, the company was acquired by visionary leaders 
+                company with a strong foundation. In April 2026, the company was acquired by visionary leaders 
                 <strong className="text-gray-900"> Ishpreet Kaur & Sheeba Parveen</strong>, marking a transformative moment in our journey.
               </p>
               <div className="mb-8 p-6 rounded-2xl bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 border-2 border-pink-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                   <i className="fas fa-handshake text-pink-600"></i>
-                  The 2024 Transformation
+                  The April 2026 Transformation
                 </h3>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  After acquiring Smartwebrowse in 2024, <strong className="text-gray-900">Ishpreet Kaur & Sheeba Parveen</strong> 
+                  After acquiring Smartwebrowse in April 2026, <strong className="text-gray-900">Ishpreet Kaur & Sheeba Parveen</strong> 
                   immediately recognized the potential to transform the company into an AI powerhouse. They strategically 
                   pivoted the entire organization towards AI technology, making it our core focus and competitive advantage.
                 </p>
