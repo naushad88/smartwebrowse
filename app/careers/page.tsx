@@ -3,18 +3,18 @@ import React from 'react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Careers | Join Smartwebrowse India Private Limited Team',
+  title: 'AI Careers | Join Praelix Technologies Team',
   description: 'Join our global AI team! Remote positions in AI development, automation engineering, AI consulting, machine learning & AI support. Competitive benefits & growth opportunities.',
   keywords: 'AI careers, AI engineer jobs, automation engineer, machine learning jobs, AI consultant, remote AI jobs',
   openGraph: {
-    title: 'AI Careers | Join Smartwebrowse India Private Limited Team',
+    title: 'AI Careers | Join Praelix Technologies Team',
     description: 'Join our global AI team! Remote positions in AI development, automation engineering, AI consulting, machine learning & AI support. Competitive benefits & growth opportunities.',
-    url: 'https://www.smartwebrowse.com/careers',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/careers',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/careers',
+    canonical: 'https://www.praelixtechnologies.com/careers',
   },
 };
 
@@ -169,7 +169,7 @@ export default function Careers() {
           <section className="mb-16">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-                Why Work With Smartwebrowse India Private Limited?
+                Why Work With Praelix Technologies?
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

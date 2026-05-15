@@ -16,7 +16,7 @@ declare global {
 
 export default function ConsultationPage() {
   const calendlyRef = useRef<HTMLDivElement>(null);
-  const calendlyUrl = 'https://calendly.com/contact-smartwebrowse/30min?back=1&month=2026-04';
+  const calendlyUrl = 'https://calendly.com/contact-praelixtechnologies/30min?back=1&month=2026-04';
   const [showCalendlyWidget, setShowCalendlyWidget] = useState(false);
 
   useEffect(() => {
@@ -94,14 +94,14 @@ export default function ConsultationPage() {
   return (
     <>
       <Head>
-        <title>Free AI Consultation | Schedule Expert Session - Smartwebrowse India Private Limited</title>
-        <meta name="description" content="Book your free 60-minute AI consultation with Smartwebrowse India Private Limited experts. Get expert advice on AI services, automation, and AI support solutions." />
+        <title>Free AI Consultation | Schedule Expert Session - Praelix Technologies</title>
+        <meta name="description" content="Book your free 60-minute AI consultation with Praelix Technologies experts. Get expert advice on AI services, automation, and AI support solutions." />
         <meta name="keywords" content="free AI consultation, AI consulting, automation advice, AI services, AI experts" />
-        <link rel="canonical" href="https://www.smartwebrowse.com/consultation" />
-        <meta property="og:title" content="Free AI Consultation | Schedule Expert Session - Smartwebrowse India Private Limited" />
-        <meta property="og:description" content="Book your free 60-minute AI consultation with Smartwebrowse India Private Limited experts. Get expert advice on AI services, automation, and AI support solutions." />
-        <meta property="og:url" content="https://www.smartwebrowse.com/consultation" />
-        <meta property="og:site_name" content="Smartwebrowse India Private Limited" />
+        <link rel="canonical" href="https://www.praelixtechnologies.com/consultation" />
+        <meta property="og:title" content="Free AI Consultation | Schedule Expert Session - Praelix Technologies" />
+        <meta property="og:description" content="Book your free 60-minute AI consultation with Praelix Technologies experts. Get expert advice on AI services, automation, and AI support solutions." />
+        <meta property="og:url" content="https://www.praelixtechnologies.com/consultation" />
+        <meta property="og:site_name" content="Praelix Technologies" />
         <meta property="og:type" content="website" />
         <style jsx global>{`
           [id*="cookie"], [class*="cookie"], [id*="consent"], [class*="consent"] {

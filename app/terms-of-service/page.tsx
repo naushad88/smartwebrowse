@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Smartwebrowse India Private Limited',
-  description: 'Terms of Service for Smartwebrowse India Private Limited - Read our terms and conditions for using our AI services in compliance with Indian laws.',
+  title: 'Terms of Service | Praelix Technologies',
+  description: 'Terms of Service for Praelix Technologies - Read our terms and conditions for using our AI services in compliance with Indian laws.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/terms-of-service',
+    canonical: 'https://www.praelixtechnologies.com/terms-of-service',
   },
 };
 
@@ -34,7 +34,7 @@ export default function TermsOfService() {
               Terms of Service
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Read our terms and conditions for using Smartwebrowse India Private Limited AI services. 
+              Read our terms and conditions for using Praelix Technologies AI services. 
               These terms govern your relationship with us and outline your rights and responsibilities.
             </p>
             <div className="mt-8 inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200">
@@ -66,12 +66,12 @@ export default function TermsOfService() {
             <div className="card-ai p-8 mb-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">1. Acceptance of Terms</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                By accessing and using the Smartwebrowse India Private Limited website and AI services, you accept and agree to be bound by the terms and provision of this agreement.
+                By accessing and using the Praelix Technologies website and AI services, you accept and agree to be bound by the terms and provision of this agreement.
               </p>
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Important Notice:</h3>
                 <p className="text-gray-800">
-                  These terms constitute a legally binding agreement between you and Smartwebrowse India Private Limited. 
+                  These terms constitute a legally binding agreement between you and Praelix Technologies. 
                   Please read them carefully before using our AI services.
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function TermsOfService() {
             <div className="card-ai p-8 mb-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">2. Description of Service</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Smartwebrowse India Private Limited provides comprehensive AI services including but not limited to:
+                Praelix Technologies provides comprehensive AI services including but not limited to:
               </p>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -157,7 +157,7 @@ export default function TermsOfService() {
             <div className="card-ai p-8 mb-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">4. Intellectual Property</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                All content, trademarks, and intellectual property on this website are owned by Smartwebrowse India Private Limited. 
+                All content, trademarks, and intellectual property on this website are owned by Praelix Technologies. 
                 You may not use, reproduce, or distribute our intellectual property without written permission.
               </p>
               <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-xl border border-indigo-200">
@@ -183,7 +183,7 @@ export default function TermsOfService() {
             <div className="card-ai p-8 mb-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">5. Limitation of Liability</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                Smartwebrowse India Private Limited shall not be liable for any indirect, incidental, special, consequential, or punitive damages 
+                Praelix Technologies shall not be liable for any indirect, incidental, special, consequential, or punitive damages 
                 resulting from your use of our AI services.
               </p>
               <div className="bg-gradient-to-br from-red-50 to-pink-50 p-6 rounded-xl border border-red-200">
@@ -202,7 +202,7 @@ export default function TermsOfService() {
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">6. Governing Law</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 These terms shall be governed by and construed in accordance with the laws of India, 
-                where Smartwebrowse India Private Limited is incorporated.
+                where Praelix Technologies is incorporated.
               </p>
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Legal Jurisdiction:</h3>
@@ -210,7 +210,7 @@ export default function TermsOfService() {
                   <p><strong>Country:</strong> India</p>
                   <p><strong>State:</strong> Punjab</p>
                   <p><strong>City:</strong> Mohali</p>
-                  <p><strong>Company:</strong> Smartwebrowse India Private Limited</p>
+                  <p><strong>Company:</strong> Praelix Technologies</p>
                 </div>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function TermsOfService() {
                     <i className="fas fa-envelope text-white text-lg"></i>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Legal Inquiries</h3>
-                  <p className="text-gray-700 text-sm">legal@smartwebrowse.com</p>
+                  <p className="text-gray-700 text-sm">legal@praelixtechnologies.com</p>
                 </div>
 
                 <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200">

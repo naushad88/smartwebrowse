@@ -14,11 +14,11 @@ interface CompanyInfo {
 
 export default function SettingsPage() {
   const [companyInfo, setCompanyInfo] = useState<CompanyInfo>({
-    companyName: 'Smartwebrowse India Private Limited',
+    companyName: 'Praelix Technologies',
     address: '123 Tech Street, Silicon Valley, CA 94000',
     phone: '+1 (555) 123-4567',
-    email: 'info@smartwebrowse.com',
-    website: 'https://www.smartwebrowse.com',
+    email: 'info@praelixtechnologies.com',
+    website: 'https://www.praelixtechnologies.com',
     foundedYear: '2020',
     description: 'Leading AI startup providing intelligent automation, AI services, and 24/7 AI support for business transformation.'
   });

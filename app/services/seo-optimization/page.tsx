@@ -3,17 +3,17 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'SEO Optimization Services | Smartwebrowse India Private Limited',
+  title: 'SEO Optimization Services | Praelix Technologies',
   description: 'Professional SEO optimization services including technical SEO, on-page optimization, and local SEO for business growth.',
   openGraph: {
-    title: 'SEO Optimization Services | Smartwebrowse India Private Limited',
+    title: 'SEO Optimization Services | Praelix Technologies',
     description: 'Professional SEO optimization services including technical SEO, on-page optimization, and local SEO for business growth.',
-    url: 'https://www.smartwebrowse.com/services/seo-optimization',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/seo-optimization',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/seo-optimization',
+    canonical: 'https://www.praelixtechnologies.com/services/seo-optimization',
   },
 };
 

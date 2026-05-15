@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Automation Services | Smartwebrowse India Private Limited',
+  title: 'Automation Services | Praelix Technologies',
   description: 'Intelligent process automation, workflow automation, and AI-powered business process automation services to streamline operations and boost efficiency.',
   keywords: 'Automation Services, Process Automation, Workflow Automation, AI-Powered Automation, Business Process Automation, Intelligent Automation',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/automation-services',
+    canonical: 'https://www.praelixtechnologies.com/services/automation-services',
   },
 };
 

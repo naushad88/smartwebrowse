@@ -1,9 +1,9 @@
-# Website Transformation Plan: Robust Softech → SWB (Smartwebrowse India Private Limited)
+# Website Transformation Plan: Praelix Technologies → Praelix Technologies (Praelix Technologies)
 
 ## 📋 Analysis Summary
 
 ### Current Website Structure
-- **Current Company**: Robust Softech Private Limited
+- **Current Company**: Praelix Technologies
 - **Current Focus**: General IT services (IAM, Cloud, Cybersecurity, DevOps, Web Development, Mobile, Digital Marketing)
 - **Technology Stack**: Next.js 15, React, TypeScript, Tailwind CSS, MongoDB
 - **Key Components**: Hero, Services Overview, Why Choose Us, About, Footer, Header
@@ -19,7 +19,7 @@
 8. Digital Marketing
 
 ### Target Transformation
-- **New Company**: Smartwebrowse India Private Limited (SWB)
+- **New Company**: Praelix Technologies
 - **New Focus**: AI Startup Company
 - **Primary Services**: 
   - AI Services Provider
@@ -37,7 +37,7 @@
 
 ### Phase 1: Core Branding & Metadata Updates
 1. ✅ **package.json** - Change project name from 'robust-softech' to 'swb'
-2. ✅ **app/layout.tsx** - Replace all "Robust Softech" with "Smartwebrowse India Private Limited" or "SWB" in:
+2. ✅ **app/layout.tsx** - Replace all "Praelix Technologies" with "Praelix Technologies" in:
    - Metadata titles and descriptions
    - OpenGraph tags
    - Twitter card metadata
@@ -61,7 +61,7 @@
    - **AI Analytics** - Data insights and predictive analytics
    - **AI Infrastructure** - Scalable AI infrastructure setup
 7. ✅ **components/Header.tsx** - Update:
-   - Logo alt text: "Smartwebrowse India Private Limited" or "SWB"
+   - Logo alt text: "Praelix Technologies"
    - Restructure Services navigation to prioritize AI services
    - Update company name references
 8. ✅ **components/Footer.tsx** - Update:
@@ -79,7 +79,7 @@
 
 ### Phase 3: Content Pages
 10. ✅ **app/about/page.tsx** - Complete rewrite:
-    - Company story: Smartwebrowse India Private Limited as AI startup
+    - Company story: Praelix Technologies as AI startup
     - Timeline: Focus on AI milestones
     - Values: Innovation, AI Excellence, Automation, Intelligence
     - Team: Update with AI-focused roles
@@ -119,7 +119,7 @@
 ### Phase 5: Metadata & SEO
 14. ✅ **All Service Pages** - Update metadata:
     - Canonical URLs (if domain changes)
-    - Titles: "Service Name | Smartwebrowse India Private Limited"
+    - Titles: "Service Name | Praelix Technologies"
     - Descriptions: AI-focused descriptions
     - Keywords: AI, automation, intelligent solutions
 15. ✅ **components/Stats.tsx** - Update statistics:
@@ -129,13 +129,13 @@
     - Clients served with AI solutions
 
 ### Phase 6: Final Cleanup
-16. ✅ **Global Search** - Find and replace all "Robust Softech" references:
+16. ✅ **Global Search** - Find and replace all "Praelix Technologies" references:
     - Use grep to find all occurrences
     - Update contact emails if needed
     - Update social media handles if changed
     - Update any hardcoded company names
 17. ✅ **README.md** - Update documentation:
-    - Document transformation to SWB
+    - Document transformation to Praelix Technologies
     - Update company information
     - Update project description
 
@@ -153,16 +153,16 @@
 - **Supporting**: AI Analytics, AI Infrastructure
 
 ### Brand Identity
-- **Company Name**: Smartwebrowse India Private Limited (SWB)
+- **Company Name**: Praelix Technologies
 - **Tagline**: "Intelligent Solutions for Modern Businesses" or "AI-Powered Automation & Support"
 - **Focus**: AI startup company specializing in automation and support services
 
 ---
 
 ## 📝 Notes
-- Logo file (`/images/Logo.png`) may need to be replaced with SWB logo
+- Logo file (`/images/Logo.png`) may need to be replaced with Praelix Technologies logo
 - Contact information should be verified and updated if changed
-- Social media links should be updated if SWB has different accounts
+- Social media links should be updated if Praelix Technologies has different accounts
 - Analytics IDs (Google Analytics, etc.) may need to be updated
 - All URLs and canonical links should reflect new branding
 
@@ -171,10 +171,15 @@
 ## ⚠️ Important Considerations
 1. **No Git Connection**: This is a copy folder, so changes won't affect the original repository
 2. **Local Development**: All changes are for local development and testing
-3. **Logo Replacement**: May need to add SWB logo to `/public/images/` folder
-4. **Content Review**: All transformed content should be reviewed for accuracy and alignment with SWB's actual services
+3. **Logo Replacement**: May need to add Praelix Technologies logo to `/public/images/` folder
+4. **Content Review**: All transformed content should be reviewed for accuracy and alignment with Praelix Technologies's actual services
 
 ---
 
 **Ready to proceed?** Please review this plan and confirm if you'd like me to start implementing these changes.
+
+
+
+
+
 

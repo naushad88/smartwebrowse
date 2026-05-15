@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Performance Testing | Smartwebrowse India Private Limited',
+  title: 'Performance Testing | Praelix Technologies',
   description: 'Comprehensive performance testing services to ensure your applications perform optimally under various load conditions.',
   keywords: 'Performance Testing, Load Testing, Stress Testing, JMeter, Performance Optimization, Scalability Testing',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/performance-testing',
+    canonical: 'https://www.praelixtechnologies.com/services/performance-testing',
   },
 };
 

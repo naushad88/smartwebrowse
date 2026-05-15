@@ -46,8 +46,8 @@ export default function Sidebar({ user }: SidebarProps) {
           {!isCollapsed && (
             <div className="flex items-center justify-center w-full">
               <Image
-                src="/images/Smartwebrowse-Logo.png"
-                alt="Smartwebrowse India Private Limited"
+                src="/images/praelixtech-logo.png"
+                alt="Praelix Technologies"
                 width={120}
                 height={45}
                 className="h-12 w-auto"

@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Help Desk Services | Smartwebrowse India Private Limited',
+  title: 'Help Desk Services | Praelix Technologies',
   description: 'Professional help desk support services with multi-channel support, ticket management, and user training. Resolve technical issues efficiently.',
   keywords: 'help desk services, IT support, ticket management, technical support, user assistance',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/help-desk-services',
+    canonical: 'https://www.praelixtechnologies.com/services/help-desk-services',
   },
 };
 

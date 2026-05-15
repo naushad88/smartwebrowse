@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | Smartwebrowse India Private Limited',
-  description: 'Cookie Policy for Smartwebrowse India Private Limited - Learn how we use cookies and similar technologies on our website in compliance with Indian laws.',
+  title: 'Cookie Policy | Praelix Technologies',
+  description: 'Cookie Policy for Praelix Technologies - Learn how we use cookies and similar technologies on our website in compliance with Indian laws.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/cookie-policy',
+    canonical: 'https://www.praelixtechnologies.com/cookie-policy',
   },
 };
 
@@ -252,7 +252,7 @@ export default function CookiePolicy() {
                     <i className="fas fa-envelope text-white text-lg"></i>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Cookie Inquiries</h3>
-                  <p className="text-gray-700 text-sm">privacy@smartwebrowse.com</p>
+                  <p className="text-gray-700 text-sm">privacy@praelixtechnologies.com</p>
                 </div>
 
                 <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200">

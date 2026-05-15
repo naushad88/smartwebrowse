@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'QA Process Optimization | Smartwebrowse India Private Limited',
+  title: 'QA Process Optimization | Praelix Technologies',
   description: 'Optimize your QA processes to improve software quality, reduce testing time, and increase development efficiency.',
   keywords: 'QA Process Optimization, Quality Assurance, Testing Process, QA Automation, Process Improvement, Software Quality',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/qa-process-optimization',
+    canonical: 'https://www.praelixtechnologies.com/services/qa-process-optimization',
   },
 };
 

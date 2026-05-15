@@ -3,17 +3,17 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'DevOps & Automation Services | Smartwebrowse India Private Limited',
+  title: 'DevOps & Automation Services | Praelix Technologies',
   description: 'Professional DevOps and automation services including CI/CD pipelines, infrastructure as code, and deployment automation.',
   openGraph: {
-    title: 'DevOps & Automation Services | Smartwebrowse India Private Limited',
+    title: 'DevOps & Automation Services | Praelix Technologies',
     description: 'Professional DevOps and automation services including CI/CD pipelines, infrastructure as code, and deployment automation.',
-    url: 'https://www.smartwebrowse.com/services/devops-automation-services',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/devops-automation-services',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/devops-automation-services',
+    canonical: 'https://www.praelixtechnologies.com/services/devops-automation-services',
   },
 };
 

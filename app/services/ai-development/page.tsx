@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Development Services | Custom AI Application Development | Smartwebrowse',
+  title: 'AI Development Services | Custom AI Application Development | Praelix Technologies',
   description: 'Custom AI application development, machine learning models, and intelligent solutions tailored to your business needs.',
   keywords: 'AI Development, Custom AI Applications, Machine Learning Development, AI Model Development, AI Solutions Development',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-development',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-development',
   },
 };
 

@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'CI/CD Pipeline Setup | Smartwebrowse India Private Limited',
+  title: 'CI/CD Pipeline Setup | Praelix Technologies',
   description: 'Professional CI/CD pipeline setup and automation services to streamline your development workflow and accelerate software delivery.',
   keywords: 'CI/CD Pipeline, Continuous Integration, Continuous Deployment, DevOps Automation, Pipeline Setup, Software Delivery',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ci-cd-pipeline',
+    canonical: 'https://www.praelixtechnologies.com/services/ci-cd-pipeline',
   },
 };
 

@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'RobustLMS - Complete Learning Platform | Portfolio | Smartwebrowse India Private Limited',
+  title: 'RobustLMS - Complete Learning Platform | Portfolio | Praelix Technologies',
   description: 'Comprehensive learning management system with AI-powered course creation, advanced analytics, multi-device learning, and enterprise-grade security for creators and learners worldwide.',
   keywords: 'LMS, learning management system, online education, AI-powered learning, course creation, educational technology',
   openGraph: {
-    title: 'RobustLMS - Complete Learning Platform | Portfolio | Smartwebrowse India Private Limited',
+    title: 'RobustLMS - Complete Learning Platform | Portfolio | Praelix Technologies',
     description: 'Comprehensive learning management system with AI-powered course creation, advanced analytics, multi-device learning, and enterprise-grade security for creators and learners worldwide.',
-    url: 'https://www.smartwebrowse.com/portfolio/robustlms-learning-platform',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/portfolio/robustlms-learning-platform',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {

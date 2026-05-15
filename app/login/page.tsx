@@ -56,7 +56,7 @@ export default function LoginPage() {
             Employee Management System
           </h2>
           <p className="text-blue-200 text-base font-medium">
-            Smartwebrowse India Private Limited - Internal Access Only
+            Praelix Technologies - Internal Access Only
           </p>
           <div className="mt-2 flex items-center justify-center space-x-2">
             <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
@@ -149,7 +149,7 @@ export default function LoginPage() {
         {/* Footer */}
         <div className="text-center">
           <p className="text-sm text-white/60 font-medium">
-            © 2025 Smartwebrowse India Private Limited. All rights reserved.
+            © 2025 Praelix Technologies. All rights reserved.
           </p>
           <div className="mt-2 flex items-center justify-center space-x-6 text-xs text-white/40">
             <span>🔒 SSL Encrypted</span>

@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Analytics & Reporting | Smartwebrowse India Private Limited',
+  title: 'Analytics & Reporting | Praelix Technologies',
   description: 'Comprehensive analytics and reporting services to track performance, gain insights, and make data-driven decisions for your business growth.',
   keywords: 'Analytics, Reporting, Data Analysis, Business Intelligence, Performance Tracking, Data Insights, KPI Monitoring',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/analytics-reporting',
+    canonical: 'https://www.praelixtechnologies.com/services/analytics-reporting',
   },
 };
 

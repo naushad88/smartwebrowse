@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Monitoring Services | Smartwebrowse India Private Limited',
+  title: 'AI Monitoring Services | Praelix Technologies',
   description: '24/7 AI system monitoring services to ensure optimal performance, detect issues early, and maintain system reliability.',
   keywords: 'AI Monitoring, AI System Monitoring, AI Performance Monitoring, AI Health Monitoring',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-support/ai-monitoring',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-support/ai-monitoring',
   },
 };
 

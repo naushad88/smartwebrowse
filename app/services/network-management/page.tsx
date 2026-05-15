@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Network Management Services | Smartwebrowse India Private Limited',
+  title: 'Network Management Services | Praelix Technologies',
   description: 'Comprehensive network infrastructure management and optimization services. Monitor, maintain, and secure your network for optimal performance.',
   keywords: 'network management, network monitoring, network security, infrastructure optimization, bandwidth management',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/network-management',
+    canonical: 'https://www.praelixtechnologies.com/services/network-management',
   },
 };
 

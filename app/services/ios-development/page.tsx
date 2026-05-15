@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'iOS Development Services | Smartwebrowse India Private Limited',
+  title: 'iOS Development Services | Praelix Technologies',
   description: 'Professional iOS app development services using Swift and SwiftUI. Create native iPhone and iPad applications with modern design and optimal performance.',
   keywords: 'iOS development, iPhone apps, iPad apps, Swift, SwiftUI, native iOS applications',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ios-development',
+    canonical: 'https://www.praelixtechnologies.com/services/ios-development',
   },
 };
 

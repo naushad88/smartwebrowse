@@ -80,14 +80,14 @@ export default function SendResumePage() {
   return (
     <>
       <Head>
-        <title>Send Resume | Join Smartwebrowse India Private Limited Team</title>
-        <meta name="description" content="Submit your resume to Smartwebrowse India Private Limited for future opportunities. We're always looking for talented IT professionals in cloud, cybersecurity & development." />
+        <title>Send Resume | Join Praelix Technologies Team</title>
+        <meta name="description" content="Submit your resume to Praelix Technologies for future opportunities. We're always looking for talented IT professionals in cloud, cybersecurity & development." />
         <meta name="keywords" content="submit resume, IT jobs, cloud careers, cybersecurity jobs, development opportunities" />
-        <link rel="canonical" href="https://www.smartwebrowse.com/send-resume" />
-        <meta property="og:title" content="Send Resume | Join Smartwebrowse India Private Limited Team" />
-        <meta property="og:description" content="Submit your resume to Smartwebrowse India Private Limited for future opportunities. We're always looking for talented IT professionals in cloud, cybersecurity & development." />
-        <meta property="og:url" content="https://www.smartwebrowse.com/send-resume" />
-        <meta property="og:site_name" content="Smartwebrowse India Private Limited" />
+        <link rel="canonical" href="https://www.praelixtechnologies.com/send-resume" />
+        <meta property="og:title" content="Send Resume | Join Praelix Technologies Team" />
+        <meta property="og:description" content="Submit your resume to Praelix Technologies for future opportunities. We're always looking for talented IT professionals in cloud, cybersecurity & development." />
+        <meta property="og:url" content="https://www.praelixtechnologies.com/send-resume" />
+        <meta property="og:site_name" content="Praelix Technologies" />
         <meta property="og:type" content="website" />
       </Head>
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">

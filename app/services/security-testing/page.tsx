@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Security Testing | Smartwebrowse India Private Limited',
+  title: 'Security Testing | Praelix Technologies',
   description: 'Comprehensive security testing services to identify vulnerabilities and ensure your applications are secure from cyber threats.',
   keywords: 'Security Testing, Penetration Testing, VAPT, Application Security, Cybersecurity Testing, Vulnerability Assessment',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/security-testing',
+    canonical: 'https://www.praelixtechnologies.com/services/security-testing',
   },
 };
 

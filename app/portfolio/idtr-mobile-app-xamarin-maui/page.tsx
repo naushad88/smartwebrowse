@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'IDTR Mobile App - XAMARIN-MAUI Platform | Portfolio | Smartwebrowse India Private Limited',
+  title: 'IDTR Mobile App - XAMARIN-MAUI Platform | Portfolio | Praelix Technologies',
   description: 'Irish Driving Test Routes (IDTR) mobile app developed using Xamarin-MAUI platform, providing Ireland\'s most accurate and up-to-date driving test routes with real-time navigation and progress tracking.',
   keywords: 'mobile app development, Xamarin, MAUI, driving test routes, Irish driving test, cross-platform development, mobile navigation',
   openGraph: {
-    title: 'IDTR Mobile App - XAMARIN-MAUI Platform | Portfolio | Smartwebrowse India Private Limited',
+    title: 'IDTR Mobile App - XAMARIN-MAUI Platform | Portfolio | Praelix Technologies',
     description: 'Irish Driving Test Routes (IDTR) mobile app developed using Xamarin-MAUI platform, providing Ireland\'s most accurate and up-to-date driving test routes with real-time navigation and progress tracking.',
-    url: 'https://www.smartwebrowse.com/portfolio/idtr-mobile-app-xamarin-maui',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/portfolio/idtr-mobile-app-xamarin-maui',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {

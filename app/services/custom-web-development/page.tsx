@@ -3,17 +3,17 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Custom Web Development | Smartwebrowse India Private Limited',
+  title: 'Custom Web Development | Praelix Technologies',
   description: 'Professional custom web development services including responsive design, eCommerce solutions, and modern web applications.',
   openGraph: {
-    title: 'Custom Web Development | Smartwebrowse India Private Limited',
+    title: 'Custom Web Development | Praelix Technologies',
     description: 'Professional custom web development services including responsive design, eCommerce solutions, and modern web applications.',
-    url: 'https://www.smartwebrowse.com/services/custom-web-development',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/custom-web-development',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/custom-web-development',
+    canonical: 'https://www.praelixtechnologies.com/services/custom-web-development',
   },
 };
 

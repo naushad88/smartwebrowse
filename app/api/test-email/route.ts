@@ -14,11 +14,11 @@ export async function POST(request: NextRequest) {
 
     // Create transporter for sending emails
     const transporter = nodemailer.createTransport({
-      host: 'mail.smartwebrowse.com',
+      host: 'mail.praelixtechnologies.com',
       port: 465,
       secure: true,
       auth: {
-        user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
+        user: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
         pass: process.env.EMAIL_PASS || 'your-email-password',
       },
     });
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
 
     // Send test email to customer
     const customerMailOptions = {
-      from: `"Smartwebrowse India Private Limited" <${process.env.EMAIL_USER || 'norply@smartwebrowse.com'}>`,
+      from: `"Praelix Technologies" <${process.env.EMAIL_USER || 'norply@praelixtechnologies.com'}>`,
       to: customerEmail,
       subject: `🎉 TEST: Your NMI Plugin Order Confirmation #${orderId}`,
       html: `
@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
           <div style="background-color: #fff7ed; border-left: 4px solid #f59e0b; padding: 20px; margin: 20px 0;">
             <h3 style="color: #92400e; margin-top: 0;">💡 Need Help?</h3>
             <p>If you have any questions or need assistance, our support team is here to help!</p>
-            <p>📧 Email: <a href="mailto:nmi-support@smartwebrowse.com">nmi-support@smartwebrowse.com</a></p>
+            <p>📧 Email: <a href="mailto:nmi-support@praelixtechnologies.com">nmi-support@praelixtechnologies.com</a></p>
             <p>⏰ Response Time: Within 12 hours</p>
           </div>
 
@@ -73,7 +73,7 @@ export async function POST(request: NextRequest) {
             <p style="color: #6b7280; margin: 0; font-size: 14px;">
               This is a <strong>TEST</strong> email to verify email functionality.<br>
               This is an automated confirmation email.<br>
-              © ${new Date().getFullYear()} Smartwebrowse India Private Limited. All rights reserved.
+              © ${new Date().getFullYear()} Praelix Technologies. All rights reserved.
             </p>
           </div>
         </div>

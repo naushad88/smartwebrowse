@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Business Process Automation Services | Smartwebrowse India Private Limited',
+  title: 'Business Process Automation Services | Praelix Technologies',
   description: 'End-to-end business process automation services to streamline operations, reduce costs, and improve efficiency across your organization.',
   keywords: 'Business Process Automation, BPA, End-to-End Automation, Enterprise Automation',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/automation-services/business-process-automation',
+    canonical: 'https://www.praelixtechnologies.com/services/automation-services/business-process-automation',
   },
 };
 

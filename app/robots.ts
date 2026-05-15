@@ -35,8 +35,8 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: 'https://www.smartwebrowse.com/sitemap.xml',
-    host: 'https://www.smartwebrowse.com',
+    sitemap: 'https://www.praelixtechnologies.com/sitemap.xml',
+    host: 'https://www.praelixtechnologies.com',
   }
 }
 

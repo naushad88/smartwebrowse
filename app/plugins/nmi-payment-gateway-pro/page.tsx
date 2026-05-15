@@ -93,7 +93,7 @@ export default function NMIPluginPage() {
     },
     {
       question: 'What support is included?',
-      answer: '24-hour email support via nmi-support@smartwebrowse.com including installation, configuration, and troubleshooting assistance.',
+      answer: '24-hour email support via nmi-support@praelixtechnologies.com including installation, configuration, and troubleshooting assistance.',
     },
   ];
 
@@ -124,8 +124,8 @@ export default function NMIPluginPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <Image
-                src="/images/Smartwebrowse-Logo.png"
-                alt="Smartwebrowse India Private Limited Logo"
+                src="/images/praelixtech-logo.png"
+                alt="Praelix Technologies"
                 width={200}
                 height={60}
                 className="mx-auto mb-6"
@@ -308,7 +308,7 @@ export default function NMIPluginPage() {
                         </p>
                         
                         <p className="text-green-700 leading-relaxed mb-6">
-                          Built by <strong>Smartwebrowse India Private Limited Private Limited</strong>, this plugin offers enterprise-level features including PCI DSS compliance via Collect.js tokenization, WooCommerce Blocks support, HPOS compatibility, refund support, and comprehensive debug logging. Whether you're running a small online store or a large e-commerce platform, our NMI gateway provides the reliability and security your business needs.
+                          Built by <strong>Praelix Technologies Private Limited</strong>, this plugin offers enterprise-level features including PCI DSS compliance via Collect.js tokenization, WooCommerce Blocks support, HPOS compatibility, refund support, and comprehensive debug logging. Whether you're running a small online store or a large e-commerce platform, our NMI gateway provides the reliability and security your business needs.
                         </p>
                       </div>
                     </div>
@@ -530,10 +530,10 @@ export default function NMIPluginPage() {
                         <h4 className="text-xl font-semibold text-blue-800 mb-3">Email Support</h4>
                         <p className="text-blue-700 mb-4">24-hour response time for all your questions and technical issues.</p>
                         <a
-                          href="mailto:nmi-support@smartwebrowse.com"
+                          href="mailto:nmi-support@praelixtechnologies.com"
                           className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium"
                         >
-                          nmi-support@smartwebrowse.com
+                          nmi-support@praelixtechnologies.com
                           <i className="fas fa-external-link-alt ml-2 text-sm"></i>
                         </a>
                       </div>
@@ -561,7 +561,7 @@ export default function NMIPluginPage() {
                         <h4 className="text-xl font-semibold text-orange-800 mb-3">Technical Support</h4>
                         <p className="text-orange-700 mb-4">Expert assistance with setup, configuration, and troubleshooting.</p>
                         <a
-                          href="mailto:nmi-support@smartwebrowse.com"
+                          href="mailto:nmi-support@praelixtechnologies.com"
                           className="inline-flex items-center text-orange-600 hover:text-orange-700 font-medium"
                         >
                           Get Support

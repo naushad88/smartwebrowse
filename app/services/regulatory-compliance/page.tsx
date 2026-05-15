@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Regulatory Compliance Support | Smartwebrowse India Private Limited',
+  title: 'Regulatory Compliance Support | Praelix Technologies',
   description: 'Ensure your cloud infrastructure meets the highest regulatory standards with our HIPAA, SOX, and FedRAMP compliance support.',
   keywords: 'HIPAA, SOX, FedRAMP, Compliance, Regulatory, Cloud Security, Audit, Governance',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/regulatory-compliance',
+    canonical: 'https://www.praelixtechnologies.com/services/regulatory-compliance',
   },
 };
 

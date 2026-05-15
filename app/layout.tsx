@@ -5,8 +5,6 @@ import ConditionalHeader from '@/components/ConditionalHeader';
 import ConditionalFooter from '@/components/ConditionalFooter';
 import { Analytics } from '@/components/Analytics';
 import { LanguageProvider } from '@/contexts/LanguageContext';
-import RelocationNoticePopup from '@/components/RelocationNoticePopup';
-
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
@@ -22,43 +20,43 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    default: 'SWB | Smartwebrowse India Private Limited - AI Services, Automation & Support',
-    template: '%s | Smartwebrowse India Private Limited'
+    default: 'Praelix Technologies - AI Services, Automation & Support',
+    template: '%s | Praelix Technologies'
   },
-  description: 'Smartwebrowse India Private Limited (SWB) is a leading AI startup providing intelligent automation, AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI consulting to transform businesses with intelligent technology.',
-  keywords: ['AI Services', 'Automation Services', 'AI Support', 'AI Consulting', 'AI Integration', 'AI Development', 'Artificial Intelligence', 'Business Automation', 'AI Solutions', 'Smartwebrowse'],
-  authors: [{ name: 'Smartwebrowse India Private Limited' }],
-  creator: 'Smartwebrowse India Private Limited',
-  publisher: 'Smartwebrowse India Private Limited',
+  description: 'Praelix Technologies is a leading AI startup providing intelligent automation, AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI consulting to transform businesses with intelligent technology.',
+  keywords: ['AI Services', 'Automation Services', 'AI Support', 'AI Consulting', 'AI Integration', 'AI Development', 'Artificial Intelligence', 'Business Automation', 'AI Solutions', 'Praelix Technologies'],
+  authors: [{ name: 'Praelix Technologies' }],
+  creator: 'Praelix Technologies',
+  publisher: 'Praelix Technologies',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.smartwebrowse.com'),
+  metadataBase: new URL('https://www.praelixtechnologies.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.smartwebrowse.com',
-    siteName: 'Smartwebrowse India Private Limited - AI Startup Company | AI Services & Automation',
-    title: 'SWB | Smartwebrowse India Private Limited - AI Services, Automation & Support',
-    description: 'Smartwebrowse India Private Limited (SWB) is a leading AI startup providing intelligent automation, AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI consulting to transform businesses with intelligent technology.',
+    url: 'https://www.praelixtechnologies.com',
+    siteName: 'Praelix Technologies - AI Startup Company | AI Services & Automation',
+    title: 'Praelix Technologies - AI Services, Automation & Support',
+    description: 'Praelix Technologies is a leading AI startup providing intelligent automation, AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI consulting to transform businesses with intelligent technology.',
     images: [
       {
-        url: '/images/Smartwebrowse-Logo.png',
+        url: '/images/praelixtech-logo.png',
         width: 210,
         height: 61,
-        alt: 'Smartwebrowse India Private Limited Logo',
+        alt: 'Praelix Technologies Logo',
       },
     ],
   },
   twitter: {
     card: 'summary',
-    site: '@smartwebrowse',
-    creator: '@smartwebrowse',
-    title: 'SWB | Smartwebrowse India Private Limited - AI Services, Automation & Support',
-    description: 'Smartwebrowse India Private Limited (SWB) is a leading AI startup providing intelligent automation, AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI consulting to transform businesses with intelligent technology.',
-    images: ['/images/Smartwebrowse-Logo.png'],
+    site: '@praelixtechnologies',
+    creator: '@praelixtechnologies',
+    title: 'Praelix Technologies - AI Services, Automation & Support',
+    description: 'Praelix Technologies is a leading AI startup providing intelligent automation, AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI consulting to transform businesses with intelligent technology.',
+    images: ['/images/praelixtech-logo.png'],
   },
   robots: {
     index: true,
@@ -76,11 +74,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/images/favicon.png', sizes: '32x32', type: 'image/png' },
-      { url: '/images/favicon.ico', sizes: 'any' },
+      { url: '/images/praelixtech-icon.png', sizes: '32x32', type: 'image/png' },
+      { url: '/images/praelixtech-icon.png', sizes: '192x192', type: 'image/png' },
     ],
-    shortcut: '/images/favicon.ico',
-    apple: '/images/favicon.png',
+    shortcut: '/images/praelixtech-icon.png',
+    apple: '/images/praelixtech-icon.png',
   },
 };
 
@@ -103,7 +101,6 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} antialiased`}>
         <LanguageProvider>
-          <RelocationNoticePopup />
           <ConditionalHeader />
           <main id="main" className="min-h-screen">
             {children}

@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Analytics Services | Predictive Analytics & Business Intelligence | Smartwebrowse',
+  title: 'AI Analytics Services | Predictive Analytics & Business Intelligence | Praelix Technologies',
   description: 'Advanced AI-powered analytics, predictive insights, and data-driven decision making to unlock business intelligence and drive informed decisions.',
   keywords: 'AI Analytics, Predictive Analytics, Business Intelligence, AI-Powered Analytics, Data Analytics, AI Insights',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-analytics',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-analytics',
   },
 };
 

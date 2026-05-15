@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'API Reference | Smartwebrowse India Private Limited',
-  description: 'Technical API documentation and code examples for integrating with Smartwebrowse India Private Limited AI services.',
+  title: 'API Reference | Praelix Technologies',
+  description: 'Technical API documentation and code examples for integrating with Praelix Technologies AI services.',
 };
 
 export default function APIReference() {

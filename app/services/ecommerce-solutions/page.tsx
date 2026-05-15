@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'eCommerce Solutions | Smartwebrowse India Private Limited',
+  title: 'eCommerce Solutions | Praelix Technologies',
   description: 'Custom eCommerce solutions to help you build, optimize, and scale your online business with modern technology and best practices.',
   keywords: 'eCommerce Solutions, Online Store, Shopping Cart, Payment Gateway, eCommerce Development, Digital Commerce',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ecommerce-solutions',
+    canonical: 'https://www.praelixtechnologies.com/services/ecommerce-solutions',
   },
 };
 

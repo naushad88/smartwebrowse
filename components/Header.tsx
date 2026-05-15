@@ -2,22 +2,21 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import BrandLogo from './BrandLogo';
 import MobileMenu from './MobileMenu';
+import {
+  HEADER_BAR_CLASS,
+  headerNavLinkClass,
+  headerNavButtonClass,
+  headerCtaOutlineClass,
+  headerCtaPrimaryClass,
+  headerMobileMenuBtnClass,
+  headerInlineStyle,
+} from '@/lib/header-theme';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
@@ -112,32 +111,15 @@ const Header = () => {
 
   return (
     <>
-      {/* Force header to stay on top for mobile */}
-      <style jsx>{`
-        header {
-          position: fixed !important;
-          top: 0 !important;
-          left: 0 !important;
-          right: 0 !important;
-          z-index: 99999 !important;
-          background-color: white !important;
-        }
-      `}</style>
-      <header className={`fixed top-0 left-0 right-0 z-[99999] transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/90 backdrop-blur-md shadow-md'
-      }`}>
+      <header
+        className={`fixed top-0 left-0 right-0 z-[99999] ${HEADER_BAR_CLASS}`}
+        style={headerInlineStyle}
+      >
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20 relative">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image
-                  src="/images/Smartwebrowse-Logo.png"
-              alt="Smartwebrowse India Private Limited"
-              width={210}
-              height={61}
-              className="h-12 w-auto"
-              priority
-            />
+            <BrandLogo priority />
           </Link>
 
           {/* Desktop Navigation */}
@@ -150,7 +132,7 @@ const Header = () => {
                     onMouseEnter={handleDropdownMouseEnter}
                     onMouseLeave={handleDropdownMouseLeave}
                   >
-                    <button className="flex items-center space-x-1 text-gray-800 hover:text-blue-600 transition-colors duration-200 font-semibold">
+                    <button className={headerNavButtonClass}>
                       <span>{item.name}</span>
                       <i className="fa-solid fa-chevron-down text-xs"></i>
                     </button>
@@ -230,7 +212,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className="text-gray-800 hover:text-blue-600 transition-colors duration-200 font-semibold"
+                    className={headerNavLinkClass}
                   >
                     {item.name}
                   </Link>
@@ -241,23 +223,22 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link href="/consultation" className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold px-6 py-2.5 rounded-xl border-2 border-blue-600 hover:bg-blue-50 transition-all duration-300">
+            <Link href="/consultation" className={headerCtaOutlineClass}>
               Schedule Consultation
             </Link>
-            <Link href="/get-a-quote" className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <Link href="/get-a-quote" className={headerCtaPrimaryClass}>
               Request a Quote
             </Link>
           </div>
 
-          {/* Mobile Menu Button - Only visible on mobile */}
+          {/* Mobile menu — hidden on desktop (lg+) */}
           <button
+            type="button"
             onClick={toggleMenu}
-            className="lg:hidden p-3 rounded-lg text-white hover:text-white hover:bg-blue-700 transition-all duration-200 bg-gradient-to-r from-blue-600 to-indigo-600 shadow-md border border-blue-700"
+            className={`header-mobile-menu-btn ${headerMobileMenuBtnClass}`}
             aria-label="Toggle menu"
-            style={{ zIndex: 9999 }}
           >
-            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
-            <span className="ml-2 text-sm">Menu</span>
+            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`} aria-hidden />
           </button>
         </div>
       </div>

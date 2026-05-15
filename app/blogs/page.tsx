@@ -5,18 +5,18 @@ import Pagination from '@/components/Pagination';
 import type { BlogPost } from '@/types';
 
 export const metadata: Metadata = {
-  title: 'AI Blog | AI Services, Automation & AI Insights - Smartwebrowse India Private Limited',
+  title: 'AI Blog | AI Services, Automation & AI Insights - Praelix Technologies',
   description: 'Stay updated with expert insights on AI services, automation, AI integration & AI transformation. Latest AI trends & best practices.',
   keywords: 'AI blog, AI services, automation insights, AI integration best practices, AI transformation',
   openGraph: {
     title: 'AI Blog | AI Services, Automation & AI Insights',
     description: 'Stay updated with expert insights on AI services, automation, AI integration & AI transformation. Latest AI trends & best practices.',
-    url: 'https://www.smartwebrowse.com/blogs',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/blogs',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/blogs',
+    canonical: 'https://www.praelixtechnologies.com/blogs',
   },
 };
 
@@ -35,7 +35,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   
   try {
     // Fetch posts from MongoDB API
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.smartwebrowse.com';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.praelixtechnologies.com';
     const response = await fetch(`${baseUrl}/api/blogs?page=${page}&per_page=12`, {
       cache: 'no-store' // Disable caching temporarily to fix featured images
     });
@@ -90,7 +90,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         content: "AI-powered automation is transforming how businesses operate...",
         date: "2024-12-15T10:00:00Z",
         modified: "2024-12-15T10:00:00Z",
-        author: { name: "Smartwebrowse India Private Limited Team", id: 1 },
+        author: { name: "Praelix Technologies Team", id: 1 },
         featuredImage: undefined,
         categories: [{ id: 1, name: "AI Services", slug: "ai-services" }],
         tags: [{ id: 1, name: "Automation", slug: "automation" }]
@@ -103,7 +103,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         content: "Intelligent AI support systems are revolutionizing customer service...",
         date: "2024-12-14T10:00:00Z",
         modified: "2024-12-14T10:00:00Z",
-        author: { name: "Smartwebrowse India Private Limited Team", id: 1 },
+        author: { name: "Praelix Technologies Team", id: 1 },
         featuredImage: undefined,
         categories: [{ id: 2, name: "AI Support", slug: "ai-support" }],
         tags: [{ id: 2, name: "AI Support", slug: "ai-support" }]
@@ -116,7 +116,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         content: "AI analytics is transforming how businesses analyze data...",
         date: "2024-12-13T10:00:00Z",
         modified: "2024-12-13T10:00:00Z",
-        author: { name: "Smartwebrowse India Private Limited Team", id: 1 },
+        author: { name: "Praelix Technologies Team", id: 1 },
         featuredImage: undefined,
         categories: [{ id: 3, name: "AI Analytics", slug: "ai-analytics" }],
         tags: [{ id: 3, name: "AI Analytics", slug: "ai-analytics" }]

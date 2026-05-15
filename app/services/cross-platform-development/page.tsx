@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Cross-Platform Development Services | Smartwebrowse India Private Limited',
+  title: 'Cross-Platform Development Services | Praelix Technologies',
   description: 'Professional cross-platform mobile app development using React Native, Flutter, and .NET MAUI. Create apps for iOS and Android with a single codebase.',
   keywords: 'cross-platform development, React Native, Flutter, .NET MAUI, mobile apps, iOS, Android',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/cross-platform-development',
+    canonical: 'https://www.praelixtechnologies.com/services/cross-platform-development',
   },
 };
 

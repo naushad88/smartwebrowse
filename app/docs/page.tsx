@@ -51,14 +51,14 @@ export default function Documentation() {
   return (
     <>
       <Head>
-        <title>Documentation & Guides | Smartwebrowse India Private Limited</title>
+        <title>Documentation & Guides | Praelix Technologies</title>
         <meta name="description" content="Comprehensive documentation and guides for AI services, automation, and AI solutions. Get started with our expert implementation guides." />
         <meta name="keywords" content="AI documentation, AI setup guides, automation guides, AI integration documentation, implementation guides" />
-        <link rel="canonical" href="https://www.smartwebrowse.com/docs" />
-        <meta property="og:title" content="Documentation & Guides | Smartwebrowse India Private Limited" />
+        <link rel="canonical" href="https://www.praelixtechnologies.com/docs" />
+        <meta property="og:title" content="Documentation & Guides | Praelix Technologies" />
         <meta property="og:description" content="Comprehensive documentation and guides for AI services, automation, and AI solutions. Get started with our expert implementation guides." />
-        <meta property="og:url" content="https://www.smartwebrowse.com/docs" />
-        <meta property="og:site_name" content="Smartwebrowse India Private Limited" />
+        <meta property="og:url" content="https://www.praelixtechnologies.com/docs" />
+        <meta property="og:site_name" content="Praelix Technologies" />
         <meta property="og:type" content="website" />
       </Head>
       

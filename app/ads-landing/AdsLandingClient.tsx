@@ -434,7 +434,7 @@ export default function AdsLandingClient() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Why Choose Smartwebrowse India Private Limited?
+                Why Choose Praelix Technologies?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 We combine deep technical expertise with business acumen to deliver 
@@ -519,7 +519,7 @@ export default function AdsLandingClient() {
               Client Video Testimonials
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Watch our clients share their experience working with Smartwebrowse India Private Limited and the results we've delivered for their businesses.
+              Watch our clients share their experience working with Praelix Technologies and the results we've delivered for their businesses.
             </p>
           </div>
           
@@ -791,7 +791,7 @@ export default function AdsLandingClient() {
             Ready to Get Started?
           </h3>
           <p className="text-lg text-gray-300 mb-6">
-            Join 500+ businesses that trust Smartwebrowse India Private Limited for their IT needs
+            Join 500+ businesses that trust Praelix Technologies for their IT needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 

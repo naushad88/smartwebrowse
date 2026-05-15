@@ -3,17 +3,17 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Cloud Services | Smartwebrowse India Private Limited',
+  title: 'Cloud Services | Praelix Technologies',
   description: 'Comprehensive cloud solutions including AWS, Azure, Google Cloud services, cloud migration, and scalable architecture for startups and enterprises.',
   openGraph: {
-    title: 'Cloud Services | Smartwebrowse India Private Limited',
+    title: 'Cloud Services | Praelix Technologies',
     description: 'Comprehensive cloud solutions including AWS, Azure, Google Cloud services, cloud migration, and scalable architecture for startups and enterprises.',
-    url: 'https://www.smartwebrowse.com/services/cloud-services',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/cloud-services',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/cloud-services',
+    canonical: 'https://www.praelixtechnologies.com/services/cloud-services',
   },
 };
 

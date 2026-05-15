@@ -78,7 +78,7 @@ export default function EmployerDashboardLayout({
       <footer className="bg-white border-t border-gray-200 py-4 px-6 flex-shrink-0">
         <div className="text-center">
           <p className="text-sm text-gray-500">
-            © 2025 Smartwebrowse India Private Limited. All rights reserved.
+            © 2025 Praelix Technologies. All rights reserved.
           </p>
         </div>
       </footer>

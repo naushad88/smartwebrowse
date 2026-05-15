@@ -29,18 +29,18 @@ export async function POST(request: NextRequest) {
     // Send email notification to admin
     try {
       const transporter = nodemailer.createTransport({
-        host: 'mail.smartwebrowse.com',
+        host: 'mail.praelixtechnologies.com',
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
+          user: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
           pass: process.env.EMAIL_PASS || 'your-email-password',
         },
       });
 
       const mailOptions = {
-        from: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
-        to: 'sales@smartwebrowse.com',
+        from: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
+        to: 'sales@praelixtechnologies.com',
         subject: `New Lead from Ads Landing Page - ${name}`,
         html: `
           <h2>New Lead from Ads Landing Page</h2>
@@ -65,33 +65,33 @@ export async function POST(request: NextRequest) {
     // Send confirmation email to client
     try {
       const transporter = nodemailer.createTransport({
-        host: 'mail.smartwebrowse.com',
+        host: 'mail.praelixtechnologies.com',
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-          user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
+          user: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
           pass: process.env.EMAIL_PASS || 'your-email-password',
         },
       });
 
       const clientMailOptions = {
-        from: `"Smartwebrowse India Private Limited Team" <${process.env.EMAIL_USER || 'norply@smartwebrowse.com'}>`,
+        from: `"Praelix Technologies Team" <${process.env.EMAIL_USER || 'norply@praelixtechnologies.com'}>`,
         to: email,
-        subject: 'We\'ve received your enquiry — Smartwebrowse India Private Limited Team',
+        subject: 'We\'ve received your enquiry — Praelix Technologies Team',
         html: `
           <!DOCTYPE html>
           <html lang="en">
           <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Thank You - Smartwebrowse India Private Limited</title>
+            <title>Thank You - Praelix Technologies</title>
           </head>
           <body style="margin: 0; padding: 20px; background-color: #f8fafc; font-family: Arial, sans-serif;">
             <div style="max-width: 800px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
               
               <!-- Header -->
               <div style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); padding: 40px 30px; text-align: center;">
-                <h1 style="color: white; margin: 0 0 10px; font-size: 28px; font-weight: 700;">Smartwebrowse India Private Limited Private Limited</h1>
+                <h1 style="color: white; margin: 0 0 10px; font-size: 28px; font-weight: 700;">Praelix Technologies Private Limited</h1>
                 <p style="color: rgba(255, 255, 255, 0.9); margin: 0; font-size: 14px; font-weight: 500;">CIN: U72900CH2013PTC034540</p>
               </div>
               
@@ -122,7 +122,7 @@ export async function POST(request: NextRequest) {
                   <table role="presentation" style="width: 100%; border-collapse: collapse;">
                     <tr>
                       <td style="width: 33.33%; padding: 5px; vertical-align: top;">
-                        <a href="https://www.smartwebrowse.com/services/cybersecurity" style="text-decoration: none; display: block;">
+                        <a href="https://www.praelixtechnologies.com/services/cybersecurity" style="text-decoration: none; display: block;">
                           <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; text-align: center; border: 1px solid #e2e8f0;">
                             <div style="font-size: 20px; margin-bottom: 5px;">🔒</div>
                             <div style="color: #1e40af; font-size: 14px; font-weight: 600;">Cybersecurity & IAM</div>
@@ -130,7 +130,7 @@ export async function POST(request: NextRequest) {
                         </a>
                       </td>
                       <td style="width: 33.33%; padding: 5px; vertical-align: top;">
-                        <a href="https://www.smartwebrowse.com/services/cloud" style="text-decoration: none; display: block;">
+                        <a href="https://www.praelixtechnologies.com/services/cloud" style="text-decoration: none; display: block;">
                           <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; text-align: center; border: 1px solid #e2e8f0;">
                             <div style="font-size: 20px; margin-bottom: 5px;">☁️</div>
                             <div style="color: #1e40af; font-size: 14px; font-weight: 600;">Cloud Services</div>
@@ -138,7 +138,7 @@ export async function POST(request: NextRequest) {
                         </a>
                       </td>
                       <td style="width: 33.33%; padding: 5px; vertical-align: top;">
-                        <a href="https://www.smartwebrowse.com/services/web-development" style="text-decoration: none; display: block;">
+                        <a href="https://www.praelixtechnologies.com/services/web-development" style="text-decoration: none; display: block;">
                           <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; text-align: center; border: 1px solid #e2e8f0;">
                             <div style="font-size: 20px; margin-bottom: 5px;">💻</div>
                             <div style="color: #1e40af; font-size: 14px; font-weight: 600;">AI & Web Development</div>
@@ -148,7 +148,7 @@ export async function POST(request: NextRequest) {
                     </tr>
                     <tr>
                       <td style="width: 33.33%; padding: 5px; vertical-align: top;">
-                        <a href="https://www.smartwebrowse.com/services/devops" style="text-decoration: none; display: block;">
+                        <a href="https://www.praelixtechnologies.com/services/devops" style="text-decoration: none; display: block;">
                           <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; text-align: center; border: 1px solid #e2e8f0;">
                             <div style="font-size: 20px; margin-bottom: 5px;">⚙️</div>
                             <div style="color: #1e40af; font-size: 14px; font-weight: 600;">DevOps & Automation</div>
@@ -156,7 +156,7 @@ export async function POST(request: NextRequest) {
                         </a>
                       </td>
                       <td style="width: 33.33%; padding: 5px; vertical-align: top;">
-                        <a href="https://www.smartwebrowse.com/services/mobile" style="text-decoration: none; display: block;">
+                        <a href="https://www.praelixtechnologies.com/services/mobile" style="text-decoration: none; display: block;">
                           <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; text-align: center; border: 1px solid #e2e8f0;">
                             <div style="font-size: 20px; margin-bottom: 5px;">📱</div>
                             <div style="color: #1e40af; font-size: 14px; font-weight: 600;">Mobile Development</div>
@@ -164,7 +164,7 @@ export async function POST(request: NextRequest) {
                         </a>
                       </td>
                       <td style="width: 33.33%; padding: 5px; vertical-align: top;">
-                        <a href="https://www.smartwebrowse.com/services/digital-marketing" style="text-decoration: none; display: block;">
+                        <a href="https://www.praelixtechnologies.com/services/digital-marketing" style="text-decoration: none; display: block;">
                           <div style="background-color: #f8fafc; padding: 15px; border-radius: 6px; text-align: center; border: 1px solid #e2e8f0;">
                             <div style="font-size: 20px; margin-bottom: 5px;">📈</div>
                             <div style="color: #1e40af; font-size: 14px; font-weight: 600;">Digital Marketing</div>
@@ -201,7 +201,7 @@ export async function POST(request: NextRequest) {
                       <td style="width: 25%; padding: 10px; text-align: center; vertical-align: top;">
                         <div style="color: white;">
                           <div style="font-weight: 600; margin-bottom: 5px; font-size: 14px;">📧 Email</div>
-                          <a href="mailto:contact@smartwebrowse.com" style="color: white; text-decoration: none; font-size: 14px; font-weight: 500;">contact@smartwebrowse.com</a>
+                          <a href="mailto:contact@praelixtechnologies.com" style="color: white; text-decoration: none; font-size: 14px; font-weight: 500;">contact@praelixtechnologies.com</a>
                         </div>
                       </td>
                     </tr>
@@ -236,7 +236,7 @@ export async function POST(request: NextRequest) {
                 <!-- Closing -->
                 <div style="text-align: center; margin-bottom: 20px;">
                   <p style="color: #4b5563; font-size: 16px; margin: 0 0 10px;">Best regards,</p>
-                  <p style="color: #1e40af; font-size: 16px; font-weight: 600; margin: 0 0 5px;">The Smartwebrowse India Private Limited Team</p>
+                  <p style="color: #1e40af; font-size: 16px; font-weight: 600; margin: 0 0 5px;">The Praelix Technologies Team</p>
                   <p style="color: #64748b; font-size: 12px; font-style: italic; margin: 0;">
                     Trusted IT Solutions Partner for Businesses in the USA, Japan, Ireland & Beyond
                   </p>
@@ -247,9 +247,9 @@ export async function POST(request: NextRequest) {
               <!-- Footer -->
               <div style="background-color: #f8fafc; padding: 20px; text-align: center; border-top: 1px solid #e2e8f0;">
                 <div style="margin-bottom: 10px;">
-                  <a href="https://www.smartwebrowse.com" style="color: #1e40af; text-decoration: none; font-weight: 600; font-size: 14px; margin: 0 10px;">Website</a>
-                  <a href="https://www.smartwebrowse.com/portfolio" style="color: #1e40af; text-decoration: none; font-weight: 600; font-size: 14px; margin: 0 10px;">Portfolio</a>
-                  <a href="https://www.smartwebrowse.com/contact" style="color: #1e40af; text-decoration: none; font-weight: 600; font-size: 14px; margin: 0 10px;">Contact</a>
+                  <a href="https://www.praelixtechnologies.com" style="color: #1e40af; text-decoration: none; font-weight: 600; font-size: 14px; margin: 0 10px;">Website</a>
+                  <a href="https://www.praelixtechnologies.com/portfolio" style="color: #1e40af; text-decoration: none; font-weight: 600; font-size: 14px; margin: 0 10px;">Portfolio</a>
+                  <a href="https://www.praelixtechnologies.com/contact" style="color: #1e40af; text-decoration: none; font-weight: 600; font-size: 14px; margin: 0 10px;">Contact</a>
                 </div>
                 <p style="color: #64748b; font-size: 11px; margin: 0;">
                   This email was sent because you requested a free consultation on our website.

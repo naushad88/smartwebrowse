@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Consulting Services | Strategic AI Advisory | Smartwebrowse',
+  title: 'AI Consulting Services | Strategic AI Advisory | Praelix Technologies',
   description: 'Strategic AI advisory services to help you identify opportunities, plan AI implementation, and maximize ROI from AI investments.',
   keywords: 'AI Consulting, AI Advisory, AI Strategy, AI Implementation, AI Planning, AI Consulting Services',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-consulting',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-consulting',
   },
 };
 

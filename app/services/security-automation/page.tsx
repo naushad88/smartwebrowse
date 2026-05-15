@@ -7,19 +7,19 @@ export const metadata: Metadata = {
   description: 'Comprehensive security automation services including SAST/DAST scanning, container security, policy as code, and compliance automation. Secure your development pipeline.',
   keywords: 'security automation, SAST, DAST, container scanning, policy as code, compliance automation, DevSecOps, security testing, vulnerability scanning',
   openGraph: {
-    title: 'Security Automation Services | Smartwebrowse India Private Limited',
+    title: 'Security Automation Services | Praelix Technologies',
     description: 'Comprehensive security automation services including SAST/DAST scanning, container security, policy as code, and compliance automation.',
-    url: 'https://www.smartwebrowse.com/services/security-automation',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/security-automation',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Security Automation Services | Smartwebrowse India Private Limited',
+    title: 'Security Automation Services | Praelix Technologies',
     description: 'Comprehensive security automation services including SAST/DAST scanning, container security, policy as code, and compliance automation.',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/security-automation',
+    canonical: 'https://www.praelixtechnologies.com/services/security-automation',
   },
 };
 

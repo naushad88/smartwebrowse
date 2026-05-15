@@ -7,19 +7,19 @@ export const metadata: Metadata = {
   description: 'Expert container orchestration services for Kubernetes, Docker Swarm, ECS/EKS, and AKS. Scale and manage containerized applications efficiently with our proven solutions.',
   keywords: 'container orchestration, kubernetes, docker swarm, ECS, EKS, AKS, container management, microservices, cloud containers',
   openGraph: {
-    title: 'Container Orchestration Services | Smartwebrowse India Private Limited',
+    title: 'Container Orchestration Services | Praelix Technologies',
     description: 'Expert container orchestration services for Kubernetes, Docker Swarm, ECS/EKS, and AKS. Scale and manage containerized applications efficiently.',
-    url: 'https://www.smartwebrowse.com/services/container-orchestration',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/container-orchestration',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Container Orchestration Services | Smartwebrowse India Private Limited',
+    title: 'Container Orchestration Services | Praelix Technologies',
     description: 'Expert container orchestration services for Kubernetes, Docker Swarm, ECS/EKS, and AKS. Scale and manage containerized applications efficiently.',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/container-orchestration',
+    canonical: 'https://www.praelixtechnologies.com/services/container-orchestration',
   },
 };
 

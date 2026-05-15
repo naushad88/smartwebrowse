@@ -6,7 +6,6 @@ import { motion } from 'framer-motion';
 import Icon from './Icon';
 import type { HeroData } from '@/types';
 import { useLanguage } from '@/contexts/LanguageContext';
-import HeaderTransparent from './HeaderTransparent';
 import AIAutomationVisualization from './AIAutomationVisualization';
 
 interface HeroProps {
@@ -21,8 +20,7 @@ interface HeroProps {
 const HeroFullPage = ({ data }: HeroProps) => {
   const { t } = useLanguage();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [isScrolled, setIsScrolled] = useState(false);
-  
+
   // Default data if none provided
   const heroData = data || {
     title: t('hero.title'),
@@ -35,14 +33,6 @@ const HeroFullPage = ({ data }: HeroProps) => {
       t('hero.feature4')
     ]
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -101,9 +91,6 @@ const HeroFullPage = ({ data }: HeroProps) => {
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/60"></div>
       </div>
-
-      {/* Integrated Header - Transparent when at top */}
-      <HeaderTransparent isScrolled={isScrolled} />
 
       {/* Main Content */}
       <div className="relative z-20 flex-1 flex items-center justify-center pt-24 pb-20">

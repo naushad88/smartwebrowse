@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | Smartwebrowse India Private Limited',
-  description: 'Find answers to common questions about Smartwebrowse India Private Limited AI services, automation solutions, and AI consulting.',
+  title: 'Frequently Asked Questions | Praelix Technologies',
+  description: 'Find answers to common questions about Praelix Technologies AI services, automation solutions, and AI consulting.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/faqs',
+    canonical: 'https://www.praelixtechnologies.com/faqs',
   },
 };
 

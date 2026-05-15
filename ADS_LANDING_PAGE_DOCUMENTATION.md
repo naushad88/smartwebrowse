@@ -5,7 +5,7 @@ A high-converting landing page specifically designed for Google Ads and Facebook
 
 ## URL
 - **Local**: http://localhost:3000/ads-landing
-- **Production**: https://www.robustsoftech.com/ads-landing
+- **Production**: https://www.praelixtechnologies.com/ads-landing
 
 ## Features
 
@@ -23,7 +23,7 @@ A high-converting landing page specifically designed for Google Ads and Facebook
 
 ### 🎨 Design & UX
 - **Modern UI**: Clean, professional design with international appeal
-- **Brand Consistency**: Uses existing Robust Softech color scheme and fonts
+- **Brand Consistency**: Uses existing Praelix Technologies color scheme and fonts
 - **Fast Loading**: Optimized images and performance
 - **Accessibility**: Proper heading structure and form labels
 
@@ -82,7 +82,7 @@ fbq('track', 'Lead', {
 ## SEO Optimization
 
 ### Meta Tags
-- **Title**: "Transform Your Business with Expert IT Solutions | Robust Softech"
+- **Title**: "Transform Your Business with Expert IT Solutions | Praelix Technologies"
 - **Description**: Geo-targeted description mentioning USA, Japan, Ireland
 - **Keywords**: IT services, cloud migration, cybersecurity, IAM services
 - **Open Graph**: Optimized for social sharing

@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Infrastructure Services | Scalable AI Infrastructure Setup | Smartwebrowse',
+  title: 'AI Infrastructure Services | Scalable AI Infrastructure Setup | Praelix Technologies',
   description: 'Scalable AI infrastructure setup, cloud AI platforms, and AI-ready infrastructure to support your AI initiatives and ensure optimal performance.',
   keywords: 'AI Infrastructure, AI Infrastructure Setup, Cloud AI Platforms, AI-Ready Infrastructure, AI Infrastructure Services',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-infrastructure',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-infrastructure',
   },
 };
 

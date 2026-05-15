@@ -8,9 +8,9 @@ export default function QuoteSuccessPage() {
   return (
     <>
       <Head>
-        <title>Quote Request Submitted | Smartwebrowse India Private Limited</title>
+        <title>Quote Request Submitted | Praelix Technologies</title>
         <meta name="description" content="Thank you for your quote request. Our team will get back to you within 24 hours." />
-        <link rel="canonical" href="https://www.smartwebrowse.com/quote-success" />
+        <link rel="canonical" href="https://www.praelixtechnologies.com/quote-success" />
       </Head>
 
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white pt-20">
@@ -30,7 +30,7 @@ export default function QuoteSuccessPage() {
               </h1>
               
               <p className="text-lg text-gray-600 mb-6">
-                Thank you for reaching out to Smartwebrowse India Private Limited. We have received your quote request and our team will get back to you within <strong>24 hours</strong>.
+                Thank you for reaching out to Praelix Technologies. We have received your quote request and our team will get back to you within <strong>24 hours</strong>.
               </p>
 
               <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">

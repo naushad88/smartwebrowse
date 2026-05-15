@@ -7,19 +7,19 @@ export const metadata: Metadata = {
   description: 'Expert release management services including blue-green deployment, canary releases, feature flags, and automated rollback strategies. Streamline your software delivery.',
   keywords: 'release management, blue-green deployment, canary releases, feature flags, rollback automation, deployment strategies, CI/CD, software delivery',
   openGraph: {
-    title: 'Release Management Services | Smartwebrowse India Private Limited',
+    title: 'Release Management Services | Praelix Technologies',
     description: 'Expert release management services including blue-green deployment, canary releases, feature flags, and automated rollback strategies.',
-    url: 'https://www.smartwebrowse.com/services/release-management',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/release-management',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Release Management Services | Smartwebrowse India Private Limited',
+    title: 'Release Management Services | Praelix Technologies',
     description: 'Expert release management services including blue-green deployment, canary releases, feature flags, and automated rollback strategies.',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/release-management',
+    canonical: 'https://www.praelixtechnologies.com/services/release-management',
   },
 };
 

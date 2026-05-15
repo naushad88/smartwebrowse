@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Content Marketing | Smartwebrowse India Private Limited',
+  title: 'Content Marketing | Praelix Technologies',
   description: 'Strategic content marketing services to attract, engage, and convert your target audience with compelling and valuable content.',
   keywords: 'Content Marketing, Content Strategy, Blog Writing, SEO Content, Digital Marketing, Content Creation',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/content-marketing',
+    canonical: 'https://www.praelixtechnologies.com/services/content-marketing',
   },
 };
 

@@ -10,7 +10,7 @@ const clientReviews = [
     name: 'Karen C',
     position: 'Founder',
     company: 'Hapy Hemp',
-    text: 'I had a great experience working with Smartwebrowse India Private Limited. They provided excellent communication and were always available promptly if something came up. I am extremely happy with their AI services and recommend using them if you need help with AI development. They did a great job taking care of my AI projects, and I couldn\'t be happier. Thanks for everything, and definitely use them if you\'re reading this and need AI services.',
+    text: 'I had a great experience working with Praelix Technologies. They provided excellent communication and were always available promptly if something came up. I am extremely happy with their AI services and recommend using them if you need help with AI development. They did a great job taking care of my AI projects, and I couldn\'t be happier. Thanks for everything, and definitely use them if you\'re reading this and need AI services.',
     rating: 5,
     service: 'AI Development',
     industry: 'Healthcare/CBD',
@@ -36,7 +36,7 @@ const clientReviews = [
     name: 'Sarah M.',
     position: 'Marketing Director',
     company: 'TechStart Inc.',
-    text: 'Smartwebrowse India Private Limited delivered exceptional results for our AI automation project. Their team was professional, knowledgeable, and exceeded our expectations. The AI solution was completed on time and within budget. Highly recommended!',
+    text: 'Praelix Technologies delivered exceptional results for our AI automation project. Their team was professional, knowledgeable, and exceeded our expectations. The AI solution was completed on time and within budget. Highly recommended!',
     rating: 5,
     service: 'AI Automation',
     industry: 'Technology',
@@ -49,7 +49,7 @@ const clientReviews = [
     name: 'Michael R.',
     position: 'CTO',
     company: 'FinTech Solutions',
-    text: 'Working with Smartwebrowse India Private Limited on our AI implementation was outstanding. They demonstrated deep expertise in AI systems and machine learning. Our AI capabilities have improved significantly.',
+    text: 'Working with Praelix Technologies on our AI implementation was outstanding. They demonstrated deep expertise in AI systems and machine learning. Our AI capabilities have improved significantly.',
     rating: 5,
     service: 'AI Consulting',
     industry: 'Financial Services',
@@ -62,7 +62,7 @@ const clientReviews = [
     name: 'Jennifer L.',
     position: 'Product Manager',
     company: 'E-commerce Plus',
-    text: 'The team at Smartwebrowse India Private Limited transformed our business with their AI-powered solutions. The new AI platform is faster, more intelligent, and has increased our efficiency by 40%.',
+    text: 'The team at Praelix Technologies transformed our business with their AI-powered solutions. The new AI platform is faster, more intelligent, and has increased our efficiency by 40%.',
     rating: 5,
     service: 'AI Solutions',
     industry: 'Retail',
@@ -75,7 +75,7 @@ const clientReviews = [
     name: 'David K.',
     position: 'Operations Manager',
     company: 'Manufacturing Corp',
-    text: 'Smartwebrowse India Private Limited implemented comprehensive AI automation that streamlined our operations. Their AI solutions have reduced our processing time by 70% and improved accuracy significantly.',
+    text: 'Praelix Technologies implemented comprehensive AI automation that streamlined our operations. Their AI solutions have reduced our processing time by 70% and improved accuracy significantly.',
     rating: 5,
     service: 'AI Automation',
     industry: 'Manufacturing',
@@ -109,7 +109,7 @@ const platformReviews = [
     platform: 'Google Reviews',
     rating: 4.9,
     totalReviews: 127,
-    link: 'https://www.google.com/search?q=Smartwebrowse+reviews',
+    link: 'https://www.google.com/search?q=Praelix+Technologies+reviews',
     icon: 'fa-brands fa-google',
     color: 'from-blue-500 to-blue-600'
   },
@@ -117,7 +117,7 @@ const platformReviews = [
     platform: 'Clutch',
     rating: 5.0,
     totalReviews: 89,
-    link: 'https://clutch.co/profile/smartwebrowse',
+    link: 'https://clutch.co/profile/praelixtechnologies',
     icon: 'fa-solid fa-star',
     color: 'from-orange-500 to-orange-600'
   },
@@ -125,7 +125,7 @@ const platformReviews = [
     platform: 'Upwork',
     rating: 5.0,
     totalReviews: 156,
-    link: 'https://www.upwork.com/agencies/smartwebrowse/',
+    link: 'https://www.upwork.com/agencies/praelixtechnologies/',
     icon: 'fa-solid fa-briefcase',
     color: 'from-green-500 to-green-600',
     badges: ['100% Success Rate', 'Top Rated Agency']
@@ -134,7 +134,7 @@ const platformReviews = [
     platform: 'LinkedIn',
     rating: 4.8,
     totalReviews: 156,
-    link: 'https://www.linkedin.com/company/smartwebrowse/reviews/',
+    link: 'https://www.linkedin.com/company/praelixtechnologies/reviews/',
     icon: 'fa-brands fa-linkedin',
     color: 'from-blue-600 to-blue-700'
   },
@@ -142,7 +142,7 @@ const platformReviews = [
     platform: 'Facebook',
     rating: 4.9,
     totalReviews: 203,
-    link: 'https://www.facebook.com/smartwebrowse/reviews/',
+    link: 'https://www.facebook.com/praelixtechnologies/reviews/',
     icon: 'fa-brands fa-facebook',
     color: 'from-blue-700 to-blue-800'
   }
@@ -266,14 +266,14 @@ export default function ClientReviewsPage() {
   return (
     <>
       <Head>
-        <title>Client Reviews & Testimonials | Smartwebrowse India Private Limited</title>
-        <meta name="description" content="Read authentic client reviews and testimonials from businesses worldwide. See why companies trust Smartwebrowse India Private Limited for AI services, automation, and AI consulting." />
+        <title>Client Reviews & Testimonials | Praelix Technologies</title>
+        <meta name="description" content="Read authentic client reviews and testimonials from businesses worldwide. See why companies trust Praelix Technologies for AI services, automation, and AI consulting." />
         <meta name="keywords" content="client reviews, testimonials, customer feedback, AI services reviews, automation feedback" />
-        <link rel="canonical" href="https://www.smartwebrowse.com/client-reviews" />
-        <meta property="og:title" content="Client Reviews & Testimonials | Smartwebrowse India Private Limited" />
-        <meta property="og:description" content="Read authentic client reviews and testimonials from businesses worldwide. See why companies trust Smartwebrowse India Private Limited for AI services, automation, and AI consulting." />
-        <meta property="og:url" content="https://www.smartwebrowse.com/client-reviews" />
-        <meta property="og:site_name" content="Smartwebrowse India Private Limited" />
+        <link rel="canonical" href="https://www.praelixtechnologies.com/client-reviews" />
+        <meta property="og:title" content="Client Reviews & Testimonials | Praelix Technologies" />
+        <meta property="og:description" content="Read authentic client reviews and testimonials from businesses worldwide. See why companies trust Praelix Technologies for AI services, automation, and AI consulting." />
+        <meta property="og:url" content="https://www.praelixtechnologies.com/client-reviews" />
+        <meta property="og:site_name" content="Praelix Technologies" />
         <meta property="og:type" content="website" />
       </Head>
       
@@ -299,7 +299,7 @@ export default function ClientReviewsPage() {
                 Client Reviews & Testimonials
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Discover why businesses across the globe trust Smartwebrowse India Private Limited for their AI transformation needs. 
+                Discover why businesses across the globe trust Praelix Technologies for their AI transformation needs. 
                 Read authentic reviews from our satisfied clients and see our team's professional profiles.
               </p>
             </div>
@@ -315,7 +315,7 @@ export default function ClientReviewsPage() {
                 Client Video Testimonials
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Watch our clients share their experience working with Smartwebrowse India Private Limited and the results we've delivered for their businesses.
+                Watch our clients share their experience working with Praelix Technologies and the results we've delivered for their businesses.
               </p>
             </div>
             

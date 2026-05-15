@@ -3,17 +3,17 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'IAM Setup & Auditing | Smartwebrowse India Private Limited',
+  title: 'IAM Setup & Auditing | Praelix Technologies',
   description: 'Professional IAM setup, auditing, and optimization services for AWS, Azure, and Google Cloud platforms.',
   openGraph: {
-    title: 'IAM Setup & Auditing | Smartwebrowse India Private Limited',
+    title: 'IAM Setup & Auditing | Praelix Technologies',
     description: 'Professional IAM setup, auditing, and optimization services for AWS, Azure, and Google Cloud platforms.',
-    url: 'https://www.smartwebrowse.com/services/iam-setup-auditing',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/iam-setup-auditing',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/iam-setup-auditing',
+    canonical: 'https://www.praelixtechnologies.com/services/iam-setup-auditing',
   },
 };
 

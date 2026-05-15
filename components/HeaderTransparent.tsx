@@ -2,14 +2,19 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import BrandLogo from './BrandLogo';
 import MobileMenu from './MobileMenu';
+import {
+  HEADER_BAR_CLASS,
+  headerNavLinkClass,
+  headerNavButtonClass,
+  headerCtaOutlineClass,
+  headerCtaPrimaryClass,
+  headerMobileMenuBtnClass,
+  headerInlineStyle,
+} from '@/lib/header-theme';
 
-interface HeaderTransparentProps {
-  isScrolled?: boolean;
-}
-
-const HeaderTransparent = ({ isScrolled = false }: HeaderTransparentProps) => {
+const HeaderTransparent = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
 
@@ -26,121 +31,99 @@ const HeaderTransparent = ({ isScrolled = false }: HeaderTransparentProps) => {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { 
-      name: 'Services', 
+    {
+      name: 'Services',
       href: '/services',
       children: [
-        { 
-          name: 'AI Services', 
+        {
+          name: 'AI Services',
           href: '/services/ai-services-provider',
           children: [
             { name: 'AI Services Provider', href: '/services/ai-services-provider' },
             { name: 'AI Consulting', href: '/services/ai-consulting' },
             { name: 'AI Integration', href: '/services/ai-integration' },
             { name: 'AI Development', href: '/services/ai-development' },
-          ]
+          ],
         },
-        { 
-          name: 'Automation Services', 
+        {
+          name: 'Automation Services',
           href: '/services/automation-services',
           children: [
             { name: 'Process Automation', href: '/services/automation-services/process-automation' },
             { name: 'Workflow Automation', href: '/services/automation-services/workflow-automation' },
             { name: 'AI-Powered Automation', href: '/services/automation-services/ai-powered-automation' },
-            { name: 'Business Process Automation', href: '/services/automation-services/business-process-automation' },
-          ]
+            {
+              name: 'Business Process Automation',
+              href: '/services/automation-services/business-process-automation',
+            },
+          ],
         },
-        { 
-          name: 'AI Support', 
+        {
+          name: 'AI Support',
           href: '/services/ai-support',
           children: [
             { name: '24/7 AI Support', href: '/services/ai-support' },
             { name: 'AI System Maintenance', href: '/services/ai-support/ai-system-maintenance' },
             { name: 'AI Infrastructure Support', href: '/services/ai-infrastructure' },
             { name: 'AI Monitoring', href: '/services/ai-support/ai-monitoring' },
-          ]
+          ],
         },
-        { 
-          name: 'AI Solutions', 
+        {
+          name: 'AI Solutions',
           href: '/services/ai-analytics',
           children: [
             { name: 'AI Analytics', href: '/services/ai-analytics' },
             { name: 'AI Infrastructure', href: '/services/ai-infrastructure' },
             { name: 'Custom AI Solutions', href: '/services/ai-development' },
             { name: 'AI Training & Implementation', href: '/services/ai-consulting' },
-          ]
+          ],
         },
-      ]
+      ],
     },
     { name: 'Case Studies', href: '/case-studies' },
     { name: 'Portfolio', href: '/portfolio' },
     { name: 'About', href: '/about' },
   ];
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleDropdownMouseEnter = () => {
-    setIsServicesDropdownOpen(true);
-  };
-
-  const handleDropdownMouseLeave = () => {
-    setIsServicesDropdownOpen(false);
-  };
-
-  const handleLinkClick = () => {
-    setIsServicesDropdownOpen(false);
-  };
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const handleDropdownMouseEnter = () => setIsServicesDropdownOpen(true);
+  const handleDropdownMouseLeave = () => setIsServicesDropdownOpen(false);
+  const handleLinkClick = () => setIsServicesDropdownOpen(false);
 
   return (
     <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-xl shadow-2xl' 
-          : 'bg-transparent'
-      }`}>
+      <header
+        className={`fixed top-0 left-0 right-0 z-[99999] ${HEADER_BAR_CLASS}`}
+        style={headerInlineStyle}
+      >
         <div className="container-custom">
           <div className="flex items-center justify-between h-16 md:h-20 relative">
-            {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/images/Smartwebrowse-Logo.png"
-                alt="Smartwebrowse India Private Limited"
-                width={210}
-                height={61}
-                className={`h-12 w-auto transition-all duration-300 ${
-                  isScrolled ? 'brightness-100' : 'brightness-0 invert'
-                }`}
-                priority
-              />
+              <BrandLogo priority className="h-12 w-auto object-contain" />
             </Link>
 
-            {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-8">
               {navigation.map((item) => (
                 <div key={item.name} className="relative group">
                   {item.children ? (
-                    <div 
+                    <div
                       className="relative"
                       onMouseEnter={handleDropdownMouseEnter}
                       onMouseLeave={handleDropdownMouseLeave}
                     >
-                      <button className={`flex items-center space-x-1 transition-colors duration-200 font-semibold ${
-                        isScrolled 
-                          ? 'text-gray-800 hover:text-blue-600' 
-                          : 'text-white hover:text-blue-300'
-                      }`}>
+                      <button type="button" className={headerNavButtonClass}>
                         <span>{item.name}</span>
-                        <i className="fa-solid fa-chevron-down text-xs"></i>
+                        <i className="fa-solid fa-chevron-down text-xs" />
                       </button>
-                      
-                      {/* Mega Menu */}
-                      <div className={`absolute top-full left-0 w-[1000px] bg-white shadow-2xl rounded-2xl transition-all duration-300 border border-blue-100 z-50 backdrop-blur-sm ${
-                        isServicesDropdownOpen 
-                          ? 'opacity-100 visible translate-y-0' 
-                          : 'opacity-0 invisible translate-y-4'
-                      }`} style={{ left: 'max(0px, calc(50% - 400px))' }}>
+
+                      <div
+                        className={`absolute top-full left-0 w-[1000px] bg-white shadow-2xl rounded-2xl transition-all duration-300 border border-blue-100 z-50 ${
+                          isServicesDropdownOpen
+                            ? 'opacity-100 visible translate-y-0'
+                            : 'opacity-0 invisible translate-y-4'
+                        }`}
+                        style={{ left: 'max(0px, calc(50% - 400px))' }}
+                      >
                         <div className="p-6 bg-gradient-to-br from-white via-blue-50/30 to-indigo-50/30 rounded-2xl">
                           <div className="grid grid-cols-4 gap-6">
                             {item.children.slice(0, 4).map((child) => (
@@ -175,14 +158,7 @@ const HeaderTransparent = ({ isScrolled = false }: HeaderTransparentProps) => {
                       </div>
                     </div>
                   ) : (
-                    <Link
-                      href={item.href}
-                      className={`transition-colors duration-200 font-semibold ${
-                        isScrolled 
-                          ? 'text-gray-800 hover:text-blue-600' 
-                          : 'text-white hover:text-blue-300'
-                      }`}
-                    >
+                    <Link href={item.href} className={headerNavLinkClass}>
                       {item.name}
                     </Link>
                   )}
@@ -190,51 +166,30 @@ const HeaderTransparent = ({ isScrolled = false }: HeaderTransparentProps) => {
               ))}
             </nav>
 
-            {/* CTA Buttons */}
             <div className="hidden lg:flex items-center space-x-4">
-              <Link 
-                href="/consultation" 
-                className={`px-6 py-2 rounded-lg font-semibold transition-all duration-300 ${
-                  isScrolled
-                    ? 'bg-white text-blue-600 hover:bg-blue-50 border border-blue-600'
-                    : 'bg-white/10 backdrop-blur-md text-white border-2 border-white/30 hover:bg-white/20'
-                }`}
-              >
+              <Link href="/consultation" className={headerCtaOutlineClass}>
                 Schedule Consultation
               </Link>
-              <Link 
-                href="/get-a-quote" 
-                className={`px-6 py-2 rounded-lg font-semibold transition-all duration-300 ${
-                  isScrolled
-                    ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700'
-                    : 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700 shadow-lg'
-                }`}
-              >
+              <Link href="/get-a-quote" className={headerCtaPrimaryClass}>
                 Request a Quote
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
+              type="button"
               onClick={toggleMenu}
-              className={`lg:hidden p-3 rounded-lg transition-all duration-200 ${
-                isScrolled
-                  ? 'bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700'
-                  : 'bg-white/10 backdrop-blur-md text-white border-2 border-white/30 hover:bg-white/20'
-              }`}
+              className={`header-mobile-menu-btn ${headerMobileMenuBtnClass}`}
               aria-label="Toggle menu"
             >
-              <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`}></i>
+              <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'} text-xl`} aria-hidden />
             </button>
           </div>
         </div>
       </header>
 
-      {/* Mobile Menu */}
       <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </>
   );
 };
 
 export default HeaderTransparent;
-

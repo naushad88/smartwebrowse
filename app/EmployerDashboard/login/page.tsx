@@ -50,7 +50,7 @@ export default function LoginPage() {
           Employee Dashboard
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
-          Smartwebrowse India Private Limited - Internal Access Only
+          Praelix Technologies - Internal Access Only
         </p>
       </div>
 

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get a Quote | Custom IT Solutions Pricing',
     description: 'Get a free quote for custom IT solutions. Cloud services, cybersecurity, web development, mobile apps & DevOps. Transparent pricing for your business needs.',
-    url: 'https://www.smartwebrowse.com/get-a-quote',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/get-a-quote',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/get-a-quote',
+    canonical: 'https://www.praelixtechnologies.com/get-a-quote',
   },
 };
 

@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI System Maintenance Services | Smartwebrowse India Private Limited',
+  title: 'AI System Maintenance Services | Praelix Technologies',
   description: 'Comprehensive AI system maintenance services to ensure optimal performance, reliability, and continuous operation of your AI systems.',
   keywords: 'AI System Maintenance, AI Maintenance, AI System Support, AI Infrastructure Maintenance',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-support/ai-system-maintenance',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-support/ai-system-maintenance',
   },
 };
 

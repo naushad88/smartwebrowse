@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Robust Softech - Deployment Script
+# Praelix Technologies - Deployment Script
 # This script helps deploy the Next.js application
 
 set -e

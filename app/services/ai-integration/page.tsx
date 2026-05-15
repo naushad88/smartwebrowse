@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Integration Services | Smartwebrowse India Private Limited',
+  title: 'AI Integration Services | Praelix Technologies',
   description: 'Integrate artificial intelligence into your applications to automate processes, improve user experience, and gain competitive advantages. Expert AI integration services from leading AI startup.',
   keywords: 'AI Integration, Artificial Intelligence, Machine Learning, AI Development, Automation, Smart Applications, AI Services',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-integration',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-integration',
   },
 };
 

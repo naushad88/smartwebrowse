@@ -3,22 +3,22 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Thank You - Smartwebrowse India Private Limited',
-  description: 'Thank you for contacting Smartwebrowse India Private Limited. We will get back to you within 24 hours.',
+  title: 'Thank You - Praelix Technologies',
+  description: 'Thank you for contacting Praelix Technologies. We will get back to you within 24 hours.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/thank-you',
+    canonical: 'https://www.praelixtechnologies.com/thank-you',
   },
   openGraph: {
-    title: 'Thank You - Smartwebrowse India Private Limited',
-    description: 'Thank you for contacting Smartwebrowse India Private Limited. We will get back to you within 24 hours.',
-    url: 'https://www.smartwebrowse.com/thank-you',
-    siteName: 'Smartwebrowse India Private Limited',
+    title: 'Thank You - Praelix Technologies',
+    description: 'Thank you for contacting Praelix Technologies. We will get back to you within 24 hours.',
+    url: 'https://www.praelixtechnologies.com/thank-you',
+    siteName: 'Praelix Technologies',
     images: [
       {
-        url: 'https://www.smartwebrowse.com/og-image.jpg',
+        url: 'https://www.praelixtechnologies.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Smartwebrowse India Private Limited - Thank You',
+        alt: 'Praelix Technologies - Thank You',
       },
     ],
     locale: 'en_US',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Thank You - Smartwebrowse India Private Limited',
-    description: 'Thank you for contacting Smartwebrowse India Private Limited. We will get back to you within 24 hours.',
-    images: ['https://www.smartwebrowse.com/og-image.jpg'],
+    title: 'Thank You - Praelix Technologies',
+    description: 'Thank you for contacting Praelix Technologies. We will get back to you within 24 hours.',
+    images: ['https://www.praelixtechnologies.com/og-image.jpg'],
   },
 };
 
@@ -111,7 +111,7 @@ export default function ThankYouPage() {
               </div>
               <div className="flex items-center justify-center space-x-2">
                 <i className="fas fa-envelope text-primary-600"></i>
-                <span className="text-gray-700">info@smartwebrowse.com</span>
+                <span className="text-gray-700">info@praelixtechnologies.com</span>
               </div>
             </div>
           </div>

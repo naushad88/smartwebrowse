@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Smartwebrowse India Private Limited',
-  description: 'Privacy Policy for Smartwebrowse India Private Limited - Learn how we collect, use, and protect your personal information in compliance with Indian data protection laws.',
+  title: 'Privacy Policy | Praelix Technologies',
+  description: 'Privacy Policy for Praelix Technologies - Learn how we collect, use, and protect your personal information in compliance with Indian data protection laws.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/privacy-policy',
+    canonical: 'https://www.praelixtechnologies.com/privacy-policy',
   },
 };
 
@@ -34,7 +34,7 @@ export default function PrivacyPolicy() {
               Privacy Policy
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Smartwebrowse India Private Limited is committed to protecting your privacy in accordance with Indian data protection laws. 
+              Praelix Technologies is committed to protecting your privacy in accordance with Indian data protection laws. 
               This policy explains how we collect, use, and safeguard your personal information.
             </p>
             <div className="mt-8 inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium border border-green-200">
@@ -66,17 +66,17 @@ export default function PrivacyPolicy() {
             <div className="card-ai p-8 mb-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Your Privacy Rights</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                As an Indian company, Smartwebrowse India Private Limited respects your fundamental right to privacy under Indian law. 
+                As an Indian company, Praelix Technologies respects your fundamental right to privacy under Indian law. 
                 We only collect data necessary to provide our AI services, and we give you full control over your personal information.
               </p>
               
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Data Controller:</h3>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Smartwebrowse India Private Limited</strong></p>
+                  <p><strong>Praelix Technologies</strong></p>
                   <p>F-195, Second Floor, Industrial Area Phase 8-B, Sector 74, Mohali, India 160055</p>
                   <p><strong>Registration:</strong> Indian company (CIN: U72200PB2013PTC037123)</p>
-                  <p><strong>Email:</strong> privacy@smartwebrowse.com</p>
+                  <p><strong>Email:</strong> privacy@praelixtechnologies.com</p>
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function PrivacyPolicy() {
                     <i className="fas fa-envelope text-white text-lg"></i>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Privacy Inquiries</h3>
-                  <p className="text-gray-700 text-sm">privacy@smartwebrowse.com</p>
+                  <p className="text-gray-700 text-sm">privacy@praelixtechnologies.com</p>
                 </div>
 
                 <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200">

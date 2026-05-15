@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Doctor Shannon - Modern Psychology & Wellness Platform | Portfolio | Smartwebrowse India Private Limited',
+  title: 'Doctor Shannon - Modern Psychology & Wellness Platform | Portfolio | Praelix Technologies',
   description: 'Comprehensive psychology and wellness platform offering personalized therapy for anxiety, depression and stress with mindfulness-based and neuroscience-informed approaches, including optional ketamine-assisted therapy.',
   keywords: 'psychology, wellness, therapy, mindfulness, neuroscience, ketamine therapy, mental health, anxiety, depression',
   openGraph: {
-    title: 'Doctor Shannon - Modern Psychology & Wellness Platform | Portfolio | Smartwebrowse India Private Limited',
+    title: 'Doctor Shannon - Modern Psychology & Wellness Platform | Portfolio | Praelix Technologies',
     description: 'Comprehensive psychology and wellness platform offering personalized therapy for anxiety, depression and stress with mindfulness-based and neuroscience-informed approaches, including optional ketamine-assisted therapy.',
-    url: 'https://www.smartwebrowse.com/portfolio/doctor-shannon-psychology-wellness',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/portfolio/doctor-shannon-psychology-wellness',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
+import BrandLogo from './BrandLogo';
 import { motion } from 'framer-motion';
 
 const Footer = () => {
@@ -45,11 +45,11 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', href: 'https://facebook.com/smartwebrowse', icon: 'fa-brands fa-facebook' },
-    { name: 'X', href: 'https://x.com/smartwebrowse', icon: 'fa-solid fa-xmark' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/smartwebrowse', icon: 'fa-brands fa-linkedin' },
-    { name: 'Instagram', href: 'https://www.instagram.com/smartwebrowse/', icon: 'fa-brands fa-instagram' },
-    { name: 'YouTube', href: 'https://www.youtube.com/@smartwebrowse', icon: 'fa-brands fa-youtube' }
+    { name: 'Facebook', href: 'https://facebook.com/praelixtechnologies', icon: 'fa-brands fa-facebook' },
+    { name: 'X', href: 'https://x.com/praelixtechnologies', icon: 'fa-solid fa-xmark' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/praelixtechnologies', icon: 'fa-brands fa-linkedin' },
+    { name: 'Instagram', href: 'https://www.instagram.com/praelixtechnologies/', icon: 'fa-brands fa-instagram' },
+    { name: 'YouTube', href: 'https://www.youtube.com/@praelixtechnologies', icon: 'fa-brands fa-youtube' }
   ];
 
   return (
@@ -77,18 +77,16 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
             >
               <Link href="/" className="inline-block mb-6 group">
-                <Image
-                  src="/images/Smartwebrowse-Logo.png"
-                  alt="Smartwebrowse India Private Limited"
-                  width={180}
-                  height={52}
-                  className="h-10 w-auto brightness-0 invert group-hover:opacity-80 transition-opacity duration-300"
+                <BrandLogo
+                  width={280}
+                  height={81}
+                  className="h-16 md:h-20 w-auto object-contain group-hover:opacity-90 transition-opacity duration-300"
                 />
               </Link>
               
               <p className="text-gray-300 mb-6 leading-relaxed text-base">
-                Smartwebrowse India Private Limited (SWB) is a leading AI startup providing intelligent automation, 
-                AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI 
+                Praelix Technologies is a leading AI partnership firm providing intelligent automation,
+                AI services, and 24/7 AI support. We deliver cutting-edge AI solutions, automation services, and AI
                 consulting to transform businesses with intelligent technology.
               </p>
               
@@ -109,7 +107,9 @@ const Footer = () => {
                   <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-blue-500/20 to-indigo-500/20 backdrop-blur-sm flex items-center justify-center mr-3 group-hover:from-blue-500/30 group-hover:to-indigo-500/30 transition-all duration-300">
                     <i className="fa-solid fa-envelope text-blue-400"></i>
                   </div>
-                  <span className="text-gray-300 text-sm">contact@smartwebrowse.com</span>
+                  <a href="mailto:contact@praelixtechnologies.com" className="text-gray-300 text-sm hover:text-blue-400 transition-colors">
+                    contact@praelixtechnologies.com
+                  </a>
                 </div>
               </div>
             </motion.div>
@@ -159,7 +159,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               className="text-gray-400 text-sm"
             >
-              © {currentYear} Smartwebrowse India Private Limited. All rights reserved.
+              © {currentYear} Praelix Technologies. All rights reserved.
             </motion.div>
 
             {/* Social Links */}

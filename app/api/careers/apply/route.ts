@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-// Configure email transporter for Smartwebrowse India Private Limited custom server
+// Configure email transporter for Praelix Technologies custom server
 const transporter = nodemailer.createTransport({
-  host: 'mail.smartwebrowse.com',
+  host: 'mail.praelixtechnologies.com',
   port: 465,
   secure: true, // true for 465, false for other ports
   auth: {
-    user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
+    user: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
     pass: process.env.EMAIL_PASS || 'your-email-password',
   },
 });
@@ -119,7 +119,7 @@ export async function POST(request: NextRequest) {
         
         <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
           <p style="color: #6b7280; font-size: 14px;">
-            This application was submitted through the Smartwebrowse India Private Limited careers portal.
+            This application was submitted through the Praelix Technologies careers portal.
           </p>
           <p style="color: #6b7280; font-size: 14px;">
             Job ID: ${jobId} | Submitted: ${new Date().toLocaleString()}
@@ -151,8 +151,8 @@ Submitted: ${new Date().toLocaleString()}
 
     // Send email to HR
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
-      to: 'hr@smartwebrowse.com',
+      from: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
+      to: 'hr@praelixtechnologies.com',
       subject: emailSubject,
       text: emailText,
       html: emailHtml,
@@ -171,7 +171,7 @@ Submitted: ${new Date().toLocaleString()}
     const candidateEmailHtml = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <h2 style="color: #2563eb; border-bottom: 2px solid #2563eb; padding-bottom: 10px;">
-          Application Received - Smartwebrowse India Private Limited
+          Application Received - Praelix Technologies
         </h2>
         
         <p style="color: #374151; font-size: 16px; line-height: 1.6;">
@@ -179,7 +179,7 @@ Submitted: ${new Date().toLocaleString()}
         </p>
         
         <p style="color: #374151; font-size: 16px; line-height: 1.6;">
-          Thank you for your interest in the <strong>${jobTitle}</strong> position at Smartwebrowse India Private Limited. 
+          Thank you for your interest in the <strong>${jobTitle}</strong> position at Praelix Technologies. 
           We have successfully received your application and resume.
         </p>
         
@@ -195,13 +195,13 @@ Submitted: ${new Date().toLocaleString()}
         
         <p style="color: #374151; font-size: 16px; line-height: 1.6;">
           If you have any questions about your application, please don't hesitate to reach out to us at 
-          <a href="mailto:hr@smartwebrowse.com" style="color: #2563eb;">hr@smartwebrowse.com</a>.
+          <a href="mailto:hr@praelixtechnologies.com" style="color: #2563eb;">hr@praelixtechnologies.com</a>.
         </p>
         
         <p style="color: #374151; font-size: 16px; line-height: 1.6;">
           Best regards,<br>
           <strong>HR Team</strong><br>
-          Smartwebrowse India Private Limited
+          Praelix Technologies
         </p>
         
         <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
@@ -213,7 +213,7 @@ Submitted: ${new Date().toLocaleString()}
     `;
 
     const candidateMailOptions = {
-      from: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
+      from: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
       to: email,
       subject: `Application Received - ${jobTitle} Position`,
       html: candidateEmailHtml,

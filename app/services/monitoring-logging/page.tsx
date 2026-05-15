@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Monitoring & Logging | Smartwebrowse India Private Limited',
+  title: 'Monitoring & Logging | Praelix Technologies',
   description: 'Comprehensive monitoring and logging services to ensure your applications and infrastructure are performing optimally with real-time visibility and alerting.',
   keywords: 'Monitoring, Logging, Observability, Application Performance, Infrastructure Monitoring, Log Management, Alerting',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/monitoring-logging',
+    canonical: 'https://www.praelixtechnologies.com/services/monitoring-logging',
   },
 };
 

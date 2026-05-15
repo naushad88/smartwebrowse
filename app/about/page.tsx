@@ -2,17 +2,17 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'About Smartwebrowse India Private Limited | Leading AI Startup',
-  description: 'Discover Smartwebrowse India Private Limited\'s journey as a leading AI startup. Expert AI services, automation, and AI support trusted by businesses worldwide.',
-  keywords: 'about Smartwebrowse, AI startup company, AI services provider, automation services, AI consulting',
+  title: 'About Praelix Technologies | Leading AI Partnership',
+  description: 'Discover Praelix Technologies\' journey as a partnership firm founded in 2020. Expert AI services, automation, and AI support trusted by businesses worldwide.',
+  keywords: 'about Praelix Technologies, AI partnership, AI services provider, automation services, AI consulting',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/about',
+    canonical: 'https://www.praelixtechnologies.com/about',
   },
   openGraph: {
-    title: 'About Smartwebrowse India Private Limited | Leading AI Startup',
-    description: 'Discover Smartwebrowse India Private Limited\'s journey as a leading AI startup. Expert AI services, automation, and AI support trusted by businesses worldwide.',
-    url: 'https://www.smartwebrowse.com/about',
-    siteName: 'Smartwebrowse India Private Limited',
+    title: 'About Praelix Technologies | Leading AI Partnership',
+    description: 'Discover Praelix Technologies\' journey as a partnership firm founded in 2020. Expert AI services, automation, and AI support trusted by businesses worldwide.',
+    url: 'https://www.praelixtechnologies.com/about',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
 };
@@ -46,33 +46,12 @@ export default function AboutPage() {
   ];
 
   const timeline = [
-    { year: '2013', title: 'Company Founded', description: 'Smartwebrowse India Private Limited was founded in June 2013, establishing a strong foundation in technology services', icon: 'fa-building', color: 'from-blue-500 to-blue-600' },
+    { year: '2020', title: 'Partnership Founded', description: 'Praelix Technologies was established in April 2020 as a partnership firm, building a strong foundation in technology services', icon: 'fa-building', color: 'from-blue-500 to-blue-600' },
     { year: '2021', title: 'Technology Expansion', description: 'Expanded technology services and built expertise across multiple domains', icon: 'fa-cogs', color: 'from-green-500 to-green-600' },
     { year: '2022', title: 'Infrastructure Growth', description: 'Established scalable infrastructure and expanded service capabilities', icon: 'fa-server', color: 'from-purple-500 to-purple-600' },
     { year: '2023', title: 'Innovation Focus', description: 'Introduced innovative solutions and advanced technology services', icon: 'fa-lightbulb', color: 'from-orange-500 to-orange-600' },
-    { year: '2026', title: 'AI Transformation', description: 'Acquired by Ishpreet Kaur & Sheeba Parveen on April 20, 2026. Strategic pivot towards AI technology, focusing on AI automation, AI development, and comprehensive AI solutions. Beginning of our journey to stay one step ahead in the AI world.', icon: 'fa-brain', color: 'from-pink-500 to-rose-600' },
-    { year: '2025', title: 'AI Leadership', description: 'Recognized as a leading AI company with exceptional expertise in AI automation, AI development, and AI services. Delivering cutting-edge solutions that transform businesses.', icon: 'fa-rocket', color: 'from-indigo-500 to-indigo-600' }
-  ];
-
-  const team = [
-    {
-      name: 'Ishpreet Kaur',
-      role: 'Co-Acquirer & Leader',
-      description: 'Visionary leader who acquired Smartwebrowse on April 20, 2026 and spearheaded the AI transformation. Expert in AI automation, AI development, and strategic AI implementation. Driving women empowerment in technology while staying ahead in the AI world.',
-      icon: 'fa-user-tie'
-    },
-    {
-      name: 'Sheeba Parveen',
-      role: 'Co-Acquirer & Leader',
-      description: 'Innovative leader who co-acquired the company on April 20, 2026 and transformed it into an AI powerhouse. Expert in AI development, AI infrastructure, and cutting-edge AI technologies. Championing women in tech and leading AI innovation.',
-      icon: 'fa-code'
-    },
-    {
-      name: 'Women Empowerment Team',
-      role: 'AI Leadership',
-      description: 'A dedicated team of women professionals leading AI automation, AI development, AI consulting, and comprehensive AI integration services. Delivering exceptional results in the AI space.',
-      icon: 'fa-users'
-    }
+    { year: '2025', title: 'AI Leadership', description: 'Recognized as a leading AI company with exceptional expertise in AI automation, AI development, and AI services. Delivering cutting-edge solutions that transform businesses.', icon: 'fa-rocket', color: 'from-indigo-500 to-indigo-600' },
+    { year: '2026', title: 'AI Innovation', description: 'Accelerating growth in AI automation, AI development, and comprehensive AI solutions for clients worldwide.', icon: 'fa-brain', color: 'from-pink-500 to-rose-600' }
   ];
 
   return (
@@ -94,11 +73,11 @@ export default function AboutPage() {
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-            About Smartwebrowse
+            About Praelix Technologies
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A women-empowerment company acquired on April 20, 2026, now focused on leading AI transformation.
-            We are dedicated to delivering intelligent AI services, automation solutions, and exceptional AI support,
+            Praelix Technologies is a partnership firm established in April 2020, focused on leading AI transformation.
+            We deliver intelligent AI services, automation solutions, and exceptional AI support,
             staying one step ahead in the AI world.
           </p>
         </div>
@@ -115,23 +94,22 @@ export default function AboutPage() {
                 Our Story
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Smartwebrowse India Private Limited was founded in June 2013, establishing itself as a technology 
-                company with a strong foundation. In April 2026, the company entered new ownership,
-                marking a transformative moment in our journey.
+                Praelix Technologies was established in April 2020 as a partnership firm, building a strong foundation in
+                technology services and growing steadily into a trusted AI-focused technology partner.
               </p>
               <div className="mb-8 p-6 rounded-2xl bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 border-2 border-pink-200">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
                   <i className="fas fa-handshake text-pink-600"></i>
-                  The April 2026 Transformation
+                  Our Partnership Foundation
                 </h3>
                 <p className="text-base text-gray-700 leading-relaxed mb-4">
-                  After acquiring Smartwebrowse in April 2026, <strong className="text-gray-900">Ishpreet Kaur & Sheeba Parveen</strong> 
-                  immediately recognized the potential to transform the company into an AI powerhouse. They strategically 
-                  pivoted the entire organization towards AI technology, making it our core focus and competitive advantage.
+                  Founded in April 2020, Praelix Technologies began as a partnership built on collaboration, innovation,
+                  and long-term client success. From day one, our focus has been delivering reliable technology solutions
+                  with integrity and excellence.
                 </p>
                 <p className="text-base text-gray-700 leading-relaxed">
-                  Under their visionary leadership, we've excelled in <strong className="text-gray-900">AI automation, AI development, 
-                  and comprehensive AI services</strong>. This transformation has positioned us as a leader in the AI space, 
+                  Today, we specialize in <strong className="text-gray-900">AI automation, AI development,
+                  and comprehensive AI services</strong>. This focus has positioned us as a growing leader in the AI space,
                   delivering exceptional results and staying <strong className="text-gray-900">one step ahead in the AI world</strong>.
                 </p>
               </div>
@@ -234,8 +212,8 @@ export default function AboutPage() {
               Our AI Journey
             </h2>
             <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              From a technology company founded in 2013 to a leading AI powerhouse after acquisition in April 2026, 
-              discover the milestones that shaped our transformation and success in AI automation, AI development, and AI innovation.
+              From a partnership firm founded in April 2020 to a leading AI-focused technology partner today, 
+              discover the milestones that shaped our growth and success in AI automation, AI development, and AI innovation.
             </p>
           </div>
           
@@ -269,46 +247,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-16 md:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 circuit-pattern opacity-10"></div>
-        <div className="container-custom relative z-10">
-          <div
-            className="text-center mb-12"
-          >
-            <div className="inline-block mb-4">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
-                Our Team
-              </span>
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Meet Our Leadership Team
-            </h2>
-            <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              A pure women empowerment company led by visionary leaders Ishpreet Kaur & Sheeba Parveen, 
-              who acquired the company on April 20, 2026 and transformed it into an AI-focused powerhouse. 
-              Our experienced leadership team brings together decades of expertise in 
-              AI technology, business, and innovation, championing women in tech and staying one step ahead in the AI world.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member, index) => (
-              <div
-                key={index}
-                className="card-ai p-8 text-center group hover:-translate-y-2 transition-all duration-300"
-              >
-                <div className="w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white text-3xl mx-auto mb-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg">
-                  <i className={`fas ${member.icon}`}></i>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-700 transition-colors">{member.name}</h3>
-                <div className="text-blue-600 font-semibold mb-3">{member.role}</div>
-                <p className="text-gray-600 text-sm leading-relaxed">{member.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-16 md:py-20 relative overflow-hidden">

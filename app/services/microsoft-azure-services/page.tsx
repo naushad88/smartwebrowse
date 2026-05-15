@@ -3,17 +3,17 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Microsoft Azure Cloud Services | Smartwebrowse India Private Limited',
+  title: 'Microsoft Azure Cloud Services | Praelix Technologies',
   description: 'Professional Microsoft Azure cloud services including VM management, Azure AD, Azure DevOps, and enterprise cloud solutions.',
   openGraph: {
-    title: 'Microsoft Azure Cloud Services | Smartwebrowse India Private Limited',
+    title: 'Microsoft Azure Cloud Services | Praelix Technologies',
     description: 'Professional Microsoft Azure cloud services including VM management, Azure AD, Azure DevOps, and enterprise cloud solutions.',
-    url: 'https://www.smartwebrowse.com/services/microsoft-azure-services',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/microsoft-azure-services',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/microsoft-azure-services',
+    canonical: 'https://www.praelixtechnologies.com/services/microsoft-azure-services',
   },
 };
 

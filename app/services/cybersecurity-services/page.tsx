@@ -4,17 +4,17 @@ import Image from 'next/image';
 import MobileCTA from '@/components/MobileCTA';
 
 export const metadata: Metadata = {
-  title: 'Cybersecurity Services | Smartwebrowse India Private Limited',
+  title: 'Cybersecurity Services | Praelix Technologies',
   description: 'Comprehensive cybersecurity solutions including IAM setup, SSO integration, MFA implementation, and regulatory compliance support for HIPAA, SOX, and FedRAMP.',
   openGraph: {
-    title: 'Cybersecurity Services | Smartwebrowse India Private Limited',
+    title: 'Cybersecurity Services | Praelix Technologies',
     description: 'Comprehensive cybersecurity solutions including IAM setup, SSO integration, MFA implementation, and regulatory compliance support for HIPAA, SOX, and FedRAMP.',
-    url: 'https://www.smartwebrowse.com/services/cybersecurity-services',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/cybersecurity-services',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/cybersecurity-services',
+    canonical: 'https://www.praelixtechnologies.com/services/cybersecurity-services',
   },
 };
 

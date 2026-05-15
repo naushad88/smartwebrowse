@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Social Media Management | Smartwebrowse India Private Limited',
+  title: 'Social Media Management | Praelix Technologies',
   description: 'Professional social media management services to build your brand presence, engage your audience, and drive business growth across all platforms.',
   keywords: 'Social Media Management, Social Media Marketing, Brand Management, Social Media Strategy, Content Creation, Community Management',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/social-media-management',
+    canonical: 'https://www.praelixtechnologies.com/services/social-media-management',
   },
 };
 

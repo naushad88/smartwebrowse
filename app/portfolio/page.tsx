@@ -3,18 +3,18 @@ import { Metadata } from 'next';
 import PortfolioContent from '@/components/PortfolioContent';
 
 export const metadata: Metadata = {
-  title: 'Portfolio | AI Solutions & Automation Projects - Smartwebrowse India Private Limited',
+  title: 'Portfolio | AI Solutions & Automation Projects - Praelix Technologies',
   description: 'Explore our successful AI projects: AI-powered platforms, automation solutions, AI learning systems & mobile apps. See real results from our AI work.',
   keywords: 'AI portfolio, AI projects, automation solutions, AI development projects, AI transformation',
   openGraph: {
     title: 'Portfolio | AI Solutions & Automation Projects',
     description: 'Explore our successful AI projects: AI-powered platforms, automation solutions, AI learning systems & mobile apps. See real results from our AI work.',
-    url: 'https://www.smartwebrowse.com/portfolio',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/portfolio',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/portfolio',
+    canonical: 'https://www.praelixtechnologies.com/portfolio',
   },
 };
 

@@ -1,13 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
-// Configure email transporter for Smartwebrowse India Private Limited custom server
+// Configure email transporter for Praelix Technologies custom server
 const transporter = nodemailer.createTransport({
-  host: 'mail.smartwebrowse.com',
+  host: 'mail.praelixtechnologies.com',
   port: 465,
   secure: true, // true for 465, false for other ports
   auth: {
-    user: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
+    user: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
     pass: process.env.EMAIL_PASS || 'your-email-password',
   },
 });
@@ -48,20 +48,20 @@ export async function POST(request: NextRequest) {
         
         <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
           <p style="color: #6b7280; font-size: 14px;">
-            This message was sent from the Smartwebrowse India Private Limited contact form.
+            This message was sent from the Praelix Technologies contact form.
           </p>
         </div>
       </div>
     `;
 
     const mailOptions = {
-      from: process.env.EMAIL_USER || 'norply@smartwebrowse.com',
-      to: 'reachus@smartwebrowse.com',
+      from: process.env.EMAIL_USER || 'norply@praelixtechnologies.com',
+      to: 'reachus@praelixtechnologies.com',
       subject: `New Contact Form Submission from ${name}`,
       html: emailHtml,
     };
 
-    console.log('Sending email to reachus@smartwebrowse.com...');
+    console.log('Sending email to reachus@praelixtechnologies.com...');
     const emailResult = await transporter.sendMail(mailOptions);
     console.log('Email sent successfully:', emailResult.messageId);
 

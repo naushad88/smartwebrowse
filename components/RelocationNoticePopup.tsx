@@ -38,7 +38,7 @@ export default function RelocationNoticePopup() {
         </div>
 
         <p className="mb-4 text-base leading-relaxed text-gray-700">
-          Smartwebrowse is currently <strong className="text-gray-900">temporarily closed at our present premises</strong>
+          Praelix Technologies is currently <strong className="text-gray-900">temporarily closed at our present premises</strong>
           {' '}and is relocating to a new location after the acquisition completed on
           {' '}<strong className="text-gray-900">April 20, 2026</strong>.
         </p>

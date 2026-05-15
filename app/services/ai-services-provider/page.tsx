@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Services Provider | Smartwebrowse India Private Limited',
+  title: 'AI Services Provider | Praelix Technologies',
   description: 'Comprehensive AI services provider offering AI consulting, custom AI development, AI-powered applications, and intelligent solutions to transform your business.',
   keywords: 'AI Services Provider, AI Services, AI Consulting, AI Development, Artificial Intelligence Services, AI Solutions',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-services-provider',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-services-provider',
   },
 };
 

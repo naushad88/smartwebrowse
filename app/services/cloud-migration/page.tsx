@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Cloud Migration & Architecture | Smartwebrowse India Private Limited',
+  title: 'Cloud Migration & Architecture | Praelix Technologies',
   description: 'Expert cloud migration services and architecture design to help you move to the cloud efficiently and securely.',
   keywords: 'Cloud Migration, Cloud Architecture, AWS Migration, Azure Migration, Google Cloud Migration, Cloud Strategy',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/cloud-migration',
+    canonical: 'https://www.praelixtechnologies.com/services/cloud-migration',
   },
 };
 

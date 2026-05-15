@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Infrastructure as Code | Smartwebrowse India Private Limited',
+  title: 'Infrastructure as Code | Praelix Technologies',
   description: 'Professional Infrastructure as Code (IaC) services to automate infrastructure provisioning, management, and deployment using modern DevOps practices.',
   keywords: 'Infrastructure as Code, IaC, Terraform, CloudFormation, DevOps, Infrastructure Automation, Cloud Infrastructure',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/infrastructure-as-code',
+    canonical: 'https://www.praelixtechnologies.com/services/infrastructure-as-code',
   },
 };
 

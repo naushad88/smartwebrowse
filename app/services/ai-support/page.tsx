@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Support & Maintenance | 24/7 AI System Support | Smartwebrowse',
+  title: 'AI Support & Maintenance | 24/7 AI System Support | Praelix Technologies',
   description: '24/7 AI system support, AI infrastructure maintenance, and continuous monitoring services to ensure optimal AI performance and reliability.',
   keywords: 'AI Support, AI Maintenance, 24/7 AI Support, AI System Support, AI Infrastructure Support, AI Monitoring',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-support',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-support',
   },
 };
 

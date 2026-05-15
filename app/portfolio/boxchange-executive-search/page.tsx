@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Boxchange - Search & Interim Management | Portfolio | Smartwebrowse India Private Limited',
+  title: 'Boxchange - Search & Interim Management | Portfolio | Praelix Technologies',
   description: 'Comprehensive search and interim management solutions through the boxchange360° platform, integrating multiple layers of scientific and objective candidate assessments for informed hiring decisions.',
   keywords: 'executive search, interim management, talent acquisition, hiring technology, recruitment platform, professional services',
   openGraph: {
-    title: 'Boxchange - Search & Interim Management | Portfolio | Smartwebrowse India Private Limited',
+    title: 'Boxchange - Search & Interim Management | Portfolio | Praelix Technologies',
     description: 'Comprehensive search and interim management solutions through the boxchange360° platform, integrating multiple layers of scientific and objective candidate assessments for informed hiring decisions.',
-    url: 'https://www.smartwebrowse.com/portfolio/boxchange-executive-search',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/portfolio/boxchange-executive-search',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {

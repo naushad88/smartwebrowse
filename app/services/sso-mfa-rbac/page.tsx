@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'SSO, MFA & RBAC Integration | Smartwebrowse India Private Limited',
+  title: 'SSO, MFA & RBAC Integration | Praelix Technologies',
   description: 'Simplify user access while boosting security with Single Sign-On (SSO), Multi-Factor Authentication (MFA), and Role-Based Access Control (RBAC).',
   keywords: 'SSO, MFA, RBAC, Single Sign-On, Multi-Factor Authentication, Role-Based Access Control, Identity Management',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/sso-mfa-rbac',
+    canonical: 'https://www.praelixtechnologies.com/services/sso-mfa-rbac',
   },
 };
 

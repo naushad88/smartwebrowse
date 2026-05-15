@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'IT Services & Support | Smartwebrowse India Private Limited',
+  title: 'IT Services & Support | Praelix Technologies',
   description: 'Comprehensive IT services and support including 24/7 IT support, help desk services, network management, and infrastructure support.',
   keywords: 'IT services, IT support, help desk, network management, infrastructure support, 24/7 support',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/it-services-support',
+    canonical: 'https://www.praelixtechnologies.com/services/it-services-support',
   },
 };
 

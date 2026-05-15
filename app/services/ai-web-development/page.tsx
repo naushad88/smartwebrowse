@@ -3,18 +3,18 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI & Web Development Services | Smartwebrowse India Private Limited',
+  title: 'AI & Web Development Services | Praelix Technologies',
   description: 'Transform your business with AI integration, custom web development, eCommerce platforms & WordPress solutions. Expert AI developers deliver scalable results.',
   keywords: 'AI integration, custom web development, eCommerce solutions, WordPress development, AI web apps, AI services',
   openGraph: {
-    title: 'AI & Web Development Services | Smartwebrowse India Private Limited',
+    title: 'AI & Web Development Services | Praelix Technologies',
     description: 'Transform your business with AI integration, custom web development, eCommerce platforms & WordPress solutions. Expert AI developers deliver scalable results.',
-    url: 'https://www.smartwebrowse.com/services/ai-web-development',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/ai-web-development',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/ai-web-development',
+    canonical: 'https://www.praelixtechnologies.com/services/ai-web-development',
   },
 };
 

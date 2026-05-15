@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: '24/7 IT Support Services | Smartwebrowse India Private Limited',
+  title: '24/7 IT Support Services | Praelix Technologies',
   description: 'Round-the-clock IT support and monitoring services. Get immediate incident response, proactive maintenance, and emergency support for your business.',
   keywords: '24/7 IT support, IT monitoring, incident response, emergency support, proactive maintenance',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/24-7-it-support',
+    canonical: 'https://www.praelixtechnologies.com/services/24-7-it-support',
   },
 };
 

@@ -2,12 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Premium WordPress & WooCommerce Plugins | Smartwebrowse India Private Limited',
+  title: 'Premium WordPress & WooCommerce Plugins | Praelix Technologies',
   description: 'Professional plugins designed for modern e-commerce, payment processing, and business automation. Built by experts, backed by 24/7 support.',
   openGraph: {
     title: 'Premium WordPress & WooCommerce Plugins',
     description: 'Professional plugins designed for modern e-commerce, payment processing, and business automation.',
-    url: 'https://www.smartwebrowse.com/plugins',
+    url: 'https://www.praelixtechnologies.com/plugins',
     type: 'website',
   },
 };

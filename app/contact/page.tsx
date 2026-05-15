@@ -4,18 +4,18 @@ import ContactForm from '@/components/ContactForm';
 import WorldMap from '@/components/WorldMap';
 
 export const metadata: Metadata = {
-  title: 'Contact Smartwebrowse India Private Limited | Get Expert AI Support',
+  title: 'Contact Praelix Technologies | Get Expert AI Support',
   description: 'Contact our AI experts for AI services, automation & AI transformation support. 24/7 assistance available. Get free consultation today.',
   keywords: 'contact AI experts, AI support, automation help, AI consulting',
   openGraph: {
-    title: 'Contact Smartwebrowse India Private Limited | Get Expert AI Support',
+    title: 'Contact Praelix Technologies | Get Expert AI Support',
     description: 'Contact our AI experts for AI services, automation & AI transformation support. 24/7 assistance available. Get free consultation today.',
-    url: 'https://www.smartwebrowse.com/contact',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/contact',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/contact',
+    canonical: 'https://www.praelixtechnologies.com/contact',
   },
 };
 
@@ -95,7 +95,7 @@ export default function ContactPage() {
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                       <div>
-                        <div className="font-semibold text-gray-900">Smartwebrowse India Private Limited</div>
+                        <div className="font-semibold text-gray-900">Praelix Technologies</div>
                         <div className="text-sm text-gray-600 mt-1">AI Services & Automation Company</div>
                       </div>
                     </div>

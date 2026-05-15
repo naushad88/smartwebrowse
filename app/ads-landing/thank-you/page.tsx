@@ -3,10 +3,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Thank You - Your Free Consultation Request Received | Smartwebrowse India Private Limited',
+  title: 'Thank You - Your Free Consultation Request Received | Praelix Technologies',
   description: 'Thank you for your interest in our IT services. We will contact you within 24 hours to schedule your free consultation.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/ads-landing/thank-you',
+    canonical: 'https://www.praelixtechnologies.com/ads-landing/thank-you',
   },
   robots: {
     index: false,
@@ -22,8 +22,8 @@ export default function AdsLandingThankYouPage() {
         <div className="container-custom py-4">
           <Link href="/" className="flex items-center space-x-2">
             <Image 
-              src="/images/Smartwebrowse-Logo.png" 
-              alt="Smartwebrowse India Private Limited" 
+              src="/images/praelixtech-logo.png" 
+              alt="Praelix Technologies" 
               width={180} 
               height={52}
               className="h-10 w-auto"
@@ -136,7 +136,7 @@ export default function AdsLandingThankYouPage() {
 
           {/* Trust Signals */}
           <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Smartwebrowse India Private Limited?</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Praelix Technologies?</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -209,8 +209,8 @@ export default function AdsLandingThankYouPage() {
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">Email Us</h3>
                 <p className="text-gray-600 mb-2">Send us your questions anytime</p>
-                <a href="mailto:contact@smartwebrowse.com" className="text-primary-600 font-semibold hover:text-primary-700">
-                  contact@smartwebrowse.com
+                <a href="mailto:contact@praelixtechnologies.com" className="text-primary-600 font-semibold hover:text-primary-700">
+                  contact@praelixtechnologies.com
                 </a>
               </div>
             </div>

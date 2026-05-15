@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Application Testing Services | QA & Performance Testing',
     description: 'Expert application testing: automated testing, performance testing, security testing & QA optimization. Ensure your apps are robust & secure.',
-    url: 'https://www.smartwebrowse.com/services/application-testing',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services/application-testing',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/application-testing',
+    canonical: 'https://www.praelixtechnologies.com/services/application-testing',
   },
 };
 

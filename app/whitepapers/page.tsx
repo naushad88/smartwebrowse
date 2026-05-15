@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Whitepapers | Smartwebrowse India Private Limited',
+  title: 'AI Whitepapers | Praelix Technologies',
   description: 'Download our comprehensive whitepapers on AI services, automation, AI consulting, and AI transformation strategies.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/whitepapers',
+    canonical: 'https://www.praelixtechnologies.com/whitepapers',
   },
 };
 

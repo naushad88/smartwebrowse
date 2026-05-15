@@ -3,10 +3,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'AI Webinars | Smartwebrowse India Private Limited',
+  title: 'AI Webinars | Praelix Technologies',
   description: 'Join our expert-led webinars on AI services, automation, AI consulting, and AI transformation strategies.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/webinars',
+    canonical: 'https://www.praelixtechnologies.com/webinars',
   },
 };
 

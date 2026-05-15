@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'All Development Services | Smartwebrowse India Private Limited',
+  title: 'All Development Services | Praelix Technologies',
   description: 'Comprehensive web development, AI integration, custom software, and digital solutions to transform your business with modern technology.',
   keywords: 'Web Development, AI Integration, Custom Software, Digital Solutions, Software Development, Technology Services',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/all-development-services',
+    canonical: 'https://www.praelixtechnologies.com/services/all-development-services',
   },
 };
 

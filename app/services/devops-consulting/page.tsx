@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'DevOps Consulting | Smartwebrowse India Private Limited',
+  title: 'DevOps Consulting | Praelix Technologies',
   description: 'Expert DevOps consulting services to help you transform your development and operations processes, improve efficiency, and accelerate software delivery.',
   keywords: 'DevOps Consulting, DevOps Transformation, Process Optimization, Automation Strategy, DevOps Implementation, Software Delivery',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/devops-consulting',
+    canonical: 'https://www.praelixtechnologies.com/services/devops-consulting',
   },
 };
 

@@ -1,12 +1,12 @@
-# SWB - Smartwebrowse India Private Limited
+# Praelix Technologies Website
 
 ## AI Startup Company Website
 
-This is the official website for **Smartwebrowse India Private Limited (SWB)**, a leading AI startup company providing intelligent automation, AI services, and 24/7 AI support.
+This is the official website for **Praelix Technologies**, a leading AI startup company providing intelligent automation, AI services, and 24/7 AI support.
 
 ## 🚀 Company Overview
 
-**Smartwebrowse India Private Limited** is an AI startup focused on delivering:
+**Praelix Technologies** is an AI startup focused on delivering:
 - **AI Services Provider** - Comprehensive AI solutions and consulting
 - **Automation Services** - Intelligent process and workflow automation
 - **AI Support & Maintenance** - 24/7 AI system support and monitoring
@@ -99,12 +99,12 @@ The project is configured for automatic deployment on Vercel via GitHub integrat
 
 ## 📧 Contact
 
-- **Email**: contact@smartwebrowse.com
-- **Website**: https://www.smartwebrowse.com
+- **Email**: contact@praelixtechnologies.com
+- **Website**: https://www.praelixtechnologies.com
 
 ## 📄 License
 
-© 2025 Smartwebrowse India Private Limited. All rights reserved.
+© 2025 Praelix Technologies. All rights reserved.
 
 ---
 

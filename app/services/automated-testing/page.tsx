@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Automated Testing | Smartwebrowse India Private Limited',
+  title: 'Automated Testing | Praelix Technologies',
   description: 'Comprehensive automated testing solutions to improve software quality, reduce testing time, and increase development efficiency.',
   keywords: 'Automated Testing, Test Automation, QA Automation, Selenium, Cypress, Testing Tools, Software Testing',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/automated-testing',
+    canonical: 'https://www.praelixtechnologies.com/services/automated-testing',
   },
 };
 

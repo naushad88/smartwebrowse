@@ -18,6 +18,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     '/EmployerDashboard/:path*',
-    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|images/praelixtech-icon.png|praelixtech-icon.png).*)',
   ],
 };

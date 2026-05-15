@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Workflow Automation Services | Smartwebrowse India Private Limited',
+  title: 'Workflow Automation Services | Praelix Technologies',
   description: 'Streamline workflows and improve efficiency with intelligent workflow automation solutions.',
   keywords: 'Workflow Automation, Business Workflow, Process Workflow, Intelligent Workflow',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/automation-services/workflow-automation',
+    canonical: 'https://www.praelixtechnologies.com/services/automation-services/workflow-automation',
   },
 };
 

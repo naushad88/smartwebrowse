@@ -96,7 +96,7 @@ const FocusIndustries = () => {
             Your Trusted AI Partner for Intelligent Automation, AI Services & Global AI Support
           </p>
           <p className="text-sm text-gray-600 max-w-4xl mx-auto">
-            Smartwebrowse India Private Limited is a leading AI startup delivering comprehensive AI solutions. 
+            Praelix Technologies is a leading AI startup delivering comprehensive AI solutions. 
             We specialize in AI Services, Automation Services, AI Support & Maintenance, AI Consulting, 
             AI Integration, AI Development, AI Analytics, and AI Infrastructure for businesses worldwide.
           </p>

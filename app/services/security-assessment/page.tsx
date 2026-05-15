@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Security Assessment & Penetration Testing | Smartwebrowse India Private Limited',
+  title: 'Security Assessment & Penetration Testing | Praelix Technologies',
   description: 'Comprehensive security assessments and penetration testing to identify vulnerabilities and strengthen your security posture.',
   keywords: 'Security Assessment, Penetration Testing, VAPT, Vulnerability Assessment, Security Testing, Cybersecurity',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/security-assessment',
+    canonical: 'https://www.praelixtechnologies.com/services/security-assessment',
   },
 };
 

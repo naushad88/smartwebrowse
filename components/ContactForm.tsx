@@ -46,7 +46,7 @@ const ContactForm = () => {
     setSubmitResponse(null);
 
     try {
-      // Form data will be sent to reachus@robustsoftech.com via API
+      // Form data will be sent to reachus@praelixtechnologies.com via API
       const formData = {
         ...data
       };

@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description: 'Comprehensive AI services: AI services provider, automation services, AI support, AI consulting, AI integration, AI development, AI analytics & AI infrastructure. Expert AI solutions for business transformation.',
   keywords: 'AI services, automation services, AI support, AI consulting, AI integration, AI development, AI analytics, AI infrastructure, artificial intelligence',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services',
+    canonical: 'https://www.praelixtechnologies.com/services',
   },
   openGraph: {
     title: 'AI Services | Automation, AI Support & AI Solutions',
     description: 'Comprehensive AI services: AI services provider, automation services, AI support, AI consulting, AI integration, AI development, AI analytics & AI infrastructure. Expert AI solutions for business transformation.',
-    url: 'https://www.smartwebrowse.com/services',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/services',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
 };

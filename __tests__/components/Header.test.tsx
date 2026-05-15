@@ -13,7 +13,7 @@ jest.mock('next/image', () => ({
 describe('Header', () => {
   it('renders the logo', () => {
     render(<Header />)
-    const logo = screen.getByAltText('Robust Softech')
+    const logo = screen.getByAltText('Praelix Technologies')
     expect(logo).toBeInTheDocument()
   })
 

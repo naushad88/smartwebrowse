@@ -1,7 +1,7 @@
 # Careers Email Setup Guide
 
 ## Overview
-The careers page now includes a fully functional job application system that sends applications to `hr@robustsoftech.com` and confirmation emails to candidates.
+The careers page now includes a fully functional job application system that sends applications to `hr@praelixtechnologies.com` and confirmation emails to candidates.
 
 ## Features
 - ✅ Working "Apply Now" buttons for each job position
@@ -53,7 +53,7 @@ You can modify the email configuration in `app/api/careers/apply/route.ts` to us
 ### 2. Backend Process
 1. Form data validated (required fields, file type, size)
 2. Resume converted to buffer for email attachment
-3. Professional email sent to `hr@robustsoftech.com` with:
+3. Professional email sent to `hr@praelixtechnologies.com` with:
    - Candidate information
    - Cover letter (if provided)
    - Resume attached

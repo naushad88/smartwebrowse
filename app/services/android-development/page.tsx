@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Android Development Services | Smartwebrowse India Private Limited',
+  title: 'Android Development Services | Praelix Technologies',
   description: 'Professional Android app development services using Kotlin and Material Design. Create native Android applications with modern UI/UX and optimal performance.',
   keywords: 'Android development, Android apps, Kotlin, Material Design, native Android applications',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/android-development',
+    canonical: 'https://www.praelixtechnologies.com/services/android-development',
   },
 };
 

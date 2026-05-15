@@ -4,10 +4,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Case Studies | AI Solutions & Automation Projects - Smartwebrowse India Private Limited',
+  title: 'Case Studies | AI Solutions & Automation Projects - Praelix Technologies',
   description: 'Explore real-world case studies showcasing our successful AI implementations in education technology, e-commerce, professional services, healthcare, and mobile app development.',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/case-studies',
+    canonical: 'https://www.praelixtechnologies.com/case-studies',
   },
 };
 

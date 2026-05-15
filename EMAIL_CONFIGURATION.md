@@ -1,12 +1,12 @@
-# Email Configuration for Robust Softech
+# Email Configuration for Praelix Technologies
 
 ## Email Server Details
 
-**Incoming Server:** `mail.robustsoftech.com`
+**Incoming Server:** `mail.praelixtechnologies.com`
 - IMAP Port: 993
 - POP3 Port: 995
 
-**Outgoing Server:** `mail.robustsoftech.com`
+**Outgoing Server:** `mail.praelixtechnologies.com`
 - SMTP Port: 465 (SSL/TLS)
 
 ## Environment Variables
@@ -15,7 +15,7 @@ Add these environment variables to your `.env.local` file:
 
 ```bash
 # Email Configuration
-EMAIL_USER="noreply@robustsoftech.com"
+EMAIL_USER="noreply@praelixtechnologies.com"
 EMAIL_PASS="your-email-password"
 ```
 
@@ -23,10 +23,10 @@ EMAIL_PASS="your-email-password"
 
 | Form | URL | Email Destination | API Route |
 |------|-----|------------------|-----------|
-| Get a Quote | `/get-a-quote` | `sales@robustsoftech.com` | `/api/quote` |
-| Contact Us | `/contact` | `reachus@robustsoftech.com` | `/api/contact` |
-| Careers | `/careers` | `hr@robustsoftech.com` | `/api/careers/apply` |
-| Send Resume | `/send-resume` | `hr@robustsoftech.com` | `/api/careers/apply` |
+| Get a Quote | `/get-a-quote` | `sales@praelixtechnologies.com` | `/api/quote` |
+| Contact Us | `/contact` | `reachus@praelixtechnologies.com` | `/api/contact` |
+| Careers | `/careers` | `hr@praelixtechnologies.com` | `/api/careers/apply` |
+| Send Resume | `/send-resume` | `hr@praelixtechnologies.com` | `/api/careers/apply` |
 
 ## SMTP Configuration
 
@@ -34,11 +34,11 @@ All forms use the following SMTP configuration:
 
 ```javascript
 const transporter = nodemailer.createTransport({
-  host: 'mail.robustsoftech.com',
+  host: 'mail.praelixtechnologies.com',
   port: 465,
   secure: true, // SSL/TLS
   auth: {
-    user: process.env.EMAIL_USER || 'noreply@robustsoftech.com',
+    user: process.env.EMAIL_USER || 'noreply@praelixtechnologies.com',
     pass: process.env.EMAIL_PASS || 'your-email-password',
   },
 });
@@ -72,7 +72,7 @@ To test if emails are working:
 
 1. **Authentication Failed:**
    - Verify `EMAIL_USER` and `EMAIL_PASS` are correct
-   - Ensure the email account exists on `mail.robustsoftech.com`
+   - Ensure the email account exists on `mail.praelixtechnologies.com`
 
 2. **Connection Timeout:**
    - Check if port 465 is open
@@ -85,10 +85,10 @@ To test if emails are working:
 ### Email Account Setup:
 
 Make sure these email accounts exist on your server:
-- `noreply@robustsoftech.com` (for sending emails)
-- `sales@robustsoftech.com` (for quote requests)
-- `reachus@robustsoftech.com` (for contact form)
-- `hr@robustsoftech.com` (for career applications)
+- `noreply@praelixtechnologies.com` (for sending emails)
+- `sales@praelixtechnologies.com` (for quote requests)
+- `reachus@praelixtechnologies.com` (for contact form)
+- `hr@praelixtechnologies.com` (for career applications)
 
 ## Security Notes
 

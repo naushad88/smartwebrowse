@@ -108,14 +108,14 @@ export default function GetAQuotePage() {
   return (
     <>
       <Head>
-        <title>Get a Quote | AI Services Pricing - Smartwebrowse India Private Limited</title>
+        <title>Get a Quote | AI Services Pricing - Praelix Technologies</title>
         <meta name="description" content="Get a free quote for AI services, automation solutions, and AI consulting. Transparent pricing for your AI project needs." />
         <meta name="keywords" content="AI quote, AI services pricing, automation quote, AI consulting cost, AI development pricing" />
-        <link rel="canonical" href="https://www.smartwebrowse.com/get-a-quote" />
-        <meta property="og:title" content="Get a Quote | AI Services Pricing - Smartwebrowse India Private Limited" />
+        <link rel="canonical" href="https://www.praelixtechnologies.com/get-a-quote" />
+        <meta property="og:title" content="Get a Quote | AI Services Pricing - Praelix Technologies" />
         <meta property="og:description" content="Get a free quote for AI services, automation solutions, and AI consulting. Transparent pricing for your AI project needs." />
-        <meta property="og:url" content="https://www.smartwebrowse.com/get-a-quote" />
-        <meta property="og:site_name" content="Smartwebrowse India Private Limited" />
+        <meta property="og:url" content="https://www.praelixtechnologies.com/get-a-quote" />
+        <meta property="og:site_name" content="Praelix Technologies" />
         <meta property="og:type" content="website" />
       </Head>
       

@@ -320,7 +320,7 @@ const AnimatedBrain = () => {
 const WhyChooseUs = ({ data }: WhyChooseUsProps) => {
   // Default data if none provided
   const whyChooseUsData = data || {
-    title: "Why Choose Smartwebrowse?",
+    title: "Why Choose Praelix Technologies?",
     subtitle: "Your Trusted AI Technology Partner",
     features: [
       {

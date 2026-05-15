@@ -37,7 +37,7 @@ const Testimonials = ({ testimonials }: TestimonialsProps) => {
             </h2>
             <p className="text-base text-gray-600 max-w-2xl mx-auto">
               Don't just take our word for it. Here's what our clients have to say about their experience 
-              working with Smartwebrowse India Private Limited.
+              working with Praelix Technologies.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -60,7 +60,7 @@ const Testimonials = ({ testimonials }: TestimonialsProps) => {
           </h2>
           <p className="text-base text-gray-600 max-w-2xl mx-auto">
             Don't just take our word for it. Here's what our clients have to say about their experience 
-            working with Smartwebrowse India Private Limited.
+            working with Praelix Technologies.
           </p>
         </div>
 

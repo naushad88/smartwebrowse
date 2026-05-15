@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Mobile App Development Services | Smartwebrowse India Private Limited',
+  title: 'Mobile App Development Services | Praelix Technologies',
   description: 'Comprehensive mobile application development services including iOS, Android, cross-platform, and custom mobile solutions.',
   keywords: 'mobile app development, iOS development, Android development, cross-platform, React Native, Flutter',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/mobile-app-development',
+    canonical: 'https://www.praelixtechnologies.com/services/mobile-app-development',
   },
 };
 

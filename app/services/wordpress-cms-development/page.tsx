@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'WordPress & CMS Development | Smartwebrowse India Private Limited',
+  title: 'WordPress & CMS Development | Praelix Technologies',
   description: 'Professional WordPress and CMS development services to create powerful, scalable, and easy-to-manage websites and applications.',
   keywords: 'WordPress Development, CMS Development, Website Development, Content Management, Custom Themes, WordPress Plugins',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/wordpress-cms-development',
+    canonical: 'https://www.praelixtechnologies.com/services/wordpress-cms-development',
   },
 };
 

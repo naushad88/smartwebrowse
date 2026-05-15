@@ -11,14 +11,14 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   const resolvedParams = await params;
   
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.smartwebrowse.com';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.praelixtechnologies.com';
     const response = await fetch(`${baseUrl}/api/blogs/${resolvedParams.slug}`, {
       next: { revalidate: 300 }
     });
     
     if (!response.ok) {
       return {
-        title: 'Post Not Found | Smartwebrowse India Private Limited',
+        title: 'Post Not Found | Praelix Technologies',
         description: 'The requested blog post could not be found.',
       };
     }
@@ -26,25 +26,25 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     const post = await response.json();
     
     return {
-      title: `${post.title} | Smartwebrowse India Private Limited Blog`,
+      title: `${post.title} | Praelix Technologies Blog`,
       description: post.excerpt,
       openGraph: {
         title: post.title,
         description: post.excerpt,
         url: `/blogs/${post.slug}`,
-        siteName: 'Smartwebrowse India Private Limited',
+        siteName: 'Praelix Technologies',
         type: 'article',
         publishedTime: post.date,
-        authors: [post.author || 'Smartwebrowse India Private Limited Team'],
+        authors: [post.author || 'Praelix Technologies Team'],
         tags: post.tags || [],
       },
       alternates: {
-        canonical: `https://www.smartwebrowse.com/blogs/${post.slug}`,
+        canonical: `https://www.praelixtechnologies.com/blogs/${post.slug}`,
       },
     };
   } catch (error) {
     return {
-      title: 'Post Not Found | Smartwebrowse India Private Limited',
+      title: 'Post Not Found | Praelix Technologies',
       description: 'The requested blog post could not be found.',
     };
   }
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
 export async function generateStaticParams() {
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.smartwebrowse.com';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.praelixtechnologies.com';
     const response = await fetch(`${baseUrl}/api/blogs?per_page=100`, {
       next: { revalidate: 3600 } // Cache for 1 hour
     });
@@ -75,7 +75,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const resolvedParams = await params;
   
   try {
-    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.smartwebrowse.com';
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.praelixtechnologies.com';
     const response = await fetch(`${baseUrl}/api/blogs/${resolvedParams.slug}`, {
       next: { revalidate: 300 }
     });
@@ -284,7 +284,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 <Link href="/client-reviews" className="text-primary-600 hover:text-primary-700 underline font-medium mb-4 inline-block">
                   Client Success Story
                 </Link>
-                <h3 className="heading-3 mb-6 text-gray-900">How Smartwebrowse India Private Limited Helps You Build with Quality from Day One</h3>
+                <h3 className="heading-3 mb-6 text-gray-900">How Praelix Technologies Helps You Build with Quality from Day One</h3>
                 <p className="text-gray-600 mb-6">We work alongside your developers to:</p>
                 <ul className="text-left max-w-2xl mx-auto mb-6 space-y-2">
                   <li className="flex items-start">
@@ -379,8 +379,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   {(typeof post.author === 'string' ? post.author : post.author?.name || 'R').charAt(0)}
                 </div>
                 <div className="text-center md:text-left">
-                  <h4 className="heading-4 text-gray-900 mb-2">{typeof post.author === 'string' ? post.author : (post.author?.name || 'Smartwebrowse India Private Limited Team')}</h4>
-                  <p className="text-gray-600 text-lg">Author at Smartwebrowse India Private Limited</p>
+                  <h4 className="heading-4 text-gray-900 mb-2">{typeof post.author === 'string' ? post.author : (post.author?.name || 'Praelix Technologies Team')}</h4>
+                  <p className="text-gray-600 text-lg">Author at Praelix Technologies</p>
                   <p className="text-gray-500 text-sm mt-2">Expert in technology and digital transformation</p>
                 </div>
               </div>

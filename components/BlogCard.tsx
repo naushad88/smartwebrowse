@@ -65,7 +65,7 @@ const BlogCard = ({ post }: BlogCardProps) => {
               <span className="mx-3 text-gray-300">•</span>
               <span className="flex items-center">
                 <i className="fas fa-user mr-2 text-primary-500"></i>
-                {typeof post.author === 'string' ? post.author : (post.author?.name || 'Smartwebrowse India Private Limited Team')}
+                {typeof post.author === 'string' ? post.author : (post.author?.name || 'Praelix Technologies Team')}
               </span>
             </div>
 

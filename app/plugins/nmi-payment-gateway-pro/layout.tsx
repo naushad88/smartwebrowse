@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'NMI Payment Gateway Pro for WooCommerce | Smartwebrowse India Private Limited',
-  description: 'Complete NMI payment gateway integration for WooCommerce with PCI DSS compliance, WooCommerce Blocks support, subscription management, and advanced features. Developed by Smartwebrowse India Private Limited.',
+  title: 'NMI Payment Gateway Pro for WooCommerce | Praelix Technologies',
+  description: 'Complete NMI payment gateway integration for WooCommerce with PCI DSS compliance, WooCommerce Blocks support, subscription management, and advanced features. Developed by Praelix Technologies.',
   keywords: 'NMI payment gateway, WooCommerce payment, PCI DSS compliance, payment processing, e-commerce, WordPress plugin',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/plugins/nmi-payment-gateway-pro',
+    canonical: 'https://www.praelixtechnologies.com/plugins/nmi-payment-gateway-pro',
   },
   openGraph: {
     title: 'NMI Payment Gateway Pro for WooCommerce | Secure Payment Processing',
     description: 'Complete NMI payment gateway integration for WooCommerce with PCI DSS compliance, WooCommerce Blocks support, subscription management, and advanced features.',
-    url: 'https://www.smartwebrowse.com/plugins/nmi-payment-gateway-pro',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/plugins/nmi-payment-gateway-pro',
+    siteName: 'Praelix Technologies',
     type: 'website',
     images: [
       {

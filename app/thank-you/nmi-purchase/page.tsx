@@ -158,7 +158,7 @@ function ThankYouContent() {
               </div>
               <h3 className="font-semibold text-neutral-900 mb-2">Need Help?</h3>
               <p className="text-sm text-neutral-600">
-                Contact us at <a href="mailto:nmi-support@smartwebrowse.com" className="text-primary-600 hover:underline">nmi-support@smartwebrowse.com</a>
+                Contact us at <a href="mailto:nmi-support@praelixtechnologies.com" className="text-primary-600 hover:underline">nmi-support@praelixtechnologies.com</a>
               </p>
             </div>
 

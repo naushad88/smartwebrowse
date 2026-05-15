@@ -3,11 +3,11 @@ import MobileCTA from '@/components/MobileCTA';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Custom Mobile Solutions Services | Smartwebrowse India Private Limited',
+  title: 'Custom Mobile Solutions Services | Praelix Technologies',
   description: 'Tailored mobile application solutions designed for specific business needs and workflows. Custom mobile apps that integrate with your existing systems.',
   keywords: 'custom mobile solutions, business mobile apps, enterprise mobile, mobile integration',
   alternates: {
-    canonical: 'https://www.smartwebrowse.com/services/custom-mobile-solutions',
+    canonical: 'https://www.praelixtechnologies.com/services/custom-mobile-solutions',
   },
 };
 

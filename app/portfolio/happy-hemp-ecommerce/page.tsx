@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Happy Hemp – E-Commerce Platform Development | Portfolio | Smartwebrowse India Private Limited',
+  title: 'Happy Hemp – E-Commerce Platform Development | Portfolio | Praelix Technologies',
   description: 'Comprehensive e-commerce platform for CBD and hemp products with multi-category support, subscription services, lab reports integration, and multi-language capabilities.',
   keywords: 'e-commerce development, CBD platform, hemp products, WooCommerce, WordPress, multi-language, subscription services',
   openGraph: {
-    title: 'Happy Hemp – E-Commerce Platform Development | Portfolio | Smartwebrowse India Private Limited',
+    title: 'Happy Hemp – E-Commerce Platform Development | Portfolio | Praelix Technologies',
     description: 'Comprehensive e-commerce platform for CBD and hemp products with multi-category support, subscription services, lab reports integration, and multi-language capabilities.',
-    url: 'https://www.smartwebrowse.com/portfolio/happy-hemp-ecommerce',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/portfolio/happy-hemp-ecommerce',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {

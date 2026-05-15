@@ -115,7 +115,7 @@ export default function AboutPageClient() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent"
           >
-            About Smartwebrowse India Private Limited
+            About Praelix Technologies
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -144,7 +144,7 @@ export default function AboutPageClient() {
                 Our Story
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Founded as an AI startup, Smartwebrowse India Private Limited has grown to become a
+                Founded as an AI startup, Praelix Technologies has grown to become a
                 leading AI services provider, delivering intelligent automation and AI solutions to 
                 businesses across multiple industries.
               </p>
@@ -390,4 +390,9 @@ export default function AboutPageClient() {
     </div>
   );
 }
+
+
+
+
+
 

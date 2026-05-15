@@ -4,14 +4,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'GradeNext AI Learning Platform | Portfolio | Smartwebrowse India Private Limited',
+  title: 'GradeNext AI Learning Platform | Portfolio | Praelix Technologies',
   description: 'AI-driven after-school learning platform for grades 1-8 with adaptive learning, performance tracking, coding classes, and personalized 1:1 tutor support system.',
   keywords: 'AI learning platform, educational technology, adaptive learning, coding classes, tutor support, grades 1-8',
   openGraph: {
-    title: 'GradeNext AI Learning Platform | Portfolio | Smartwebrowse India Private Limited',
+    title: 'GradeNext AI Learning Platform | Portfolio | Praelix Technologies',
     description: 'AI-driven after-school learning platform for grades 1-8 with adaptive learning, performance tracking, coding classes, and personalized 1:1 tutor support system.',
-    url: 'https://www.smartwebrowse.com/portfolio/gradenext-ai-learning-platform',
-    siteName: 'Smartwebrowse India Private Limited',
+    url: 'https://www.praelixtechnologies.com/portfolio/gradenext-ai-learning-platform',
+    siteName: 'Praelix Technologies',
     type: 'website',
   },
   alternates: {
