@@ -17,7 +17,21 @@ export const SITE_EMAIL = {
 export const MAIL_HOST = process.env.EMAIL_HOST || 'mail.praelixtechnologies.com';
 
 export const CALENDLY_URL =
-  process.env.CALENDLY_URL || 'https://calendly.com/contact-praelixtechnologies/30min';
+  process.env.NEXT_PUBLIC_CALENDLY_URL ||
+  process.env.CALENDLY_URL ||
+  'https://calendly.com/praelix/30min';
+
+/** Registered office & legal jurisdiction (Delhi, India) */
+export const COMPANY_LEGAL = {
+  country: 'India',
+  state: 'Delhi',
+  stateFull: 'National Capital Territory of Delhi',
+  city: 'New Delhi',
+  officeAddress:
+    '#333, Shankar Marg, Mandawali, East Delhi, Delhi 110092, India',
+  jurisdiction:
+    'Exclusive jurisdiction of the competent courts at New Delhi, Delhi, India.',
+} as const;
 
 export const SOCIAL_LINKS = {
   facebook: 'https://facebook.com/praelixtechnologies',

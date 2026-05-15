@@ -1,212 +1,171 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
-import { useState } from 'react';
-import Head from 'next/head';
+import { useEffect, useRef, useState } from 'react';
+import Script from 'next/script';
 
-// Declare Calendly types
+const CALENDLY_BASE_URL =
+  process.env.NEXT_PUBLIC_CALENDLY_URL ||
+  'https://calendly.com/praelix/30min';
+
+const CALENDLY_INLINE_URL = `${CALENDLY_BASE_URL}${
+  CALENDLY_BASE_URL.includes('?') ? '&' : '?'
+}month=2026-05&hide_gdpr_banner=1&hide_event_type_details=1`;
+
+const CALENDLY_HEIGHT = 680;
+
 declare global {
   interface Window {
     Calendly?: {
-      initInlineWidget: (options: any) => void;
-      initPopupWidget: (options: any) => void;
+      initInlineWidget: (options: {
+        url: string;
+        parentElement: HTMLElement;
+        prefill?: Record<string, string>;
+        utm?: Record<string, string>;
+      }) => void;
     };
   }
 }
 
 export default function ConsultationPage() {
   const calendlyRef = useRef<HTMLDivElement>(null);
-  const calendlyUrl = 'https://calendly.com/contact-praelixtechnologies/30min?back=1&month=2026-04';
-  const [showCalendlyWidget, setShowCalendlyWidget] = useState(false);
+  const [scriptReady, setScriptReady] = useState(false);
+  const [widgetReady, setWidgetReady] = useState(false);
 
   useEffect(() => {
-    setShowCalendlyWidget(true);
+    if (window.Calendly) {
+      setScriptReady(true);
+    }
   }, []);
 
   useEffect(() => {
-    if (!showCalendlyWidget) {
+    if (!scriptReady || !calendlyRef.current || !window.Calendly) {
       return;
     }
 
-    // Wait for Calendly to be available
-    const initCalendly = () => {
-      if (window.Calendly && calendlyRef.current) {
-        try {
-          // Clear any existing content to prevent duplicates
-          if (calendlyRef.current) {
-            calendlyRef.current.innerHTML = '';
-          }
-          
-          window.Calendly.initInlineWidget({
-            url: calendlyUrl,
-            parentElement: calendlyRef.current,
-            prefill: {},
-            utm: {}
-          });
-        } catch (error) {
-          console.log('Calendly initialization error:', error);
-        }
-      }
-    };
+    calendlyRef.current.innerHTML = '';
 
-    // Fix for mobile cookie consent issues
-    const fixMobileCookieConsent = () => {
-      const cookieConsentElements = document.querySelectorAll('[id*="cookie"], [class*="cookie"], [id*="consent"], [class*="consent"]');
-      cookieConsentElements.forEach(element => {
-        const htmlElement = element as HTMLElement;
-        if (htmlElement.style) {
-          htmlElement.style.zIndex = '9998';
-          htmlElement.style.touchAction = 'manipulation';
-          htmlElement.style.pointerEvents = 'auto';
-        }
-      });
+    window.Calendly.initInlineWidget({
+      url: CALENDLY_INLINE_URL,
+      parentElement: calendlyRef.current,
+      prefill: {},
+      utm: {},
+    });
 
-      const cookieButtons = document.querySelectorAll('[id*="cookie"] button, [class*="cookie"] button, [id*="consent"] button, [class*="consent"] button');
-      cookieButtons.forEach(button => {
-        const htmlButton = button as HTMLElement;
-        if (htmlButton.style) {
-          htmlButton.style.touchAction = 'manipulation';
-          htmlButton.style.pointerEvents = 'auto';
-          htmlButton.style.cursor = 'pointer';
-        }
-        
-        htmlButton.addEventListener('touchstart', (e) => {
-          e.preventDefault();
-          htmlButton.click();
-        }, { passive: false });
-      });
-    };
+    setWidgetReady(true);
+  }, [scriptReady]);
 
-    // Initialize when Calendly is ready
+  const handleCalendlyLoad = () => {
     if (window.Calendly) {
-      initCalendly();
-    } else {
-      const timer = setTimeout(initCalendly, 1000);
-      return () => clearTimeout(timer);
+      setScriptReady(true);
+      return;
     }
 
-    // Fix mobile cookie consent issues
-    setTimeout(fixMobileCookieConsent, 500);
-    setTimeout(fixMobileCookieConsent, 1500);
-    setTimeout(fixMobileCookieConsent, 3000);
-  }, [showCalendlyWidget, calendlyUrl]);
+    const interval = window.setInterval(() => {
+      if (window.Calendly) {
+        window.clearInterval(interval);
+        setScriptReady(true);
+      }
+    }, 100);
+
+    window.setTimeout(() => window.clearInterval(interval), 10000);
+  };
 
   return (
     <>
-      <Head>
-        <title>Free AI Consultation | Schedule Expert Session - Praelix Technologies</title>
-        <meta name="description" content="Book your free 60-minute AI consultation with Praelix Technologies experts. Get expert advice on AI services, automation, and AI support solutions." />
-        <meta name="keywords" content="free AI consultation, AI consulting, automation advice, AI services, AI experts" />
-        <link rel="canonical" href="https://www.praelixtechnologies.com/consultation" />
-        <meta property="og:title" content="Free AI Consultation | Schedule Expert Session - Praelix Technologies" />
-        <meta property="og:description" content="Book your free 60-minute AI consultation with Praelix Technologies experts. Get expert advice on AI services, automation, and AI support solutions." />
-        <meta property="og:url" content="https://www.praelixtechnologies.com/consultation" />
-        <meta property="og:site_name" content="Praelix Technologies" />
-        <meta property="og:type" content="website" />
-        <style jsx global>{`
-          [id*="cookie"], [class*="cookie"], [id*="consent"], [class*="consent"] {
-            touch-action: manipulation !important;
-            pointer-events: auto !important;
-            z-index: 9998 !important;
-          }
-          
-          [id*="cookie"] button, [class*="cookie"] button, [id*="consent"] button, [class*="consent"] button {
-            touch-action: manipulation !important;
-            pointer-events: auto !important;
-            cursor: pointer !important;
-            -webkit-tap-highlight-color: rgba(0,0,0,0.1) !important;
-          }
-          
-          .calendly-inline-widget {
-            position: relative !important;
-            z-index: 1 !important;
-            max-width: 100% !important;
-            overflow: hidden !important;
-          }
-          
-          .calendly-inline-widget iframe {
-            position: relative !important;
-            z-index: 1 !important;
-            max-width: 100% !important;
-          }
-          
-          @media (max-width: 768px) {
-            [id*="cookie"], [class*="cookie"], [id*="consent"], [class*="consent"] {
-              position: fixed !important;
-              bottom: 0 !important;
-              left: 0 !important;
-              right: 0 !important;
-              z-index: 9999 !important;
-            }
-          }
-        `}</style>
-      </Head>
-      
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-24 pt-28 overflow-hidden">
-        {/* Background Patterns */}
-        <div className="absolute inset-0 neural-pattern opacity-20"></div>
-        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
-        
-        {/* Animated Gradient Orbs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
+      <link
+        href="https://assets.calendly.com/assets/external/widget.css"
+        rel="stylesheet"
+      />
+
+      <Script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        strategy="afterInteractive"
+        onLoad={handleCalendlyLoad}
+      />
+
+      <section className="relative min-h-screen pt-24 pb-10 md:pt-28 md:pb-12 overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900 text-white">
+        <div className="absolute inset-0 neural-pattern opacity-30" />
+        <div className="absolute inset-0 circuit-pattern opacity-20 animate-circuit-flow" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-transparent to-slate-900/60" />
+
+        <div className="absolute top-20 left-0 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl animate-blob" />
+        <div
+          className="absolute bottom-10 right-0 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl animate-blob"
+          style={{ animationDelay: '2s' }}
+        />
 
         <div className="container-custom relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-block mb-4">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
-                Free Consultation Available
-              </span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12 items-center lg:items-start">
+            {/* Left — hero copy */}
+            <div className="text-center lg:text-left lg:sticky lg:top-28 lg:py-4">
+              <div className="inline-block mb-5">
+                <span className="text-xs font-bold text-blue-200 uppercase tracking-widest bg-white/10 border border-white/20 px-4 py-2 rounded-full backdrop-blur-sm">
+                  Free Consultation Available
+                </span>
+              </div>
+
+              <h1 className="text-3xl sm:text-4xl xl:text-5xl font-bold mb-5 text-white leading-tight">
+                Schedule Your Free AI Consultation
+              </h1>
+
+              <p className="text-base md:text-lg text-slate-200 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                Pick a time on the right — booking stays on this page. No redirect to
+                Calendly.
+              </p>
+
+              <ul className="space-y-4 max-w-md mx-auto lg:mx-0 text-left">
+                <li className="flex items-center gap-3 text-slate-100">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/20 border border-blue-400/30">
+                    <i className="fas fa-clock text-blue-400" aria-hidden />
+                  </span>
+                  <span className="font-medium">30-minute session</span>
+                </li>
+                <li className="flex items-center gap-3 text-slate-100">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/20 border border-blue-400/30">
+                    <i className="fas fa-video text-blue-400" aria-hidden />
+                  </span>
+                  <span className="font-medium">Video call or phone</span>
+                </li>
+                <li className="flex items-center gap-3 text-slate-100">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-blue-500/20 border border-blue-400/30">
+                    <i className="fas fa-gift text-blue-400" aria-hidden />
+                  </span>
+                  <span className="font-medium">100% free</span>
+                </li>
+              </ul>
             </div>
-            
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Schedule Your Free AI Consultation
-            </h1>
-            
-            <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Talk to our AI experts, share your challenges, and discover how we can help you transform your business with intelligent AI solutions.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 sm:mb-12">
-              <div className="flex items-center text-gray-700">
-                <i className="fas fa-clock text-blue-600 mr-2"></i>
-                <span>30-minute session</span>
-              </div>
-              <div className="flex items-center text-gray-700">
-                <i className="fas fa-video text-blue-600 mr-2"></i>
-                <span>Video call or phone</span>
-              </div>
-              <div className="flex items-center text-gray-700">
-                <i className="fas fa-gift text-blue-600 mr-2"></i>
-                <span>100% free</span>
+
+            {/* Right — Calendly (calendar only, details on left) */}
+            <div className="w-full max-w-[520px] mx-auto lg:max-w-none lg:ml-auto">
+              <div
+                className="relative rounded-xl overflow-hidden shadow-2xl border border-slate-200/90 bg-white"
+                style={{ minHeight: CALENDLY_HEIGHT }}
+              >
+                {!widgetReady && (
+                  <div className="absolute inset-0 z-10 flex items-center justify-center bg-slate-50 text-slate-500">
+                    <div className="text-center">
+                      <i
+                        className="fas fa-spinner fa-spin text-3xl text-blue-600 mb-3"
+                        aria-hidden
+                      />
+                      <p className="font-medium">Loading scheduler…</p>
+                    </div>
+                  </div>
+                )}
+
+                <div
+                  ref={calendlyRef}
+                  className="calendly-inline-widget"
+                  data-url={CALENDLY_INLINE_URL}
+                  style={{
+                    height: `${CALENDLY_HEIGHT}px`,
+                    width: '100%',
+                    minWidth: '280px',
+                  }}
+                />
               </div>
             </div>
           </div>
-        </div>
-         
-        {/* Calendly Form - Full Width */}
-        <div className="w-full px-4 my-0 relative">
-          {showCalendlyWidget ? (
-            <div 
-              ref={calendlyRef}
-              className="calendly-inline-widget" 
-              data-url={calendlyUrl}
-              style={{ 
-                minWidth: '100%', 
-                width: '100%', 
-                height: '700px',
-                position: 'relative',
-                zIndex: 1,
-                overflow: 'hidden'
-              }}
-            ></div>
-          ) : (
-            <div
-              className="w-full animate-pulse rounded-xl bg-blue-50"
-              style={{ height: '700px' }}
-            />
-          )}
         </div>
       </section>
     </>

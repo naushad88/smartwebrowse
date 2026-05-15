@@ -152,7 +152,7 @@ const teamProfiles = [
   {
     name: 'Ishpreet K.',
     role: 'Senior AI Engineer',
-    location: 'Mohali, India',
+    location: 'Delhi, India',
     availability: 'Available now',
     jobSuccess: '100% Job Success',
     rating: 'Top Rated Plus',
@@ -188,7 +188,7 @@ const teamProfiles = [
   {
     name: 'Jaskamal S.',
     role: 'AI Backend Developer',
-    location: 'Mohali, India',
+    location: 'Delhi, India',
     availability: 'Available now',
     jobSuccess: '100% Job Success',
     rating: 'Top Rated',
@@ -200,7 +200,7 @@ const teamProfiles = [
   {
     name: 'Neha N.',
     role: 'AI Frontend Developer',
-    location: 'Mohali, India',
+    location: 'Delhi, India',
     availability: 'Available now',
     jobSuccess: '100% Job Success',
     rating: 'Top Rated Plus',
@@ -236,7 +236,7 @@ const teamProfiles = [
   {
     name: 'Priya S.',
     role: 'AI QA Engineer',
-    location: 'Mohali, India',
+    location: 'Delhi, India',
     availability: 'Available now',
     jobSuccess: '100% Job Success',
     rating: 'Top Rated',

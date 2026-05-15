@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
-import Link from 'next/link';
+import LegalPageLayout from '@/components/LegalPageLayout';
+import { COMPANY_LEGAL, SITE_EMAIL } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Terms of Service | Praelix Technologies',
@@ -12,46 +13,17 @@ export const metadata: Metadata = {
 
 export default function TermsOfService() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50">
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-24 pt-28 overflow-hidden">
-        {/* Background Patterns */}
-        <div className="absolute inset-0 neural-pattern opacity-20"></div>
-        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
-        
-        {/* Animated Gradient Orbs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
-
-        <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block mb-4">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
-                Legal Terms
-              </span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Terms of Service
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Read our terms and conditions for using Praelix Technologies AI services. 
-              These terms govern your relationship with us and outline your rights and responsibilities.
-            </p>
-            <div className="mt-8 inline-flex items-center px-4 py-2 bg-blue-100 text-blue-800 rounded-full text-sm font-medium border border-blue-200">
-              <i className="fas fa-gavel mr-2"></i>
-              Indian Law Compliant
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Main Content */}
-      <section className="py-16 md:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 neural-pattern opacity-10"></div>
-        <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto">
+    <LegalPageLayout
+      badge="Legal Terms"
+      title="Terms of Service"
+      description="Read our terms and conditions for using Praelix Technologies AI services. These terms govern your relationship with us and outline your rights and responsibilities."
+      currentPage="terms"
+      badgeTone="blue"
+      complianceLabel="Delhi, India — Law Compliant"
+      complianceIcon="fa-gavel"
+    >
             {/* Last Updated Info */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <div className="text-center">
                 <p className="text-lg text-gray-600 mb-2">
                   <strong>Last updated:</strong> January 2025
@@ -63,7 +35,7 @@ export default function TermsOfService() {
             </div>
 
             {/* Acceptance of Terms */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">1. Acceptance of Terms</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 By accessing and using the Praelix Technologies website and AI services, you accept and agree to be bound by the terms and provision of this agreement.
@@ -78,7 +50,7 @@ export default function TermsOfService() {
             </div>
 
             {/* Description of Service */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">2. Description of Service</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Praelix Technologies provides comprehensive AI services including but not limited to:
@@ -117,7 +89,7 @@ export default function TermsOfService() {
             </div>
 
             {/* User Responsibilities */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">3. User Responsibilities</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">You agree to:</p>
               
@@ -154,7 +126,7 @@ export default function TermsOfService() {
             </div>
 
             {/* Intellectual Property */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">4. Intellectual Property</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 All content, trademarks, and intellectual property on this website are owned by Praelix Technologies. 
@@ -180,7 +152,7 @@ export default function TermsOfService() {
             </div>
 
             {/* Limitation of Liability */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">5. Limitation of Liability</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Praelix Technologies shall not be liable for any indirect, incidental, special, consequential, or punitive damages 
@@ -198,25 +170,28 @@ export default function TermsOfService() {
             </div>
 
             {/* Governing Law */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">6. Governing Law</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                These terms shall be governed by and construed in accordance with the laws of India, 
-                where Praelix Technologies is incorporated.
+                These Terms of Service are governed by and construed in accordance with the laws of
+                India. Praelix Technologies operates from its corporate office in Delhi, India. Any
+                dispute, claim, or matter arising out of or relating to these terms shall be subject
+                to the exclusive jurisdiction of the courts at New Delhi, Delhi, India.
               </p>
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-200">
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Legal Jurisdiction:</h3>
                 <div className="space-y-2 text-gray-800">
-                  <p><strong>Country:</strong> India</p>
-                  <p><strong>State:</strong> Punjab</p>
-                  <p><strong>City:</strong> Mohali</p>
+                  <p><strong>Country:</strong> {COMPANY_LEGAL.country}</p>
+                  <p><strong>State / UT:</strong> {COMPANY_LEGAL.stateFull}</p>
+                  <p><strong>City:</strong> {COMPANY_LEGAL.city}</p>
                   <p><strong>Company:</strong> Praelix Technologies</p>
+                  <p><strong>Courts:</strong> {COMPANY_LEGAL.jurisdiction}</p>
                 </div>
               </div>
             </div>
 
             {/* Contact Information */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">7. Contact Information</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 If you have any questions about these Terms of Service, please contact us:
@@ -228,7 +203,7 @@ export default function TermsOfService() {
                     <i className="fas fa-envelope text-white text-lg"></i>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Legal Inquiries</h3>
-                  <p className="text-gray-700 text-sm">legal@praelixtechnologies.com</p>
+                  <p className="text-gray-700 text-sm">{SITE_EMAIL.legal}</p>
                 </div>
 
                 <div className="text-center p-6 bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl border border-indigo-200">
@@ -236,7 +211,7 @@ export default function TermsOfService() {
                     <i className="fas fa-building text-white text-lg"></i>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Company Address</h3>
-                  <p className="text-gray-700 text-sm">F-195, Second Floor, Industrial Area Phase 8-B, Sector 74, Mohali, India 160055</p>
+                  <p className="text-gray-700 text-sm">{COMPANY_LEGAL.officeAddress}</p>
                 </div>
               </div>
             </div>
@@ -248,9 +223,6 @@ export default function TermsOfService() {
                 with Indian laws and regulations.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </LegalPageLayout>
   );
 }

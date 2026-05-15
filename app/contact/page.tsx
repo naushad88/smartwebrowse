@@ -101,7 +101,7 @@ export default function ContactPage() {
                     </div>
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700">Established: <span className="font-medium">June 2013</span></span>
+                      <span className="text-gray-700">Established: <span className="font-medium">April 2020</span></span>
                     </div>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export default function ContactPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { title: 'India - Corporate Office', address: 'SCO 215-217, 3rd Floor, Sector 34-A, Chandigarh, India 160034', icon: 'fa-building' },
+              { title: 'India - Corporate Office', address: '#333, Shankar Marg, Mandawali, East Delhi, Delhi 110092, India', icon: 'fa-building' },
               { title: 'Canada - Sales Office', address: 'Apartment -08\n2155 rue Saint Marc\nMontreal, Quebec, H3H2G8', icon: 'fa-map-marker-alt' },
               { title: 'Japan - Sales Office', address: 'Japan, Chiba-Ken\nUrayasu City\nTakasu 3-29-22', icon: 'fa-map-marker-alt' },
               { title: 'USA - Sales Office', address: '620 VETERANS BLVD, Unit 525\nRedwood City\nState - California, 94063', icon: 'fa-map-marker-alt' }

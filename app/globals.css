@@ -83,6 +83,14 @@
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 
+  .legal-page-content .card-ai {
+    @apply p-6 md:p-8;
+  }
+
+  .legal-page-content h2 {
+    @apply text-2xl md:text-3xl;
+  }
+
   .heading-1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold font-heading leading-tight mt-8;
   }

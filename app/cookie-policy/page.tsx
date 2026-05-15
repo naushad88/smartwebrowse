@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
-import Link from 'next/link';
+import LegalPageLayout from '@/components/LegalPageLayout';
+import { COMPANY_LEGAL } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Cookie Policy | Praelix Technologies',
@@ -12,46 +13,17 @@ export const metadata: Metadata = {
 
 export default function CookiePolicy() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-indigo-50/50">
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-24 pt-28 overflow-hidden">
-        {/* Background Patterns */}
-        <div className="absolute inset-0 neural-pattern opacity-20"></div>
-        <div className="absolute inset-0 circuit-pattern opacity-15 animate-circuit-flow"></div>
-        
-        {/* Animated Gradient Orbs */}
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl animate-blob" style={{ animationDelay: '2s' }}></div>
-
-        <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block mb-4">
-              <span className="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-50 px-4 py-2 rounded-full">
-                Cookie Management
-              </span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">
-              Cookie Policy
-            </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Learn how we use cookies and similar technologies to enhance your browsing experience 
-              and provide personalized AI services on our website.
-            </p>
-            <div className="mt-8 inline-flex items-center px-4 py-2 bg-purple-100 text-purple-800 rounded-full text-sm font-medium border border-purple-200">
-              <i className="fas fa-shield-alt mr-2"></i>
-              Privacy Compliant
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Main Content */}
-      <section className="py-16 md:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 neural-pattern opacity-10"></div>
-        <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto">
+    <LegalPageLayout
+      badge="Cookie Management"
+      title="Cookie Policy"
+      description="Learn how we use cookies and similar technologies to enhance your browsing experience and provide personalized AI services on our website."
+      currentPage="cookie"
+      badgeTone="purple"
+      complianceLabel="Privacy Compliant"
+      complianceIcon="fa-shield-alt"
+    >
             {/* Last Updated Info */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <div className="text-center">
                 <p className="text-lg text-gray-600 mb-2">
                   <strong>Last updated:</strong> January 2025
@@ -63,7 +35,7 @@ export default function CookiePolicy() {
             </div>
 
             {/* What Are Cookies */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">What Are Cookies?</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 Cookies are small text files that are placed on your device when you visit our website. 
@@ -89,7 +61,7 @@ export default function CookiePolicy() {
             </div>
 
             {/* How We Use Cookies */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">How We Use Cookies</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 We use cookies for the following purposes to improve your experience:
@@ -120,7 +92,7 @@ export default function CookiePolicy() {
             </div>
 
             {/* Types of Cookies */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Types of Cookies We Use</h2>
               
               <div className="space-y-6">
@@ -199,7 +171,7 @@ export default function CookiePolicy() {
             </div>
 
             {/* Managing Cookie Preferences */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Managing Your Cookie Preferences</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 You can control and manage cookies in several ways:
@@ -240,7 +212,7 @@ export default function CookiePolicy() {
             </div>
 
             {/* Contact Information */}
-            <div className="card-ai p-8 mb-8">
+            <div className="card-ai p-8">
               <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-blue-800 to-indigo-800 bg-clip-text text-transparent">Contact Us</h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
                 If you have any questions about our use of cookies, please contact us:
@@ -260,7 +232,7 @@ export default function CookiePolicy() {
                     <i className="fas fa-building text-white text-lg"></i>
                   </div>
                   <h3 className="font-semibold text-gray-900 mb-2">Company Address</h3>
-                  <p className="text-gray-700 text-sm">F-195, Second Floor, Industrial Area Phase 8-B, Sector 74, Mohali, India 160055</p>
+                  <p className="text-gray-700 text-sm">{COMPANY_LEGAL.officeAddress}</p>
                 </div>
               </div>
             </div>
@@ -272,9 +244,6 @@ export default function CookiePolicy() {
                 with Indian data protection laws and regulations.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-    </div>
+    </LegalPageLayout>
   );
 }

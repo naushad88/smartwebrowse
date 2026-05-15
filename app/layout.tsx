@@ -109,11 +109,6 @@ export default function RootLayout({
           <Analytics />
         </LanguageProvider>
         
-        {/* Calendly Script */}
-        <script 
-          src="https://assets.calendly.com/assets/external/widget.js" 
-          async
-        />
       </body>
     </html>
   );
